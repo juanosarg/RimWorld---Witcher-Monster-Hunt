@@ -1,0 +1,4 @@
+E:\SteamLibrary\steamapps\common\RimWorld\Mods\RaceToTheRim\Assemblies\RttRAnimalRangeUnlocker.dll
+E:\SteamLibrary\steamapps\common\RimWorld\Mods\RaceToTheRim\Source\AnimalRangedVerbsUnlocker\obj\Debug\RttRAnimalRangeUnlocker.csprojAssemblyReference.cache
+E:\SteamLibrary\steamapps\common\RimWorld\Mods\RaceToTheRim\Source\AnimalRangedVerbsUnlocker\obj\Debug\RttRAnimalRangeUnlocker.csproj.CoreCompileInputs.cache
+E:\SteamLibrary\steamapps\common\RimWorld\Mods\RaceToTheRim\Source\AnimalRangedVerbsUnlocker\obj\Debug\RttRAnimalRangeUnlocker.dll

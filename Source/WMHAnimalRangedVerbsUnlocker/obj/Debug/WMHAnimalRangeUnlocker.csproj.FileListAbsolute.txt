@@ -1,0 +1,4 @@
+E:\SteamLibrary\steamapps\common\RimWorld\Mods\RimWorld - Witcher Monster Hunt\Assemblies\WMHAnimalRangeUnlocker.dll
+E:\SteamLibrary\steamapps\common\RimWorld\Mods\RimWorld - Witcher Monster Hunt\Source\WMHAnimalRangedVerbsUnlocker\obj\Debug\WMHAnimalRangeUnlocker.csprojAssemblyReference.cache
+E:\SteamLibrary\steamapps\common\RimWorld\Mods\RimWorld - Witcher Monster Hunt\Source\WMHAnimalRangedVerbsUnlocker\obj\Debug\WMHAnimalRangeUnlocker.csproj.CoreCompileInputs.cache
+E:\SteamLibrary\steamapps\common\RimWorld\Mods\RimWorld - Witcher Monster Hunt\Source\WMHAnimalRangedVerbsUnlocker\obj\Debug\WMHAnimalRangeUnlocker.dll

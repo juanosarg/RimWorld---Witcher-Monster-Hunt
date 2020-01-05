@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+
+
+	<BodyPartDef>
+		<defName>WMH_Wing</defName>
+		<label>wing</label>
+		<hitPoints>30</hitPoints>
+		<skinCovered>true</skinCovered>
+	</BodyPartDef>
+
+
+
+
+</Defs>

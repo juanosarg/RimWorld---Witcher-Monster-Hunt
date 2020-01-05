@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+	<DamageDef ParentName="Bite">
+		<defName>WMH_VeryToxicBite</defName>
+		<label>virulent toxic bite</label>
+		<additionalHediffs>
+			<li>
+				<hediff>WMH_ToxicBuildup</hediff>
+				<severityPerDamageDealt>0.03</severityPerDamageDealt>
+				<victimSeverityScaling>ToxicSensitivity</victimSeverityScaling>
+
+			</li>
+		</additionalHediffs>
+	</DamageDef>
+	
+	<DamageDef ParentName="Bite">
+		<defName>WMH_Berserk</defName>
+		<label>berserk wave</label>
+		<workerClass>WMHAnimalBehaviours.DamageWorker_Berserk</workerClass>
+
+	</DamageDef>
+
+	
+
+
+
+
+
+</Defs>

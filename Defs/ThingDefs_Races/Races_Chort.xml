@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+	<!-- ============================================================ -->
+
+	<ThingDef ParentName="WMH_MonsterBase">
+		<defName>WMH_Chort</defName>
+		<label>chort</label>
+
+		<description>Description\n\nSpecial Abilities:.\n\nRace Traits: Relicts are Gallatross level threats, but yield significantly bigger rewards.</description>
+		<statBases>
+			<MoveSpeed>5.7</MoveSpeed>
+			<ComfyTemperatureMin>-100</ComfyTemperatureMin>
+			<MarketValue>4000</MarketValue>
+		</statBases>
+		<tools>
+			<li>
+				<label>horn</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>35</power>
+				<cooldownTime>0.85</cooldownTime>
+				<linkedBodyPartsGroup>HornAttackTool</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>horn</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>27</power>
+				<cooldownTime>1.7</cooldownTime>
+				<linkedBodyPartsGroup>HornAttackTool</linkedBodyPartsGroup>
+			</li>
+
+			<li>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>1.65</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1.65</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+
+		</tools>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<accuracyTouch>1</accuracyTouch>
+				<accuracyShort>1</accuracyShort>
+				<accuracyMedium>1</accuracyMedium>
+				<accuracyLong>1</accuracyLong>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>WMH_ChortWave</defaultProjectile>
+				<warmupTime>5</warmupTime>
+				<burstShotCount>1</burstShotCount>
+				<minRange>2</minRange>
+				<range>30</range>
+				<soundCast>PsychicPulseGlobal</soundCast>
+				<muzzleFlashScale>0</muzzleFlashScale>
+				<!--Commanility determines how frequent this range verb is chosen.-->
+				<commonality>0.1</commonality>
+			</li>
+
+
+		</verbs>
+		<race>
+
+			<body>WMH_QuadrupedWithPawsAndHorns</body>
+			<baseBodySize>6.00</baseBodySize>
+			<baseHungerRate>5.0</baseHungerRate>
+			<baseHealthScale>30</baseHealthScale>
+			<foodType>OmnivoreAnimal</foodType>
+			<leatherDef>Leather_Lizard</leatherDef>
+			<wildness>0.99</wildness>
+			<manhunterOnDamageChance>1.0</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>1.0</manhunterOnTameFailChance>
+			<trainability>Advanced</trainability>
+			<gestationPeriodDays>75</gestationPeriodDays>
+			<litterSizeCurve>
+				<points>
+					<li>(0.99, 0)</li>
+					<li>(1, 1)</li>
+					<li>(1.01, 0)</li>
+				</points>
+			</litterSizeCurve>
+			<lifeExpectancy>300</lifeExpectancy>
+			<lifeStageAges>
+				
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0</minAge>
+					<soundCall>Pawn_Thrumbo_Call</soundCall>
+					<soundAngry>Pawn_Thrumbo_Angry</soundAngry>
+					<soundWounded>Pawn_Thrumbo_Pain</soundWounded>
+					<soundDeath>Pawn_Thrumbo_Death</soundDeath>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+			<li>AnimalMonster</li>
+		</tradeTags>
+		<modExtensions>
+			<li Class="WMHAnimalBehaviours.MonsterClass">
+				<monsterClass>Relict</monsterClass>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<PawnKindDef ParentName="WMH_MonsterKindBase">
+		<defName>WMH_Chort</defName>
+		<label>chort</label>
+		<race>WMH_Chort</race>
+		<combatPower>1000</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+
+		<lifeStages>
+		
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/WMH_Chort/WMH_Chort</texPath>
+					<drawSize>4.5</drawSize>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/WMH_Chort/WMH_Dessicated_Chort</texPath>
+					<drawSize>4.5</drawSize>
+				</dessicatedBodyGraphicData>
+				
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+</Defs>

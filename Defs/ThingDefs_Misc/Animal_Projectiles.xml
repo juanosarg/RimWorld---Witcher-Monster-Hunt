@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>WMH_ChortWave</defName>
+		<label>berserk wave</label>
+		<thingClass>WMHAnimalRangeUnlocker.AnimalProjectile</thingClass>
+		<graphicData>
+			<texPath>Things/Projectiles/WMH_ChortAttack</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>WMH_Berserk</damageDef>
+			<damageAmountBase>20</damageAmountBase>
+			<speed>20</speed>
+		</projectile>
+	</ThingDef>
+
+
+
+	
+	
+
+
+
+</Defs>

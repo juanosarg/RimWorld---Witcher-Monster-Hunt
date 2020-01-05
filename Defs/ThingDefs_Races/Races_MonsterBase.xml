@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="AnimalThingBase" Name="WMH_MonsterBase" Abstract="True">
+		
+		<race>
+			<fleshType>WMH_Flesh</fleshType>
+			<needsRest>false</needsRest>
+			<foodType>None</foodType>
+			
+
+			
+		</race>
+	</ThingDef>
+
+	<PawnKindDef Name="WMH_MonsterKindBase" Abstract="True">
+		<defaultFactionType>WMH_Monsters</defaultFactionType>
+		<aiAvoidCover>true</aiAvoidCover>
+	</PawnKindDef>
+</Defs>

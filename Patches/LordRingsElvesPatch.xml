@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ModCheck.isModLoaded">
+				<modName>Lord of the Rims - Elves</modName>
+				<yourMod>Race to the Rim</yourMod>
+			</li>
+
+
+
+
+			
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[defName="RttR_Fury"]/race/wildBiomes</xpath>
+				<value>
+					<LotRE_MallornForest>0.04</LotRE_MallornForest>
+					
+				</value>
+			</li>
+			
+		
+			
+		</operations>
+	</Operation>
+
+
+</Patch>
+

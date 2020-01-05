@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+
+
+	<!-- Misc -->
+
+
+	<WMH_MonsterClass>Monster class</WMH_MonsterClass>
+	
+	<WMH_MonsterClass_CursedOne>Cursed One</WMH_MonsterClass_CursedOne>
+	<WMH_MonsterClass_CursedOne_Description>Each Cursed One has a rare attack (usually bite) that spreads the curse. Curses act like infection - they can be cured, but upon reaching 100% they turn the pawn into that very Cursed One that infected him/her.</WMH_MonsterClass_CursedOne_Description>
+	
+	<WMH_MonsterClass_Draconid>Draconid</WMH_MonsterClass_Draconid>
+	<WMH_MonsterClass_Draconid_Description>Draconids avoid terrain path cost. They can move over stone chunks, barricades, trees, rivers like it's nothing.</WMH_MonsterClass_Draconid_Description>
+	
+	<WMH_MonsterClass_Elemental>Elemental</WMH_MonsterClass_Elemental>
+	<WMH_MonsterClass_Elemental_Description>Elementa are completely immune to super cold and super hot temperatures, as well as fully immune to fire.</WMH_MonsterClass_Elemental_Description>
+	
+	<WMH_MonsterClass_Insectoid>Insectoid</WMH_MonsterClass_Insectoid>
+	<WMH_MonsterClass_Insectoid_Description>Insectoids always appear in swarms with a different types of insectoids.</WMH_MonsterClass_Insectoid_Description>
+	
+	<WMH_MonsterClass_Necrophage>Necrophage</WMH_MonsterClass_Necrophage>
+	<WMH_MonsterClass_Necrophage_Description>Necrophages have a very high infection chance on all attacks. Necrophage bite applies a random illness.</WMH_MonsterClass_Necrophage_Description>
+
+	<WMH_MonsterClass_Ogroid>Ogroid</WMH_MonsterClass_Ogroid>
+	<WMH_MonsterClass_Ogroid_Description>Ogroids have a basic slow wound regeneration.</WMH_MonsterClass_Ogroid_Description>
+	
+	<WMH_MonsterClass_Relict>Relict</WMH_MonsterClass_Relict>
+	<WMH_MonsterClass_Relict_Description>Relicts are Gallatross level threats, but yield significantly bigger rewards.</WMH_MonsterClass_Relict_Description>
+	
+	<WMH_MonsterClass_Spectre>Spectre</WMH_MonsterClass_Spectre>
+	<WMH_MonsterClass_Spectre_Description>Wraith presence instills fear, which directly affects mood of your pawns. Get ready for mental breaks mid-battle.</WMH_MonsterClass_Spectre_Description>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LanguageData>
