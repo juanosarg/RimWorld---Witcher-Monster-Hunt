@@ -33,9 +33,7 @@ namespace WMHAnimalBehaviours
                 Pawn thisPawn = this.parent as Pawn;
                 if (thisPawn!=null && thisPawn.Map != null && !thisPawn.Dead && !thisPawn.Downed)
                 {
-                    Log.Message(thisPawn.health.summaryHealth.SummaryHealthPercent.ToString());
-                    Log.Message(((float)(100 - Props.healthPercent) / 100).ToString());
-
+                   
                     if (thisPawn.health.summaryHealth.SummaryHealthPercent < ((float)(Props.healthPercent)/100))
                     {
                         thisPawn.mindState.mentalStateHandler.TryStartMentalState(DefDatabase<MentalStateDef>.GetNamed(Props.mentalState, true), null, true, false, null, false);
