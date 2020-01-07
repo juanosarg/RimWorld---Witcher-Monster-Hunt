@@ -1,7 +1,7 @@
 ﻿
 using Verse;
 
-namespace WHMAnimalBehaviours
+namespace WMHAnimalBehaviours
 {
     public class CompProperties_DigWhenHungry : CompProperties
     {

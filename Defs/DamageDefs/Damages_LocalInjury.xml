@@ -22,6 +22,20 @@
 		<workerClass>WMHAnimalBehaviours.DamageWorker_Berserk</workerClass>
 
 	</DamageDef>
+	
+	<DamageDef ParentName="CutBase">
+		<defName>WMH_InfectedClaws</defName>
+		<label>infected claws</label>
+		<workerClass>WMHAnimalBehaviours.DamageWorker_ExtraInfecter</workerClass>
+		<additionalHediffs>
+			<li>
+				<hediff>WMH_Vomiting</hediff>
+				<severityPerDamageDealt>0.03</severityPerDamageDealt>
+				<victimSeverityScaling>ToxicSensitivity</victimSeverityScaling>
+
+			</li>
+		</additionalHediffs>
+	</DamageDef>
 
 	
 

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="WMH_UndeadMonsterBase">
+		<defName>WMH_Ghoul</defName>
+		<label>ghoul</label>
+		<description>Description\n\nSpecial Abilities:.\n\nRace Traits: Necrophages have a very high infection chance on all attacks. Necrophage bite applies a random illness.</description>
+		<statBases>
+			<MoveSpeed>3</MoveSpeed>
+			<ComfyTemperatureMin>-15</ComfyTemperatureMin>
+			<MarketValue>55</MarketValue>
+			<LeatherAmount>0</LeatherAmount>
+			<MeatAmount>0</MeatAmount>
+			<ArmorRating_Blunt>.3</ArmorRating_Blunt>
+			<ArmorRating_Heat>-0.3</ArmorRating_Heat>
+			<ArmorRating_Sharp>.3</ArmorRating_Sharp>
+		</statBases>
+		<tools>
+			<li>
+				<label>left fist</label>
+				<capacities>
+					<li>WMH_InfectedClaws</li>
+				</capacities>
+				<power>2</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>right fist</label>
+				<capacities>
+					<li>WMH_InfectedClaws</li>
+				</capacities>
+				<power>2</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.7</chanceFactor>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<comps>
+			<li Class="WMHAnimalBehaviours.CompProperties_Infecter">
+				<infectionChance>30</infectionChance>
+				
+			</li>
+		</comps>
+
+		<race>
+			<body>Human</body>
+			<baseBodySize>1</baseBodySize>
+			<baseHealthScale>2</baseHealthScale>
+			<leatherDef>Leather_Human</leatherDef>
+			<useMeatFrom>Human</useMeatFrom>
+			<gestationPeriodDays>45</gestationPeriodDays>
+			<lifeExpectancy>1800</lifeExpectancy>
+			<foodType>OmnivoreHuman</foodType>
+			<baseHungerRate>0.10</baseHungerRate>
+			<wildness>1</wildness>
+
+			<lifeStageAges>
+			
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0</minAge>
+					
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+			
+		</race>
+		
+		<tradeTags>
+			<li>AnimalMonster</li>
+		</tradeTags>
+		<modExtensions>
+			<li Class="WMHAnimalBehaviours.MonsterClass">
+				<monsterClass>Necrophage</monsterClass>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<PawnKindDef ParentName="WMH_MonsterKindBase">
+		<defName>WMH_Ghoul</defName>
+		<label>ghoul</label>
+		<race>WMH_Ghoul</race>
+		<combatPower>120</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+		<ecoSystemWeight>1</ecoSystemWeight>
+		<wildGroupSize>
+			<min>2</min>
+			<max>6</max>
+		</wildGroupSize>
+		<lifeStages>
+			
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/WMH_Ghoul/WMH_Ghoul</texPath>
+					<drawSize>2</drawSize>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/WMH_Ghoul/WMH_Dessicated_Ghoul</texPath>
+					<drawSize>2</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+</Defs>

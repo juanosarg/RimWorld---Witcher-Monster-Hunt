@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using Verse;
 
-namespace WHMAnimalBehaviours
+namespace WMHAnimalBehaviours
 {
     public class CompDigWhenHungry : ThingComp
     {

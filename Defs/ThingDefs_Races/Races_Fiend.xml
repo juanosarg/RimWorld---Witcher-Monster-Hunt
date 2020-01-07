@@ -6,24 +6,33 @@
 	<!-- ============================================================ -->
 
 	<ThingDef ParentName="WMH_MonsterBase">
-		<defName>WMH_Chort</defName>
-		<label>chort</label>
+		<defName>WMH_Fiend</defName>
+		<label>fiend</label>
 
 		<description>Description\n\nSpecial Abilities:.\n\nRace Traits: Relicts are Gallatross level threats, but yield significantly bigger rewards.</description>
 		<statBases>
-			<MoveSpeed>5.7</MoveSpeed>
+			<MoveSpeed>5</MoveSpeed>
 			<ComfyTemperatureMin>-100</ComfyTemperatureMin>
 			<MarketValue>4000</MarketValue>
 		</statBases>
 		<tools>
 			<li>
-				<label>horn</label>
+				<label>left claw</label>
 				<capacities>
 					<li>Scratch</li>
 				</capacities>
-				<power>35</power>
+				<power>22</power>
 				<cooldownTime>0.85</cooldownTime>
-				<linkedBodyPartsGroup>HornAttackTool</linkedBodyPartsGroup>
+				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>right claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>22</power>
+				<cooldownTime>0.85</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
 			</li>
 			<li>
 				<label>horn</label>
@@ -57,17 +66,17 @@
 		</tools>
 		<comps>
 			<li Class="WMHAnimalBehaviours.CompProperties_MindEffecter">
-				<radius>20</radius>
-				<tickInterval>1000</tickInterval>
-				<mentalState>Berserk</mentalState>
+				<radius>30</radius>
+				<tickInterval>750</tickInterval>
+				<mentalState>Wander_Psychotic</mentalState>
 			</li>
 		</comps>
 		<race>
 
 			<body>WMH_QuadrupedWithPawsAndHorns</body>
-			<baseBodySize>6.00</baseBodySize>
-			<baseHungerRate>5.0</baseHungerRate>
-			<baseHealthScale>30</baseHealthScale>
+			<baseBodySize>7.00</baseBodySize>
+			<baseHungerRate>3.0</baseHungerRate>
+			<baseHealthScale>25</baseHealthScale>
 			<foodType>OmnivoreAnimal</foodType>
 			<leatherDef>Leather_Lizard</leatherDef>
 			<wildness>0.99</wildness>
@@ -109,9 +118,9 @@
 	</ThingDef>
 
 	<PawnKindDef ParentName="WMH_MonsterKindBase">
-		<defName>WMH_Chort</defName>
-		<label>chort</label>
-		<race>WMH_Chort</race>
+		<defName>WMH_Fiend</defName>
+		<label>fiend</label>
+		<race>WMH_Fiend</race>
 		<combatPower>1000</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
 
@@ -119,7 +128,7 @@
 		
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/WMH_Chort/WMH_Chort</texPath>
+					<texPath>Things/Pawn/Animal/WMH_Fiend/WMH_Fiend</texPath>
 					<drawSize>4.5</drawSize>
 					<shadowData>
 						<volume>(0.8, 0.6, 0.6)</volume>
@@ -127,7 +136,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/WMH_Chort/WMH_Dessicated_Chort</texPath>
+					<texPath>Things/Pawn/Animal/WMH_Fiend/WMH_Dessicated_Fiend</texPath>
 					<drawSize>4.5</drawSize>
 				</dessicatedBodyGraphicData>
 				

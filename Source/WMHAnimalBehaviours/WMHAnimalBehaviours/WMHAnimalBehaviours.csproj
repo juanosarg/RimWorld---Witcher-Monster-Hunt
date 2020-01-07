@@ -53,9 +53,18 @@
   <ItemGroup>
     <Compile Include="Comps\CompDigWhenHungry.cs" />
     <Compile Include="Comps\CompHovering.cs" />
+    <Compile Include="Comps\CompInfecter.cs" />
+    <Compile Include="Comps\CompMindEffecter.cs" />
+    <Compile Include="Comps\CompProperties_StateAfterHealthLoss.cs" />
     <Compile Include="Comps\CompProperties_DigWhenHungry.cs" />
     <Compile Include="Comps\CompProperties_Hovering.cs" />
+    <Compile Include="Comps\CompProperties_Infecter.cs" />
+    <Compile Include="Comps\CompProperties_MindEffecter.cs" />
+    <Compile Include="Comps\CompProperties_Regeneration.cs" />
+    <Compile Include="Comps\CompRegeneration.cs" />
+    <Compile Include="Comps\CompStateAfterHealthLoss.cs" />
     <Compile Include="DamageWorker_Berserk.cs" />
+    <Compile Include="DamageWorker_ExtraInfecter.cs" />
     <Compile Include="Enums\MonsterClassEnum.cs" />
     <Compile Include="MonsterClass.cs" />
     <Compile Include="HarmonyPatchers.cs" />

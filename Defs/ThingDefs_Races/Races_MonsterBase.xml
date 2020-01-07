@@ -7,9 +7,6 @@
 			<fleshType>WMH_Flesh</fleshType>
 			<needsRest>false</needsRest>
 			<foodType>None</foodType>
-			
-
-			
 		</race>
 	</ThingDef>
 
@@ -17,4 +14,33 @@
 		<defaultFactionType>WMH_Monsters</defaultFactionType>
 		<aiAvoidCover>true</aiAvoidCover>
 	</PawnKindDef>
+	
+	
+	<ThingDef ParentName="BasePawn" Name="WMH_UndeadMonsterBase" Abstract="True">
+    <statBases>
+      <Flammability>1.0</Flammability>
+      <LeatherAmount>30</LeatherAmount>
+    </statBases>
+    <race>
+	  <fleshType>WMH_Flesh</fleshType>
+	  <needsRest>false</needsRest>
+	  <foodType>None</foodType>
+      <thinkTreeMain>Animal</thinkTreeMain>
+      <thinkTreeConstant>AnimalConstant</thinkTreeConstant>
+      <hasGenders>true</hasGenders>
+      <nameGenerator>NamerAnimalGenericMale</nameGenerator>
+      <nameGeneratorFemale>NamerAnimalGenericFemale</nameGeneratorFemale>
+      <manhunterOnDamageChance>0.02</manhunterOnDamageChance>
+      <manhunterOnTameFailChance>0.013</manhunterOnTameFailChance>
+      <nameOnNuzzleChance>0.5</nameOnNuzzleChance>
+      <trainability>Intermediate</trainability>
+      
+    </race>
+    <recipes>
+		
+      <li>RemoveBodyPart</li>
+      <li>Euthanize</li>
+      <li>Anesthetize</li>
+    </recipes>
+  </ThingDef>
 </Defs>

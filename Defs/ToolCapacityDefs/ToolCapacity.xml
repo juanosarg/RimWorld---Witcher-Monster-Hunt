@@ -7,6 +7,11 @@
     <defName>WMH_VeryToxicBite</defName>
     <label>virulent toxic bite</label>
   </ToolCapacityDef>
+  
+   <ToolCapacityDef>
+    <defName>WMH_InfectedClaws</defName>
+    <label>infected claws</label>
+  </ToolCapacityDef>
  
 
 
