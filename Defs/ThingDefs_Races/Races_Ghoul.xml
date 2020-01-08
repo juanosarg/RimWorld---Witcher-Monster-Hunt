@@ -4,7 +4,7 @@
 	<ThingDef ParentName="WMH_UndeadMonsterBase">
 		<defName>WMH_Ghoul</defName>
 		<label>ghoul</label>
-		<description>Description\n\nSpecial Abilities:.\n\nRace Traits: Necrophages have a very high infection chance on all attacks. Necrophage bite applies a random illness.</description>
+		<description>Ghouls are hard to describe. In part, they resemble humans - yet on the whole, they are the utter negation of all that is human. They are driven by one thing and one thing only: an insatiable craving for human flesh. Their repulsive look makes people vomit on sight.\n\nMonster class traits: Being a necrophage, Ghoul's attacks have a very high infection chance.</description>		
 		<statBases>
 			<MoveSpeed>3</MoveSpeed>
 			<ComfyTemperatureMin>-15</ComfyTemperatureMin>

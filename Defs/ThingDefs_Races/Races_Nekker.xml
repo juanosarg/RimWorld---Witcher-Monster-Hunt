@@ -4,14 +4,14 @@
 	<ThingDef ParentName="WMH_MonsterBase">
 		<defName>WMH_Nekker</defName>
 		<label>nekker</label>
-		<description>Description\n\nSpecial Abilities:.\n\nRace Traits: Ogroids have a basic slow wound regeneration.</description>
+		<description>A lone nekker is harmless. Five are dangerous. Ten can kill even a veteran of the Mechanoid wars. Nekkers always attack in groups and by surprise. Nekkers are cowards, which means they will try to run if facing grave danger.\n\nMonster class traits: Being an Ogroid, Nekker can regenerate wounds quickly in combat.</description>		
 		<statBases>
 			<MoveSpeed>3</MoveSpeed>
 			<ComfyTemperatureMin>0</ComfyTemperatureMin>
 			<MarketValue>15</MarketValue>
 			<LeatherAmount>0</LeatherAmount>
 			<MeatAmount>0</MeatAmount>
-			
+
 		</statBases>
 		<tools>
 			<li>
@@ -56,13 +56,13 @@
 		<comps>
 			<li Class="WMHAnimalBehaviours.CompProperties_Regeneration">
 				<rateInTicks>1000</rateInTicks>
-				
+
 			</li>
 			<li Class="WMHAnimalBehaviours.CompProperties_StateAfterHealthLoss">
 				<healthPercent>70</healthPercent>
 				<tickInterval>50</tickInterval>
 				<mentalState>PanicFlee</mentalState>
-				
+
 			</li>
 		</comps>
 
@@ -79,19 +79,19 @@
 			<wildness>1</wildness>
 
 			<lifeStageAges>
-			
+
 				<li>
 					<def>AnimalAdult</def>
 					<minAge>0</minAge>
-					
+
 				</li>
 			</lifeStageAges>
 			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
-			
+
 		</race>
-		
+
 		<tradeTags>
 			<li>AnimalMonster</li>
 		</tradeTags>
@@ -113,7 +113,7 @@
 			<max>20</max>
 		</wildGroupSize>
 		<lifeStages>
-			
+
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/WMH_Nekker/WMH_Nekker</texPath>

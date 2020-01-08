@@ -9,7 +9,7 @@
 		<defName>WMH_Fiend</defName>
 		<label>fiend</label>
 
-		<description>Description\n\nSpecial Abilities:.\n\nRace Traits: Relicts are Gallatross level threats, but yield significantly bigger rewards.</description>
+		<description>Fiend is a walking mountain of muscle capped with horned, tooth-filled head. Is enormous size and strength allows it to take on an entire raiding party, whilst the third eye located in the center of their forehead is used to draw their prey into a state of hypnosis.\n\nMonster class traits: Being a Relict, Fiend contract provides much higher rewards.</description>		
 		<statBases>
 			<MoveSpeed>5</MoveSpeed>
 			<ComfyTemperatureMin>-100</ComfyTemperatureMin>
@@ -93,7 +93,7 @@
 			</litterSizeCurve>
 			<lifeExpectancy>300</lifeExpectancy>
 			<lifeStageAges>
-				
+
 				<li>
 					<def>AnimalAdult</def>
 					<minAge>0</minAge>
@@ -125,7 +125,7 @@
 		<canArriveManhunter>false</canArriveManhunter>
 
 		<lifeStages>
-		
+
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/WMH_Fiend/WMH_Fiend</texPath>
@@ -139,7 +139,7 @@
 					<texPath>Things/Pawn/Animal/WMH_Fiend/WMH_Dessicated_Fiend</texPath>
 					<drawSize>4.5</drawSize>
 				</dessicatedBodyGraphicData>
-				
+
 			</li>
 		</lifeStages>
 	</PawnKindDef>

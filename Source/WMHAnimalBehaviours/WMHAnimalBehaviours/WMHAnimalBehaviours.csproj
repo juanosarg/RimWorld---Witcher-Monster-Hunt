@@ -63,6 +63,8 @@
     <Compile Include="Comps\CompProperties_Regeneration.cs" />
     <Compile Include="Comps\CompRegeneration.cs" />
     <Compile Include="Comps\CompStateAfterHealthLoss.cs" />
+    <Compile Include="Comps\HediffCompProperties_TurnsWhenDead.cs" />
+    <Compile Include="Comps\HediffComp_TurnWhenDead.cs" />
     <Compile Include="DamageWorker_Berserk.cs" />
     <Compile Include="DamageWorker_ExtraInfecter.cs" />
     <Compile Include="Enums\MonsterClassEnum.cs" />
