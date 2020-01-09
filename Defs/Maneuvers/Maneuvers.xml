@@ -17,6 +17,20 @@
 	</ManeuverDef>
 
 	<ManeuverDef>
+		<defName>WMH_WerewolfBite</defName>
+		<requiredCapacity>WMH_WerewolfBite</requiredCapacity>
+		<verb>
+			<verbClass>Verb_MeleeAttackDamage</verbClass>
+			<meleeDamageDef>WMH_WerewolfBite</meleeDamageDef>
+		</verb>
+		<logEntryDef>MeleeAttack</logEntryDef>
+		<combatLogRulesHit>Maneuver_Bite_MeleeHit</combatLogRulesHit>
+		<combatLogRulesDeflect>Maneuver_Bite_MeleeDeflect</combatLogRulesDeflect>
+		<combatLogRulesMiss>Maneuver_Bite_MeleeMiss</combatLogRulesMiss>
+		<combatLogRulesDodge>Maneuver_Bite_MeleeDodge</combatLogRulesDodge>
+	</ManeuverDef>
+
+	<ManeuverDef>
 		<defName>WMH_InfectedClaws</defName>
 		<requiredCapacity>WMH_InfectedClaws</requiredCapacity>
 		<verb>

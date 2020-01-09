@@ -12,6 +12,11 @@
     <defName>WMH_InfectedClaws</defName>
     <label>infected claws</label>
   </ToolCapacityDef>
+  
+  <ToolCapacityDef>
+    <defName>WMH_WerewolfBite</defName>
+    <label>werewolf bite</label>
+  </ToolCapacityDef>
  
 
 

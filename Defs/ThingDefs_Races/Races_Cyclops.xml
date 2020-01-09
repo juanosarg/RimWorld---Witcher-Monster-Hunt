@@ -1,97 +1,100 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+
+
+	<!-- ============================================================ -->
+
 	<ThingDef ParentName="WMH_MonsterBase">
-		<defName>WMH_Nekker</defName>
-		<label>nekker</label>
-		<description>A lone nekker is harmless. Five are dangerous. Ten can kill even a veteran of the Mechanoid wars. Nekkers always attack in groups and by surprise. Nekkers are cowards, which means they will try to run if facing grave danger.\n\nMonster class traits: Being an Ogroid, Nekker can regenerate wounds quickly in combat.</description>		
+		<defName>WMH_Cyclops</defName>
+		<label>cyclops</label>
+
+		<description>Cyclopses can easily be recognized by the single eye located in the center of their foreheads. If for some reason that is not visible, other tell-tale signs are their enormous size and incredible strength. They are often seen throwing heavy boulders at their enemies.\n\nMonster class traits: Being an Ogroid, Cyclops can regenerate wounds quickly in combat.</description>
 		<statBases>
 			<MoveSpeed>3</MoveSpeed>
-			<ComfyTemperatureMin>0</ComfyTemperatureMin>
-			<MarketValue>15</MarketValue>
-			<LeatherAmount>0</LeatherAmount>
-			<MeatAmount>0</MeatAmount>
-
+			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
+			<MarketValue>1500</MarketValue>
 		</statBases>
 		<tools>
 			<li>
 				<label>left fist</label>
 				<capacities>
-					<li>Scratch</li>
+					<li>Blunt</li>
 				</capacities>
-				<power>2</power>
+				<power>15</power>
 				<cooldownTime>1.5</cooldownTime>
 				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
 			</li>
 			<li>
 				<label>right fist</label>
 				<capacities>
-					<li>Scratch</li>
+					<li>Blunt</li>
 				</capacities>
-				<power>2</power>
+				<power>15</power>
 				<cooldownTime>1.5</cooldownTime>
 				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
 			</li>
+
 			<li>
 				<capacities>
 					<li>Bite</li>
 				</capacities>
 				<power>4</power>
-				<cooldownTime>2</cooldownTime>
+				<cooldownTime>1.65</cooldownTime>
 				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-				<chanceFactor>0.7</chanceFactor>
 			</li>
 			<li>
 				<label>head</label>
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>1</power>
-				<cooldownTime>2</cooldownTime>
+				<power>9</power>
+				<cooldownTime>1.65</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 				<chanceFactor>0.2</chanceFactor>
 			</li>
+
 		</tools>
 		<comps>
 			<li Class="WMHAnimalBehaviours.CompProperties_Regeneration">
 				<rateInTicks>400</rateInTicks>
 
 			</li>
-			<li Class="WMHAnimalBehaviours.CompProperties_StateAfterHealthLoss">
-				<healthPercent>70</healthPercent>
-				<tickInterval>50</tickInterval>
-				<mentalState>PanicFlee</mentalState>
-
-			</li>
 		</comps>
-
 		<race>
-			<body>Human</body>
-			<baseBodySize>0.5</baseBodySize>
-			<baseHealthScale>1</baseHealthScale>
+
+			<body>WMH_SingleEyedHumanoid</body>
+			<baseBodySize>4.00</baseBodySize>
+			<baseHungerRate>0.75</baseHungerRate>
+			<baseHealthScale>25</baseHealthScale>
+			<foodType>OmnivoreAnimal</foodType>
 			<leatherDef>Leather_Human</leatherDef>
 			<useMeatFrom>Human</useMeatFrom>
-			<gestationPeriodDays>45</gestationPeriodDays>
-			<lifeExpectancy>10</lifeExpectancy>
-			<foodType>OmnivoreHuman</foodType>
-			<baseHungerRate>0.10</baseHungerRate>
 			<wildness>1</wildness>
-
+			<manhunterOnDamageChance>1.0</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>1.0</manhunterOnTameFailChance>
+			<trainability>Advanced</trainability>
+			<gestationPeriodDays>25</gestationPeriodDays>
+			<litterSizeCurve>
+				<points>
+					<li>(0.99, 0)</li>
+					<li>(1, 1)</li>
+					<li>(1.01, 0)</li>
+				</points>
+			</litterSizeCurve>
+			<lifeExpectancy>175</lifeExpectancy>
 			<lifeStageAges>
-
+				
 				<li>
 					<def>AnimalAdult</def>
 					<minAge>0</minAge>
-
+					
 				</li>
 			</lifeStageAges>
 			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
-
 		</race>
-
 		<tradeTags>
 			<li>AnimalMonster</li>
 		</tradeTags>
@@ -101,32 +104,30 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
-	<PawnKindDef ParentName="WMH_MonsterKindBase">
-		<defName>WMH_Nekker</defName>
-		<label>nekker</label>
-		<race>WMH_Nekker</race>
-		<combatPower>25</combatPower>
-		<canArriveManhunter>false</canArriveManhunter>
-		<ecoSystemWeight>1</ecoSystemWeight>
-		<wildGroupSize>
-			<min>10</min>
-			<max>20</max>
-		</wildGroupSize>
-		<lifeStages>
 
+	<PawnKindDef ParentName="WMH_MonsterKindBase">
+		<defName>WMH_Cyclops</defName>
+		<label>cyclops</label>
+		<race>WMH_Cyclops</race>
+		<combatPower>500</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+
+		<lifeStages>
+		
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/WMH_Nekker/WMH_Nekker</texPath>
-					<drawSize>1.75</drawSize>
+					<texPath>Things/Pawn/Animal/WMH_Cyclops/WMH_Cyclops</texPath>
+					<drawSize>4</drawSize>
 					<shadowData>
 						<volume>(0.8, 0.6, 0.6)</volume>
 						<offset>(0,0,-0.3)</offset>
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/WMH_Nekker/WMH_Dessicated_Nekker</texPath>
-					<drawSize>1.75</drawSize>
+					<texPath>Things/Pawn/Animal/WMH_Cyclops/WMH_Dessicated_Cyclops</texPath>
+					<drawSize>4</drawSize>
 				</dessicatedBodyGraphicData>
+				
 			</li>
 		</lifeStages>
 	</PawnKindDef>

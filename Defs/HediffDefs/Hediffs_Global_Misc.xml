@@ -192,7 +192,7 @@
         <severityPerDayTended>-0.53</severityPerDayTended>
       </li>
 	  <li Class="WMHAnimalBehaviours.HediffCompProperties_TurnWhenDead">
-        <thingToTurnTo>WMH_Nekker</thingToTurnTo>
+        <thingToTurnTo>WMH_Werewolf</thingToTurnTo>
      
       </li>
       <li Class="HediffCompProperties_Immunizable">
@@ -200,6 +200,7 @@
         <immunityPerDaySick>0.6441</immunityPerDaySick>
         <severityPerDayImmune>-0.70</severityPerDayImmune>
         <immunityPerDayNotSick>-0.40</immunityPerDayNotSick>
+		
       </li>
      
     </comps>

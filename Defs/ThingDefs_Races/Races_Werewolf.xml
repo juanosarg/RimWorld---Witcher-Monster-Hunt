@@ -2,51 +2,50 @@
 <Defs>
 
 	<ThingDef ParentName="WMH_MonsterBase">
-		<defName>WMH_Nekker</defName>
-		<label>nekker</label>
-		<description>A lone nekker is harmless. Five are dangerous. Ten can kill even a veteran of the Mechanoid wars. Nekkers always attack in groups and by surprise. Nekkers are cowards, which means they will try to run if facing grave danger.\n\nMonster class traits: Being an Ogroid, Nekker can regenerate wounds quickly in combat.</description>		
+		<defName>WMH_Werewolf</defName>
+		<label>werewolf</label>
+		<description>Neither animal, nor man, the Werewolf takes the worst from both species: the bloodlust and primal nature of a timberwolf, and the ruthlessness and cruelty of a human. Feared by the tribal elders, Werewolves are nearly unkillable due to their fast wound regeneration.\n\nMonster class traits: Being a Cursed One, Werewolf bite infection leads to full transformation and should be treated as soon as possible.</description>		
 		<statBases>
-			<MoveSpeed>3</MoveSpeed>
-			<ComfyTemperatureMin>0</ComfyTemperatureMin>
-			<MarketValue>15</MarketValue>
-			<LeatherAmount>0</LeatherAmount>
-			<MeatAmount>0</MeatAmount>
-
+			<MoveSpeed>7</MoveSpeed>
+			<ComfyTemperatureMin>-55</ComfyTemperatureMin>
+			<MarketValue>450</MarketValue>
+			<ArmorRating_Blunt>.3</ArmorRating_Blunt>
+			<ArmorRating_Sharp>.3</ArmorRating_Sharp>
 		</statBases>
 		<tools>
 			<li>
-				<label>left fist</label>
+				<label>left claws</label>
 				<capacities>
 					<li>Scratch</li>
 				</capacities>
-				<power>2</power>
+				<power>15</power>
 				<cooldownTime>1.5</cooldownTime>
 				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
 			</li>
 			<li>
-				<label>right fist</label>
+				<label>right claws</label>
 				<capacities>
 					<li>Scratch</li>
 				</capacities>
-				<power>2</power>
+				<power>15</power>
 				<cooldownTime>1.5</cooldownTime>
 				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
 			</li>
 			<li>
 				<capacities>
-					<li>Bite</li>
+					<li>WMH_WerewolfBite</li>
 				</capacities>
-				<power>4</power>
+				<power>24</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-				<chanceFactor>0.7</chanceFactor>
+				<chanceFactor>0.45</chanceFactor>
 			</li>
 			<li>
 				<label>head</label>
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>1</power>
+				<power>8</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
@@ -55,77 +54,68 @@
 		</tools>
 		<comps>
 			<li Class="WMHAnimalBehaviours.CompProperties_Regeneration">
-				<rateInTicks>400</rateInTicks>
-
-			</li>
-			<li Class="WMHAnimalBehaviours.CompProperties_StateAfterHealthLoss">
-				<healthPercent>70</healthPercent>
-				<tickInterval>50</tickInterval>
-				<mentalState>PanicFlee</mentalState>
+				<rateInTicks>200</rateInTicks>
 
 			</li>
 		</comps>
 
 		<race>
 			<body>Human</body>
-			<baseBodySize>0.5</baseBodySize>
-			<baseHealthScale>1</baseHealthScale>
+			<baseBodySize>1.5</baseBodySize>
+			<baseHealthScale>15</baseHealthScale>
 			<leatherDef>Leather_Human</leatherDef>
 			<useMeatFrom>Human</useMeatFrom>
 			<gestationPeriodDays>45</gestationPeriodDays>
-			<lifeExpectancy>10</lifeExpectancy>
+			<lifeExpectancy>85</lifeExpectancy>
 			<foodType>OmnivoreHuman</foodType>
 			<baseHungerRate>0.10</baseHungerRate>
 			<wildness>1</wildness>
 
 			<lifeStageAges>
-
+			
 				<li>
 					<def>AnimalAdult</def>
 					<minAge>0</minAge>
-
+					
 				</li>
 			</lifeStageAges>
 			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
-
+			
 		</race>
-
+		
 		<tradeTags>
 			<li>AnimalMonster</li>
 		</tradeTags>
 		<modExtensions>
 			<li Class="WMHAnimalBehaviours.MonsterClass">
-				<monsterClass>Ogroid</monsterClass>
+				<monsterClass>CursedOne</monsterClass>
 			</li>
 		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="WMH_MonsterKindBase">
-		<defName>WMH_Nekker</defName>
-		<label>nekker</label>
-		<race>WMH_Nekker</race>
-		<combatPower>25</combatPower>
+		<defName>WMH_Werewolf</defName>
+		<label>werewolf</label>
+		<race>WMH_Werewolf</race>
+		<combatPower>250</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>1</ecoSystemWeight>
-		<wildGroupSize>
-			<min>10</min>
-			<max>20</max>
-		</wildGroupSize>
+		
 		<lifeStages>
-
+			
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/WMH_Nekker/WMH_Nekker</texPath>
-					<drawSize>1.75</drawSize>
+					<texPath>Things/Pawn/Animal/WMH_Werewolf/WMH_Werewolf</texPath>
+					<drawSize>3</drawSize>
 					<shadowData>
 						<volume>(0.8, 0.6, 0.6)</volume>
 						<offset>(0,0,-0.3)</offset>
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/WMH_Nekker/WMH_Dessicated_Nekker</texPath>
-					<drawSize>1.75</drawSize>
+					<texPath>Things/Pawn/Animal/WMH_Werewolf/WMH_Dessicated_Werewolf</texPath>
+					<drawSize>3</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
