@@ -11,7 +11,97 @@
 		<skinCovered>true</skinCovered>
 	</BodyPartDef>
 
+	<BodyPartDef>
+		<defName>WMH_PlasmaMembrane</defName>
+		<label>plasma membrane</label>
+		<hitPoints>30</hitPoints>
+		<canSuggestAmputation>false</canSuggestAmputation>
+		<frostbiteVulnerability>0.1</frostbiteVulnerability>
 
+		<skinCovered>true</skinCovered>
+		<tags>
+			<li>MovingLimbCore</li>
+			<li>ManipulationLimbCore</li>
+			<li>BreathingSource</li>
+
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>WMH_Cytoplasm</defName>
+		<label>cytoplasm</label>
+		<hitPoints>30</hitPoints>
+		<delicate>true</delicate>
+		<skinCovered>false</skinCovered>
+		<canSuggestAmputation>false</canSuggestAmputation>
+
+		<tags>
+			<li>ConsciousnessSource</li>
+			<li>BloodPumpingSource</li>
+			<li>BloodFiltrationSource</li>
+			<li>MetabolismSource</li>
+			<li>SightSource</li>
+			<li>EatingSource</li>
+
+
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>WMH_RockTorso</defName>
+		<label>rocky torso</label>
+		<hitPoints>40</hitPoints>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<alive>false</alive>
+		<bleedRate>0</bleedRate>
+
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>WMH_RockHead</defName>
+		<label>rocky head</label>
+		<hitPoints>25</hitPoints>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<alive>false</alive>
+		<bleedRate>0</bleedRate>
+		<canSuggestAmputation>false</canSuggestAmputation>
+
+		<tags>
+			<li>ConsciousnessSource</li>
+			<li>SightSource</li>
+
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>WMH_RockLeg</defName>
+		<label>rocky leg</label>
+		<hitPoints>30</hitPoints>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<alive>false</alive>
+		<bleedRate>0</bleedRate>
+		<tags>
+			<li>MovingLimbCore</li>
+		</tags>
+		    <frostbiteVulnerability>0.001</frostbiteVulnerability>
+
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>WMH_RockArm</defName>
+		<label>rocky arm</label>
+		<hitPoints>30</hitPoints>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<alive>false</alive>
+		<bleedRate>0</bleedRate>
+		<tags>
+			<li>ManipulationLimbCore</li>
+		</tags>
+	</BodyPartDef>
 
 
 </Defs>

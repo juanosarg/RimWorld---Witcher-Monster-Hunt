@@ -31,6 +31,34 @@
 	</ManeuverDef>
 
 	<ManeuverDef>
+		<defName>WMH_EkimmaraBite</defName>
+		<requiredCapacity>WMH_EkimmaraBite</requiredCapacity>
+		<verb>
+			<verbClass>Verb_MeleeAttackDamage</verbClass>
+			<meleeDamageDef>WMH_EkimmaraBite</meleeDamageDef>
+		</verb>
+		<logEntryDef>MeleeAttack</logEntryDef>
+		<combatLogRulesHit>Maneuver_Bite_MeleeHit</combatLogRulesHit>
+		<combatLogRulesDeflect>Maneuver_Bite_MeleeDeflect</combatLogRulesDeflect>
+		<combatLogRulesMiss>Maneuver_Bite_MeleeMiss</combatLogRulesMiss>
+		<combatLogRulesDodge>Maneuver_Bite_MeleeDodge</combatLogRulesDodge>
+	</ManeuverDef>
+
+	<ManeuverDef>
+		<defName>WMH_FlederBite</defName>
+		<requiredCapacity>WMH_FlederBite</requiredCapacity>
+		<verb>
+			<verbClass>Verb_MeleeAttackDamage</verbClass>
+			<meleeDamageDef>WMH_FlederBite</meleeDamageDef>
+		</verb>
+		<logEntryDef>MeleeAttack</logEntryDef>
+		<combatLogRulesHit>Maneuver_Bite_MeleeHit</combatLogRulesHit>
+		<combatLogRulesDeflect>Maneuver_Bite_MeleeDeflect</combatLogRulesDeflect>
+		<combatLogRulesMiss>Maneuver_Bite_MeleeMiss</combatLogRulesMiss>
+		<combatLogRulesDodge>Maneuver_Bite_MeleeDodge</combatLogRulesDodge>
+	</ManeuverDef>
+
+	<ManeuverDef>
 		<defName>WMH_InfectedClaws</defName>
 		<requiredCapacity>WMH_InfectedClaws</requiredCapacity>
 		<verb>

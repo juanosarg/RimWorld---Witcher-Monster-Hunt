@@ -27,7 +27,31 @@
 			</li>
 		</additionalHediffs>
 	</DamageDef>
+	
+	<DamageDef ParentName="Bite">
+		<defName>WMH_EkimmaraBite</defName>
+		<label>ekimmara bite</label>
+		<additionalHediffs>
+			<li>
+				<hediff>WMH_VampirismEkimmara</hediff>
+				<severityPerDamageDealt>0.0001</severityPerDamageDealt>
 
+			</li>
+		</additionalHediffs>
+	</DamageDef>
+
+	<DamageDef ParentName="Bite">
+		<defName>WMH_FlederBite</defName>
+		<label>fleder bite</label>
+		<additionalHediffs>
+			<li>
+				<hediff>WMH_VampirismFleder</hediff>
+				<severityPerDamageDealt>0.0001</severityPerDamageDealt>
+
+			</li>
+		</additionalHediffs>
+	</DamageDef>	
+	
 	<DamageDef ParentName="Bite">
 		<defName>WMH_Berserk</defName>
 		<label>berserk wave</label>

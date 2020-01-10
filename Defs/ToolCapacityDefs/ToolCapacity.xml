@@ -17,6 +17,17 @@
     <defName>WMH_WerewolfBite</defName>
     <label>werewolf bite</label>
   </ToolCapacityDef>
+  
+  <ToolCapacityDef>
+    <defName>WMH_EkimmaraBite</defName>
+    <label>ekimmara bite</label>
+  </ToolCapacityDef>
+  
+  <ToolCapacityDef>
+    <defName>WMH_FlederBite</defName>
+    <label>fleder bite</label>
+  </ToolCapacityDef>
+ 
  
 
 

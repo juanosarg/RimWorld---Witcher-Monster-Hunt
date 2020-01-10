@@ -51,10 +51,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Comps\CompChangeWeather.cs" />
     <Compile Include="Comps\CompDigWhenHungry.cs" />
     <Compile Include="Comps\CompHovering.cs" />
     <Compile Include="Comps\CompInfecter.cs" />
+    <Compile Include="Comps\CompInitialHediff.cs" />
     <Compile Include="Comps\CompMindEffecter.cs" />
+    <Compile Include="Comps\CompProperties_ChangeWeather.cs" />
+    <Compile Include="Comps\CompProperties_InitialHediff.cs" />
     <Compile Include="Comps\CompProperties_StateAfterHealthLoss.cs" />
     <Compile Include="Comps\CompProperties_DigWhenHungry.cs" />
     <Compile Include="Comps\CompProperties_Hovering.cs" />

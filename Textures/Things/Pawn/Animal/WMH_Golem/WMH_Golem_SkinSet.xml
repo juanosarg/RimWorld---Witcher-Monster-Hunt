@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<SkinSet>
+  
+  <lifeStage>
+    <appliesToAll>true</appliesToAll>
+    <variants>
+      <skin>
+        <commonality>1</commonality>
+        <texName>WMH_Golem</texName>
+      </skin>
+      
+      <skin>
+        <commonality>1</commonality>
+        <texName>WMH_Golem2</texName>
+      </skin>
+      
+      <skin>
+        <commonality>1</commonality>
+        <texName>WMH_Golem3</texName>
+      </skin>
+      
+      <skin>
+        <commonality>1</commonality>
+        <texName>WMH_Golem4</texName>
+      </skin>
+      
+     
+      
+      
+      
+    </variants>  
+  </lifeStage>
+  
+</SkinSet>
