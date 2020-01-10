@@ -17,6 +17,24 @@
 			<speed>20</speed>
 		</projectile>
 	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>WMH_Rock</defName>
+		<label>rock</label>
+		<thingClass>WMHAnimalRangeUnlocker.AnimalProjectile</thingClass>
+
+		<graphicData>
+			<texPath>Things/Projectiles/WMH_Boulder</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<projectile>
+			<flyOverhead>true</flyOverhead>
+			<damageDef>WMH_RockCrush</damageDef>
+			<damageAmountBase>40</damageAmountBase>
+			<speed>15</speed>
+		</projectile>
+	</ThingDef>
 
 
 
