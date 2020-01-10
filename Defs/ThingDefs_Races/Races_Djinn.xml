@@ -40,7 +40,29 @@
 			
 		</tools>
 		
+<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<accuracyTouch>0.15</accuracyTouch>
+				<accuracyShort>0.25</accuracyShort>
+				<accuracyMedium>0.15</accuracyMedium>
+				<accuracyLong>0.1</accuracyLong>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>WMH_WispProjectile</defaultProjectile>
+				<warmupTime>2</warmupTime>
+				<ticksBetweenBurstShots>2</ticksBetweenBurstShots>
 
+				<burstShotCount>50</burstShotCount>
+				<minRange>1</minRange>
+				<range>25</range>
+				<!--<soundCast>MM_PoisonBreathSound</soundCast>-->
+				<muzzleFlashScale>0</muzzleFlashScale>
+				<!--Commanility determines how frequent this range verb is chosen.-->
+				<commonality>1</commonality>
+			</li>
+
+
+		</verbs>
 		<race>
 			<body>WMH_Wisp</body>
 			<baseBodySize>1</baseBodySize>

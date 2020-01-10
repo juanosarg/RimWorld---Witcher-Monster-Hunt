@@ -35,6 +35,22 @@
 			<speed>15</speed>
 		</projectile>
 	</ThingDef>
+	
+	<ThingDef ParentName="MM_BaseAnimalProjectile">
+		<defName>WMH_WispProjectile</defName>
+		<label>djinn fire</label>
+				<thingClass>AlphaAnimalRangeAttack.AnimalProjectile</thingClass>
+		<graphicData>
+			<texPath>Things/Projectiles/WMH_WispProjectile</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Burn</damageDef>
+			<damageAmountBase>1</damageAmountBase>
+			<speed>5</speed>
+		</projectile>
+	</ThingDef>
 
 
 
