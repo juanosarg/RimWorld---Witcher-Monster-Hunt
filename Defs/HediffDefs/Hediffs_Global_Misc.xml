@@ -390,6 +390,61 @@
 			</li>
 		</stages>
 	</HediffDef>
+	
+	  <HediffDef ParentName="DiseaseBase">
+    <defName>WMH_Paralysis</defName>
+    <label>paralysis</label>
+    <isBad>false</isBad>
+    <comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-2</severityPerDay>
+			</li>
+		</comps>
+    <stages>
+      <li>
+	    <label>lightly stunned</label>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>0.9</setMax>
+          </li>
+        </capMods>
+      </li>
+	   <li>
+	    <label>stunned</label>
+		<minSeverity>0.2</minSeverity>
+
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>0.6</setMax>
+          </li>
+        </capMods>
+      </li>
+	  <li>
+	    <label>very stunned</label>
+		<minSeverity>0.5</minSeverity>
+
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>0.4</setMax>
+          </li>
+        </capMods>
+      </li>
+	  <li>
+	    <label>paralysed</label>
+		<minSeverity>0.8</minSeverity>
+
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>0.1</setMax>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
 
 
 

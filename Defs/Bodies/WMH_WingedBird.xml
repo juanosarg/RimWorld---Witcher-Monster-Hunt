@@ -12,6 +12,9 @@
 				<li>
 					<def>Tail</def>
 					<coverage>0.10</coverage>
+					<groups>
+						<li>WMH_TailAttackTool</li>
+					</groups>
 				</li>
 				<li>
 					<def>Spine</def>

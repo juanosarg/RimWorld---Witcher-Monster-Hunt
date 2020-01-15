@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="WMH_UndeadMonsterBase">
+	<ThingDef ParentName="WMH_MonsterBase">
 		<thingClass>AnimalVariations.AnimalMultiSkins</thingClass>
 		<defName>WMH_Golem</defName>
 		<label>golem</label>

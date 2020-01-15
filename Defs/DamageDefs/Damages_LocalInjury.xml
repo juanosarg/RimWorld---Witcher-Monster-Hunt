@@ -58,6 +58,13 @@
 		<workerClass>WMHAnimalBehaviours.DamageWorker_Berserk</workerClass>
 
 	</DamageDef>
+	
+	<DamageDef ParentName="BluntBase">
+		<defName>WMH_HymPunch</defName>
+		<label>hym claws</label>
+		<workerClass>WMHAnimalBehaviours.DamageWorker_Demoralizer</workerClass>
+
+	</DamageDef>
 
 	<DamageDef ParentName="CutBase">
 		<defName>WMH_InfectedClaws</defName>
@@ -85,6 +92,17 @@
 		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
 		<impactSoundType>Blunt</impactSoundType>
 		<armorCategory>Blunt</armorCategory>
+	</DamageDef>
+	
+	<DamageDef ParentName="Bite">
+		<defName>WMH_ParalysingBite</defName>
+		<label>paralysing bite</label>
+		<additionalHediffs>
+			<li>
+				<hediff>WMH_Paralysis</hediff>
+				<severityPerDamageDealt>0.01</severityPerDamageDealt>
+			</li>
+		</additionalHediffs>
 	</DamageDef>
 
 

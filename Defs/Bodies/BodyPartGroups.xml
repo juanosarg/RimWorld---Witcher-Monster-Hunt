@@ -7,5 +7,10 @@
     <defName>WMH_Pseudopods</defName>
     <label>pseudopods</label>
   </BodyPartGroupDef>
+  
+    <BodyPartGroupDef>
+    <defName>WMH_TailAttackTool</defName>
+    <label>tail</label>
+  </BodyPartGroupDef>
 
 </Defs>
