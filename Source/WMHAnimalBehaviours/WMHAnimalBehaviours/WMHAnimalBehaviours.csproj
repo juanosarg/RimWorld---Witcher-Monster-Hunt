@@ -75,9 +75,14 @@
     <Compile Include="DamageWorker_Demoralizer.cs" />
     <Compile Include="DamageWorker_ExtraInfecter.cs" />
     <Compile Include="Enums\MonsterClassEnum.cs" />
+    <Compile Include="GenStep_MonsterEncounter.cs" />
+    <Compile Include="IncidentWorker_MonsterEncounter.cs" />
     <Compile Include="MonsterClass.cs" />
     <Compile Include="HarmonyPatchers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SymbolResolver_SpawnHuntingMonsters.cs" />
+    <Compile Include="WorldObjectCompProperties_MonsterToHunt.cs" />
+    <Compile Include="WorldObjectComp_MonsterToHunt.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

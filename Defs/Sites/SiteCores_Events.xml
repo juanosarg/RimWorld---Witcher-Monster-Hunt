@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>  
+ 
+
+  
+  <SiteCoreDef>
+    <defName>WMH_MonsterEncounterCore</defName>
+    <label>monster encounter</label>
+	<description>The place where a monster is roaming.</description>
+    <siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
+    <expandingIconTexture>World/WorldObjects/Expanding/Sites/ItemStash</expandingIconTexture>
+	<forceExitAndRemoveMapCountdownDurationDays>6</forceExitAndRemoveMapCountdownDurationDays>
+  </SiteCoreDef>
+
+</Defs>

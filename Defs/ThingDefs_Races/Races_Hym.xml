@@ -5,7 +5,7 @@
 		
 		<defName>WMH_Hym</defName>
 		<label>hym</label>
-		<description>Hym avoids sinking its claws into their victims. Instead, it saps their strength directly, through inflicting suffering. Speaking in a voice only the victim hears, Hym drives him to commit acts of violence, aggression and self-harm. Those tormented by a Hym are incapable of restful sleep weeks after the Hym is gone.\n\nMonster class traits: Being a Spectre, Hym instill fear in nearby humans, directly affecting their mood. </description>		
+		<description>Hym avoids sinking its claws into their victims. Instead, it saps their strength directly, through inflicting suffering. Speaking in a voice only the victim hears, Hym drives him to commit acts of violence, aggression and self-harm. Those tormented by a Hym are incapable of restful sleep weeks after the Hym is gone.\n\nMonster class traits: Being a Spectre, Hym instill fear in nearby humans, directly affecting their mood.</description>		
 		<statBases>
 			<MoveSpeed>5</MoveSpeed>
 			<ComfyTemperatureMin>-250</ComfyTemperatureMin>
@@ -56,7 +56,7 @@
 			<li Class="WMHAnimalBehaviours.CompProperties_ThoughtEffecter">
 				<radius>100</radius>
 				<tickInterval>50</tickInterval>
-				<mentalState>WMH_SpectreEffect</mentalState>
+				<thoughtDef>WMH_SpectreEffect</thoughtDef>
 			</li>
 			<li Class="WMHAnimalBehaviours.CompProperties_InitialHediff">
 				<hediffname>WMH_NoPain</hediffname>

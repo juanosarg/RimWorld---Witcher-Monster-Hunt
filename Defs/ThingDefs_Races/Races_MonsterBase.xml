@@ -22,7 +22,6 @@
 			<meatMarketValue>0.5</meatMarketValue>
 			<manhunterOnDamageChance>0.35</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.20</manhunterOnTameFailChance>
-			<fleshType>WMH_Flesh</fleshType>
 			<needsRest>false</needsRest>
 			<foodType>None</foodType>
 		</race>

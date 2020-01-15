@@ -55,7 +55,7 @@
 			<li Class="WMHAnimalBehaviours.CompProperties_ThoughtEffecter">
 				<radius>50</radius>
 				<tickInterval>50</tickInterval>
-				<mentalState>WMH_SpectreEffect</mentalState>
+				<thoughtDef>WMH_SpectreEffect</thoughtDef>
 			</li>
 			<li Class="WMHAnimalBehaviours.CompProperties_InitialHediff">
 				<hediffname>WMH_NoPain</hediffname>

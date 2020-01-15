@@ -36,10 +36,10 @@
 		</projectile>
 	</ThingDef>
 	
-	<ThingDef ParentName="MM_BaseAnimalProjectile">
+	<ThingDef ParentName="BaseBullet">
 		<defName>WMH_WispProjectile</defName>
 		<label>djinn fire</label>
-				<thingClass>AlphaAnimalRangeAttack.AnimalProjectile</thingClass>
+				<thingClass>WMHAnimalRangeUnlocker.AnimalProjectile</thingClass>
 		<graphicData>
 			<texPath>Things/Projectiles/WMH_WispProjectile</texPath>
 			<graphicClass>Graphic_Random</graphicClass>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+	
+	
+	<IncidentDef>
+		<defName>WMH_MonsterEncounterIncident</defName>
+		<label>monster hunt</label>
+		<category>Misc</category>
+		<targetTags>
+			<li>World</li>
+		</targetTags>
+		<workerClass>WMHAnimalBehaviours.IncidentWorker_MonsterEncounter</workerClass>
+		<letterLabel>monster hunt</letterLabel>
+		<letterText>{0}, {1} of {2}, has informed us that his faction is being terrorized by a monster, a {3}.</letterText>
+		<letterDef>NeutralEvent</letterDef>
+		<baseChance>1</baseChance>
+		<minRefireDays>15</minRefireDays>
+		
+	</IncidentDef>
+	
+	
+  
+</Defs>
