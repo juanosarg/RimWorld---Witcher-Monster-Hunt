@@ -11,6 +11,7 @@
     <siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
     <expandingIconTexture>World/WorldObjects/Expanding/Sites/ItemStash</expandingIconTexture>
 	<forceExitAndRemoveMapCountdownDurationDays>6</forceExitAndRemoveMapCountdownDurationDays>
+	<wantsThreatPoints>true</wantsThreatPoints>
   </SiteCoreDef>
 
 </Defs>

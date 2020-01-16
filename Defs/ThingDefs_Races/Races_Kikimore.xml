@@ -4,7 +4,7 @@
 	<!-- ====================Worker====================== -->
 
 	<ThingDef ParentName="WMH_InsectoidMonsterBase">
-		<defName>WMH_KikimoreWorker</defName>
+		<defName>WMAux_KikimoreWorker</defName>
 		<label>kikimore worker</label>
 
 		<description>Kikimores form colonies, making them similar to communal insects such as megaspiders. Kikimore workers take care of hunting food and bringing it back to the nest.\n\nMonster class traits: Being an Insectoid, Kikimore workers always appear with other members of their species.</description>
@@ -75,9 +75,9 @@
 	</ThingDef>
 
 	<PawnKindDef ParentName="WMH_MonsterKindBase">
-		<defName>WMH_KikimoreWorker</defName>
+		<defName>WMAux_KikimoreWorker</defName>
 		<label>kikimore worker</label>
-		<race>WMH_KikimoreWorker</race>
+		<race>WMAux_KikimoreWorker</race>
 		<combatPower>50</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>0.5</ecoSystemWeight>
@@ -104,7 +104,7 @@
 	<!-- ====================Warrior====================== -->
 
 	<ThingDef ParentName="WMH_InsectoidMonsterBase">
-		<defName>WMH_KikimoreWarrior</defName>
+		<defName>WMAux_KikimoreWarrior</defName>
 		<label>kikimore warrior</label>
 
 		<description>Kikimores form colonies, making them similar to communal insects such as megaspiders. Kikimore warriors defend their nests from attackers. They attack somewhat slower than kikimore workers, but their bite injects potent venom.\n\nMonster class traits: Being an Insectoid, Kikimore warriors always appear with other members of their species.</description>
@@ -175,9 +175,9 @@
 	</ThingDef>
 
 	<PawnKindDef ParentName="WMH_MonsterKindBase">
-		<defName>WMH_KikimoreWarrior</defName>
+		<defName>WMAux_KikimoreWarrior</defName>
 		<label>kikimore warrior</label>
-		<race>WMH_KikimoreWarrior</race>
+		<race>WMAux_KikimoreWarrior</race>
 		<combatPower>50</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>0.5</ecoSystemWeight>

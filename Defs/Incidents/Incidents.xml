@@ -11,8 +11,8 @@
 			<li>World</li>
 		</targetTags>
 		<workerClass>WMHAnimalBehaviours.IncidentWorker_MonsterEncounter</workerClass>
-		<letterLabel>monster hunt</letterLabel>
-		<letterText>{0}, {1} of {2}, has informed us that his faction is being terrorized by a monster, a {3}.</letterText>
+		<letterLabel>Monster hunt</letterLabel>
+		<letterText>{0}, {1} of {2}, has informed us that his faction is being terrorized by a monster, a {3}.\n\nIf we succeed in the hunt, their relations will improve, and they'll send us this reward worth {4}:\n\n{5}</letterText>
 		<letterDef>NeutralEvent</letterDef>
 		<baseChance>1</baseChance>
 		<minRefireDays>15</minRefireDays>
