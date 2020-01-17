@@ -3,16 +3,16 @@
 
 
 	<ThingDef ParentName="BaseBullet">
-		<defName>WMH_ChortWave</defName>
-		<label>berserk wave</label>
+		<defName>WMH_LeshyWave</defName>
+		<label>rage of nature</label>
 		<thingClass>WMHAnimalRangeUnlocker.AnimalProjectile</thingClass>
 		<graphicData>
-			<texPath>Things/Projectiles/WMH_ChortAttack</texPath>
+			<texPath>Things/Projectiles/WMH_LeshyAttack</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile>
 			<flyOverhead>false</flyOverhead>
-			<damageDef>WMH_Berserk</damageDef>
+			<damageDef>WMH_VeryToxicBite</damageDef>
 			<damageAmountBase>20</damageAmountBase>
 			<speed>20</speed>
 		</projectile>
@@ -29,8 +29,8 @@
 			<drawSize>2</drawSize>
 		</graphicData>
 		<projectile>
-			<flyOverhead>true</flyOverhead>
-			<damageDef>WMH_RockCrush</damageDef>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Crush</damageDef>
 			<damageAmountBase>40</damageAmountBase>
 			<speed>15</speed>
 		</projectile>
@@ -47,8 +47,8 @@
 		<projectile>
 			<flyOverhead>false</flyOverhead>
 			<damageDef>Burn</damageDef>
-			<damageAmountBase>1</damageAmountBase>
-			<speed>5</speed>
+			<damageAmountBase>6</damageAmountBase>
+			<speed>10</speed>
 		</projectile>
 	</ThingDef>
 

@@ -9,8 +9,7 @@
 			<MoveSpeed>3</MoveSpeed>
 			<ComfyTemperatureMin>0</ComfyTemperatureMin>
 			<MarketValue>15</MarketValue>
-			<LeatherAmount>0</LeatherAmount>
-			<MeatAmount>0</MeatAmount>
+			
 
 		</statBases>
 		<tools>

@@ -9,7 +9,7 @@
 		<stackLimit>5</stackLimit>
 		<stages>
 			<li>
-				<label>Tormented by guilt.</label>
+				<label>Tormented by guilt</label>
 				<description>Was it all my fault? I can see their screaming faces, the anguish in their voice...</description>
 				<baseMoodEffect>-20</baseMoodEffect>
 			</li>
@@ -22,7 +22,7 @@
 		<stackLimit>1</stackLimit>
 		<stages>
 			<li>
-				<label>Bone chilling fear.</label>
+				<label>Bone chilling fear</label>
 				<description>I must not fear, fear is the mind-killer. Fear is the little-death that brings total obliteration...</description>
 				<baseMoodEffect>-15</baseMoodEffect>
 			</li>

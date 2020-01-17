@@ -76,7 +76,7 @@
 
 			<body>WMH_Reptile</body>
 			<baseBodySize>3</baseBodySize>
-			<baseHealthScale>5</baseHealthScale>
+			<baseHealthScale>15</baseHealthScale>
 			<leatherDef>Leather_Lizard</leatherDef>
 			<useMeatFrom>Iguana</useMeatFrom>
 			<gestationPeriodDays>30</gestationPeriodDays>

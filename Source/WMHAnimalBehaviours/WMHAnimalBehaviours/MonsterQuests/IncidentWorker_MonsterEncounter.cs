@@ -80,7 +80,7 @@ namespace WMHAnimalBehaviours
             PawnKindDef huntingTarget = animalList.RandomElement();
             Site site = MakeSite(tile, 20, faction, huntingTarget);
             site.sitePartsKnown = true;
-            List<Thing> list = GenerateRewards(faction, site.desiredThreatPoints);
+            List<Thing> list = GenerateRewards(faction, site.desiredThreatPoints, huntingTarget);
             
             site.GetComponent<DefeatAllMonstersQuestComp>().StartQuest(faction, 20, list);
             string text;
@@ -91,12 +91,23 @@ namespace WMHAnimalBehaviours
             return true;
         }
 
-        private List<Thing> GenerateRewards(Faction alliedFaction, float siteThreatPoints)
+        private List<Thing> GenerateRewards(Faction alliedFaction, float siteThreatPoints, PawnKindDef huntingTarget)
         {
+            float relictModifier = 1;
+            MonsterClassEnum monsterClass = MonsterClassEnum.CursedOne;
+            var extendedRaceProps = huntingTarget.race.GetModExtension<MonsterClass>();
+            if (extendedRaceProps != null)
+            {
+                monsterClass = extendedRaceProps.monsterClass;
+            }
+            if (monsterClass == MonsterClassEnum.Relict)
+            {
+                relictModifier = 1.5f;
+            }
             ThingSetMakerParams parms = default(ThingSetMakerParams);
-            parms.totalMarketValueRange = new FloatRange?(SiteTuning.BanditCampQuestRewardMarketValueRange * SiteTuning.QuestRewardMarketValueThreatPointsFactor.Evaluate(siteThreatPoints));
+            parms.totalMarketValueRange = new FloatRange?(SiteTuning.BanditCampQuestRewardMarketValueRange * SiteTuning.QuestRewardMarketValueThreatPointsFactor.Evaluate(siteThreatPoints) * relictModifier);
              
-            return ThingSetMakerDefOf.Reward_StandardByDropPod.root.Generate(parms);
+            return ThingSetMakerDefOf.Reward_ItemStashQuestContents.root.Generate(parms);
         }
 
         private void GetLetterText(Faction alliedFaction, PawnKindDef animalDef, string things,string money, out string letter, out string label)

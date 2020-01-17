@@ -49,10 +49,10 @@
 				<accuracyLong>0.1</accuracyLong>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>WMH_WispProjectile</defaultProjectile>
-				<warmupTime>2</warmupTime>
+				<warmupTime>0.1</warmupTime>
 				<ticksBetweenBurstShots>2</ticksBetweenBurstShots>
 
-				<burstShotCount>50</burstShotCount>
+				<burstShotCount>75</burstShotCount>
 				<minRange>1</minRange>
 				<range>25</range>
 				<!--<soundCast>MM_PoisonBreathSound</soundCast>-->

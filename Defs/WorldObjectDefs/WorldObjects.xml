@@ -9,7 +9,7 @@
     <expandingIconPriority>70</expandingIconPriority>
     <comps>
       <li Class="WorldObjectCompProperties_Timeout" />
-      <li Class="WorldObjectCompProperties_DefeatAllEnemiesQuest" />
+      <li Class="WMHAnimalBehaviours.WorldObjectCompProperties_DefeatAllMonstersQuest" />
       <li Class="WorldObjectCompProperties_ItemStashContents" />
       <li Class="WorldObjectCompProperties_DownedRefugee" />
       <li Class="WorldObjectCompProperties_PrisonerWillingToJoin" />

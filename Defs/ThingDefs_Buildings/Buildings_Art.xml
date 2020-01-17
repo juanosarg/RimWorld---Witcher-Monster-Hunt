@@ -57,7 +57,7 @@
 
 
 	<ThingDef ParentName="WMH_LargeTrophyBase">
-		<defName>WMH_TrophyLargeDjinn</defName>
+		<defName>WMHT_TrophyLargeDjinn</defName>
 		<label>djinn trophy</label>
 		<description>A person-sized piece of material sculpted into an artistic form. This trophy depicts the hunt of the Djinn.</description>
 		<graphicData>
@@ -69,7 +69,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="WMH_LargeTrophyBase">
-		<defName>WMH_TrophyLargeEkimmara</defName>
+		<defName>WMHT_TrophyLargeEkimmara</defName>
 		<label>ekimmara trophy</label>
 		<description>A person-sized piece of material sculpted into an artistic form. This trophy depicts the hunt of the Ekimmara.</description>
 		<graphicData>
@@ -80,7 +80,7 @@
 		</costList>
 	</ThingDef>
 	<ThingDef ParentName="WMH_LargeTrophyBase">
-		<defName>WMH_TrophyLargeFleder</defName>
+		<defName>WMHT_TrophyLargeFleder</defName>
 		<label>fleder trophy</label>
 		<description>A person-sized piece of material sculpted into an artistic form. This trophy depicts the hunt of the Fleder.</description>
 		<graphicData>
@@ -91,7 +91,7 @@
 		</costList>
 	</ThingDef>
 	<ThingDef ParentName="WMH_LargeTrophyBase">
-		<defName>WMH_TrophyLargeFogler</defName>
+		<defName>WMHT_TrophyLargeFogler</defName>
 		<label>fogler trophy</label>
 		<description>A person-sized piece of material sculpted into an artistic form. This trophy depicts the hunt of the Fogler.</description>
 		<graphicData>
@@ -102,7 +102,7 @@
 		</costList>
 	</ThingDef>
 	<ThingDef ParentName="WMH_LargeTrophyBase">
-		<defName>WMH_TrophyLargeGhoul</defName>
+		<defName>WMHT_TrophyLargeGhoul</defName>
 		<label>ghoul trophy</label>
 		<description>A person-sized piece of material sculpted into an artistic form. This trophy depicts the hunt of the Ghoul.</description>
 		<graphicData>
@@ -113,7 +113,7 @@
 		</costList>
 	</ThingDef>
 	<ThingDef ParentName="WMH_LargeTrophyBase">
-		<defName>WMH_TrophyLargeHym</defName>
+		<defName>WMHT_TrophyLargeHym</defName>
 		<label>hym trophy</label>
 		<description>A person-sized piece of material sculpted into an artistic form. This trophy depicts the hunt of the Hym.</description>
 		<graphicData>
@@ -123,8 +123,8 @@
 			<Corpse_WMH_Hym>1</Corpse_WMH_Hym>
 		</costList>
 	</ThingDef>
-	<!--<ThingDef ParentName="WMH_LargeTrophyBase">
-		<defName>WMH_TrophyLargeLeshy</defName>
+	<ThingDef ParentName="WMH_LargeTrophyBase">
+		<defName>WMHT_TrophyLargeLeshy</defName>
 		<label>leshy trophy</label>
 		<description>A person-sized piece of material sculpted into an artistic form. This trophy depicts the hunt of the Leshy.</description>
 		<graphicData>
@@ -133,9 +133,9 @@
 		<costList>
 			<Corpse_WMH_Leshy>1</Corpse_WMH_Leshy>
 		</costList>
-	</ThingDef>-->
+	</ThingDef>
 	<ThingDef ParentName="WMH_LargeTrophyBase">
-		<defName>WMH_TrophyLargeNekker</defName>
+		<defName>WMHT_TrophyLargeNekker</defName>
 		<label>nekker trophy</label>
 		<description>A person-sized piece of material sculpted into an artistic form. This trophy depicts the hunt of the Nekker.</description>
 		<graphicData>
@@ -146,7 +146,7 @@
 		</costList>
 	</ThingDef>
 	<ThingDef ParentName="WMH_LargeTrophyBase">
-		<defName>WMH_TrophyLargeWerewolf</defName>
+		<defName>WMHT_TrophyLargeWerewolf</defName>
 		<label>werewolf trophy</label>
 		<description>A person-sized piece of material sculpted into an artistic form. This trophy depicts the hunt of the Werewolf.</description>
 		<graphicData>
@@ -157,7 +157,7 @@
 		</costList>
 	</ThingDef>
 	<ThingDef ParentName="WMH_LargeTrophyBase">
-		<defName>WMH_TrophyLargeWraith</defName>
+		<defName>WMHT_TrophyLargeWraith</defName>
 		<label>wraith trophy</label>
 		<description>A person-sized piece of material sculpted into an artistic form. This trophy depicts the hunt of the Wraith.</description>
 		<graphicData>
@@ -170,7 +170,7 @@
 	
 	
 	<ThingDef ParentName="WMH_GrandTrophyBase">
-		<defName>WMH_TrophyGrandBasilisk</defName>
+		<defName>WMHT_TrophyGrandBasilisk</defName>
 		<label>basilisk trophy (grand)</label>
 		<description>A huge piece of material on a decorative pedestal, sculpted into an artistic form. This trophy depicts the hunt of the Basilisk.</description>
 		<graphicData>
@@ -180,8 +180,8 @@
 			<Corpse_WMH_Basilisk>1</Corpse_WMH_Basilisk>
 		</costList>
 	</ThingDef>	
-	<!--<ThingDef ParentName="WMH_GrandTrophyBase">
-		<defName>WMH_TrophyGrandBearofleet</defName>
+	<ThingDef ParentName="WMH_GrandTrophyBase">
+		<defName>WMHT_TrophyGrandBearofleet</defName>
 		<label>bearofleet trophy (grand)</label>
 		<description>A huge piece of material on a decorative pedestal, sculpted into an artistic form. This trophy depicts the hunt of the Bearofleet.</description>
 		<graphicData>
@@ -190,9 +190,9 @@
 		<costList>
 			<Corpse_WMH_Bearofleet>1</Corpse_WMH_Bearofleet>
 		</costList>
-	</ThingDef>-->
+	</ThingDef>
 	<ThingDef ParentName="WMH_GrandTrophyBase">
-		<defName>WMH_TrophyGrandChort</defName>
+		<defName>WMHT_TrophyGrandChort</defName>
 		<label>chort trophy (grand)</label>
 		<description>A huge piece of material on a decorative pedestal, sculpted into an artistic form. This trophy depicts the hunt of the Chort.</description>
 		<graphicData>
@@ -203,7 +203,7 @@
 		</costList>
 	</ThingDef>
 	<ThingDef ParentName="WMH_GrandTrophyBase">
-		<defName>WMH_TrophyGrandCyclops</defName>
+		<defName>WMHT_TrophyGrandCyclops</defName>
 		<label>cyclops trophy (grand)</label>
 		<description>A huge piece of material on a decorative pedestal, sculpted into an artistic form. This trophy depicts the hunt of the Cyclops.</description>
 		<graphicData>
@@ -214,7 +214,7 @@
 		</costList>
 	</ThingDef>
 	<ThingDef ParentName="WMH_GrandTrophyBase">
-		<defName>WMH_TrophyGrandFiend</defName>
+		<defName>WMHT_TrophyGrandFiend</defName>
 		<label>fiend trophy (grand)</label>
 		<description>A huge piece of material on a decorative pedestal, sculpted into an artistic form. This trophy depicts the hunt of the Fiend.</description>
 		<graphicData>
@@ -225,7 +225,7 @@
 		</costList>
 	</ThingDef>
 	<ThingDef ParentName="WMH_GrandTrophyBase">
-		<defName>WMH_TrophyGrandGolem</defName>
+		<defName>WMHT_TrophyGrandGolem</defName>
 		<label>golem trophy (grand)</label>
 		<description>A huge piece of material on a decorative pedestal, sculpted into an artistic form. This trophy depicts the hunt of the Golem.</description>
 		<graphicData>
@@ -236,7 +236,7 @@
 		</costList>
 	</ThingDef>
 	<ThingDef ParentName="WMH_GrandTrophyBase">
-		<defName>WMH_TrophyGrandKikimore</defName>
+		<defName>WMHT_TrophyGrandKikimore</defName>
 		<label>kikimore trophy (grand)</label>
 		<description>A huge piece of material on a decorative pedestal, sculpted into an artistic form. This trophy depicts the hunt of the Kikimore Queen.</description>
 		<graphicData>
@@ -247,7 +247,7 @@
 		</costList>
 	</ThingDef>
 	<ThingDef ParentName="WMH_GrandTrophyBase">
-		<defName>WMH_TrophyGrandWyvern</defName>
+		<defName>WMHT_TrophyGrandWyvern</defName>
 		<label>wyvern trophy (grand)</label>
 		<description>A huge piece of material on a decorative pedestal, sculpted into an artistic form. This trophy depicts the hunt of the Wyvern.</description>
 		<graphicData>

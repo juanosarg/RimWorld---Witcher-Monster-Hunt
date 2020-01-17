@@ -115,7 +115,7 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/WMH_Fogler/WMH_Fogler</texPath>
-					<drawSize>2</drawSize>
+					<drawSize>1.75</drawSize>
 					<shadowData>
 						<volume>(0.8, 0.6, 0.6)</volume>
 						<offset>(0,0,-0.3)</offset>
@@ -123,7 +123,7 @@
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/WMH_Fogler/WMH_Dessicated_Fogler</texPath>
-					<drawSize>2</drawSize>
+					<drawSize>1.75</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>

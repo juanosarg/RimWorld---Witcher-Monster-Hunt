@@ -63,7 +63,7 @@
 			<body>Human</body>
 			<baseBodySize>1.5</baseBodySize>
 			<baseHealthScale>15</baseHealthScale>
-			<leatherDef>Leather_Human</leatherDef>
+			<leatherDef>Leather_Wolf</leatherDef>
 			<useMeatFrom>Human</useMeatFrom>
 			<gestationPeriodDays>45</gestationPeriodDays>
 			<lifeExpectancy>85</lifeExpectancy>

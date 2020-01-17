@@ -36,16 +36,20 @@ namespace WMHAnimalBehaviours
 
             public static void Postfix(ThingDef __instance, ref IEnumerable<StatDrawEntry> __result)
             {
-                Log.Message(__instance.defName);
-                if (__instance.defName.Contains("WMH_"))
+                //Log.Message(__instance.defName);
+                if (   ((__instance.defName.Contains("WMH_")) || (__instance.defName.Contains("WMAux_")))&& !__instance.IsCorpse)
                 {
-                    Log.Message(__instance.defName + " Detected");
-                    MonsterClassEnum monsterClass = MonsterClassEnum.CursedOne;
-                    var extendedRaceProps = __instance.GetModExtension<MonsterClass>();
-                    if (extendedRaceProps != null)
-                        monsterClass = extendedRaceProps.monsterClass;
-                    __result = __result.Add(new StatDrawEntry(StatCategoryDefOf.BasicsPawn, "WMH_MonsterClass".Translate(), $"WMH_MonsterClass_{monsterClass}".Translate(),
-                        overrideReportText: $"WMH_MonsterClass_{monsterClass}_Description".Translate()));
+                    
+                        // Log.Message(__instance.defName + " Detected");
+                        MonsterClassEnum monsterClass = MonsterClassEnum.CursedOne;
+                        var extendedRaceProps = __instance.GetModExtension<MonsterClass>();
+                        if (extendedRaceProps != null)
+                            monsterClass = extendedRaceProps.monsterClass;
+                        __result = __result.Add(new StatDrawEntry(StatCategoryDefOf.BasicsPawn, "WMH_MonsterClass".Translate(), $"WMH_MonsterClass_{monsterClass}".Translate(),
+                            overrideReportText: $"WMH_MonsterClass_{monsterClass}_Description".Translate()));
+
+                   
+                   
                 }
             }
 

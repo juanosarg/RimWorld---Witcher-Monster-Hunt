@@ -80,19 +80,7 @@
 		</additionalHediffs>
 	</DamageDef>
 	
-	<DamageDef>
-		<defName>WMH_RockCrush</defName>
-		<label>rock crush</label>
-		<workerClass>DamageWorker_Blunt</workerClass>
-		<externalViolence>true</externalViolence>
-		<deathMessage>{0} has been crushed to death.</deathMessage>
-		<hediff>Crush</hediff>
-		<hediffSkin>Shredded</hediffSkin>
-		<hediffSolid>Crack</hediffSolid>
-		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
-		<impactSoundType>Blunt</impactSoundType>
-		<armorCategory>Blunt</armorCategory>
-	</DamageDef>
+
 	
 	<DamageDef ParentName="Bite">
 		<defName>WMH_ParalysingBite</defName>

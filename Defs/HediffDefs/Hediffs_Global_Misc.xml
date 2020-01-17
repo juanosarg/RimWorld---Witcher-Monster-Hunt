@@ -18,6 +18,28 @@
 			</li>
 		</stages>
 	</HediffDef>
+	
+	<HediffDef>
+		<defName>WMH_Hunger</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+
+		<label>preternatural hunger</label>
+		<defaultLabelColor>(.8,0,0)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-1</severityPerDay>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<painOffset>0.1</painOffset>
+				<hungerRateFactorOffset>10</hungerRateFactorOffset>
+				
+			</li>
+		</stages>
+	</HediffDef>
 
 	<HediffDef>
 		<defName>WMH_ToxicBuildup</defName>

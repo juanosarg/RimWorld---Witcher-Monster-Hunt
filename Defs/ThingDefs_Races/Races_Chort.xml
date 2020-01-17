@@ -69,7 +69,8 @@
 			<baseHungerRate>5.0</baseHungerRate>
 			<baseHealthScale>30</baseHealthScale>
 			<foodType>OmnivoreAnimal</foodType>
-			<leatherDef>Leather_Lizard</leatherDef>
+			<leatherDef>Leather_Heavy</leatherDef>
+			<meatLabel>monster meat</meatLabel>
 			<wildness>0.99</wildness>
 			<manhunterOnDamageChance>1.0</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>1.0</manhunterOnTameFailChance>

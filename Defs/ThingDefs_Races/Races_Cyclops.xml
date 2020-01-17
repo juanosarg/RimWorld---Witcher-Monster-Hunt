@@ -70,7 +70,7 @@
 				<accuracyLong>1</accuracyLong>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>WMH_Rock</defaultProjectile>
-				<warmupTime>0.66</warmupTime>
+				<warmupTime>4</warmupTime>
 				<burstShotCount>1</burstShotCount>
 				
 				<minRange>10</minRange>
