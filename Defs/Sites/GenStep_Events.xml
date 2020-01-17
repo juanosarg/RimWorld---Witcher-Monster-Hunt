@@ -5,8 +5,8 @@
 
   
   <GenStepDef>
-    <defName>WMH_MonsterEncounterGen</defName>
-    <linkWithSite>WMH_MonsterEncounterCore</linkWithSite>
+    <defName>WMH_Basilisk_MonsterEncounterGen</defName>
+    <linkWithSite>WMH_Basilisk_MonsterEncounterCore</linkWithSite>
     <order>805</order>
     <genStep Class="WMHAnimalBehaviours.GenStep_MonsterEncounter">
     </genStep>

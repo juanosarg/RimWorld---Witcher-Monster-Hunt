@@ -131,7 +131,7 @@
 		<defName>WMH_Cyclops</defName>
 		<label>cyclops</label>
 		<race>WMH_Cyclops</race>
-		<combatPower>500</combatPower>
+		<combatPower>1500</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
 
 		<lifeStages>

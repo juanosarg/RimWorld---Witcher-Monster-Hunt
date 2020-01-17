@@ -33,10 +33,10 @@ namespace WMHAnimalBehaviours
 
         public static Site MakeSite(int tile, int timeOutDays, Faction faction, PawnKindDef animalKind)
         {
-            Site site = (Site)WorldObjectMaker.MakeWorldObject(DefDatabase<WorldObjectDef>.GetNamed("WMH_MonsterEncounterWorldObject", true));
+            Site site = (Site)WorldObjectMaker.MakeWorldObject(DefDatabase<WorldObjectDef>.GetNamed(animalKind.defName+"_MonsterEncounterWorldObject", true));
             site.Tile = tile;
-
-            site.core = new SiteCore(DefDatabase<SiteCoreDef>.GetNamed("WMH_MonsterEncounterCore", true), DefDatabase<SiteCoreDef>.GetNamed("WMH_MonsterEncounterCore", true).Worker.GenerateDefaultParams(site, StorytellerUtility.DefaultSiteThreatPointsNow()));
+           
+            site.core = new SiteCore(DefDatabase<SiteCoreDef>.GetNamed(animalKind.defName + "_MonsterEncounterCore", true), DefDatabase<SiteCoreDef>.GetNamed(animalKind.defName + "_MonsterEncounterCore", true).Worker.GenerateDefaultParams(site, StorytellerUtility.DefaultSiteThreatPointsNow()));
             site.SetFaction(faction);
             site.desiredThreatPoints = StorytellerUtility.DefaultSiteThreatPointsNow();
             //Log.Message(site.desiredThreatPoints.ToString());

@@ -47,7 +47,7 @@ namespace WMHAnimalBehaviours
 
         public override void Generate(Map map, GenStepParams parms)
         {
-            PawnKindDef huntingKind = Find.WorldObjects.WorldObjectAt(map.Tile, DefDatabase<WorldObjectDef>.GetNamed("WMH_MonsterEncounterWorldObject", true)).GetComponent<WorldObjectComp_MonsterToHunt>().monsterKindDef;
+            PawnKindDef huntingKind = Find.WorldObjects.WorldObjectAt(map.Tile, DefDatabase<WorldObjectDef>.GetNamed("WMH_WorldObjectBase", true)).GetComponent<WorldObjectComp_MonsterToHunt>().monsterKindDef;
             base.Generate(map, parms);
             CellRect rect = new CellRect(Rand.RangeInclusive(this.adventureRegion.minX + 10, this.adventureRegion.maxX - (edgeSize + 10)), Rand.RangeInclusive(this.adventureRegion.minZ + 10, this.adventureRegion.maxZ - (edgeSize + 10)), edgeSize, edgeSize);
             rect.ClipInsideMap(map);
