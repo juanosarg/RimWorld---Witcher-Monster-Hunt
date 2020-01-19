@@ -5,13 +5,13 @@
 
 	<ThoughtDef>
 		<defName>WMH_HymPunchEffect</defName>
-		<durationDays>10</durationDays>
+		<durationDays>15</durationDays>
 		<stackLimit>5</stackLimit>
 		<stages>
 			<li>
 				<label>Tormented by guilt</label>
 				<description>Was it all my fault? I can see their screaming faces, the anguish in their voice...</description>
-				<baseMoodEffect>-20</baseMoodEffect>
+				<baseMoodEffect>-30</baseMoodEffect>
 			</li>
 		</stages>
 	</ThoughtDef>

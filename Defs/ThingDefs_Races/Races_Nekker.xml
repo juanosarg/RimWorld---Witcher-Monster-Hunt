@@ -54,7 +54,7 @@
 		</tools>
 		<comps>
 			<li Class="WMHAnimalBehaviours.CompProperties_Regeneration">
-				<rateInTicks>400</rateInTicks>
+				<rateInTicks>100</rateInTicks>
 
 			</li>
 			<li Class="WMHAnimalBehaviours.CompProperties_StateAfterHealthLoss">

@@ -25,7 +25,7 @@
 				<capacities>
 					<li>WMH_HymPunch</li>
 				</capacities>
-				<power>10</power>
+				<power>22</power>
 				<cooldownTime>3</cooldownTime>
 				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
 			</li>
@@ -34,7 +34,7 @@
 				<capacities>
 					<li>WMH_HymPunch</li>
 				</capacities>
-				<power>10</power>
+				<power>22</power>
 				<cooldownTime>3</cooldownTime>
 				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
 			</li>

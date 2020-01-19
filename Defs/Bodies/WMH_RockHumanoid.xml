@@ -6,7 +6,7 @@
 		<defName>WMH_RockHumanoid</defName>
 		<label>rock humanoid</label>
 		<corePart>
-			<def>WMH_RockTorso</def>
+			<def>Torso</def>
 			<height>Middle</height>
 			<depth>Outside</depth>
 			<groups>

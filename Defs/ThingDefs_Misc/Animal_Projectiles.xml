@@ -13,7 +13,23 @@
 		<projectile>
 			<flyOverhead>false</flyOverhead>
 			<damageDef>WMH_VeryToxicBite</damageDef>
-			<damageAmountBase>20</damageAmountBase>
+			<damageAmountBase>35</damageAmountBase>
+			<speed>20</speed>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>WMH_WyvernAcidSpit</defName>
+		<label>wyvern acid spit</label>
+		<thingClass>WMHAnimalRangeUnlocker.AnimalProjectile</thingClass>
+		<graphicData>
+			<texPath>Things/Projectiles/WMH_PoisonBolt</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>WMH_AcidSpit</damageDef>
+			<damageAmountBase>35</damageAmountBase>
 			<speed>20</speed>
 		</projectile>
 	</ThingDef>

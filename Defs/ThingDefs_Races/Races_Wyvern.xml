@@ -13,6 +13,8 @@
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
 			<ToxicSensitivity>0</ToxicSensitivity>
 			<MarketValue>350</MarketValue>
+			<ArmorRating_Blunt>1</ArmorRating_Blunt>
+			<ArmorRating_Sharp>.6</ArmorRating_Sharp>
 		</statBases>
 		<tools>
 
@@ -72,6 +74,28 @@
 				<canCrossWater>true</canCrossWater>
 			</li>
 		</comps>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<accuracyTouch>1</accuracyTouch>
+				<accuracyShort>1</accuracyShort>
+				<accuracyMedium>1</accuracyMedium>
+				<accuracyLong>1</accuracyLong>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>WMH_WyvernAcidSpit</defaultProjectile>
+				<warmupTime>3</warmupTime>
+				<burstShotCount>1</burstShotCount>
+				
+				<minRange>10</minRange>
+				<range>30</range>
+				<!--<soundCast>AA_RockThrow</soundCast>-->
+				<muzzleFlashScale>0</muzzleFlashScale>
+				<!--Commanility determines how frequent this range verb is chosen.-->
+				<commonality>0.5</commonality>
+			</li>
+
+
+		</verbs>
 		<race>
 
 			<body>WMH_Reptile</body>

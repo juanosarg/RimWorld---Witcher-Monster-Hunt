@@ -47,16 +47,7 @@
 		</tags>
 	</BodyPartDef>
 
-	<BodyPartDef>
-		<defName>WMH_RockTorso</defName>
-		<label>rocky torso</label>
-		<hitPoints>40</hitPoints>
-		<skinCovered>false</skinCovered>
-		<solid>true</solid>
-		<alive>false</alive>
-		<bleedRate>0</bleedRate>
-
-	</BodyPartDef>
+	
 
 	<BodyPartDef>
 		<defName>WMH_RockHead</defName>

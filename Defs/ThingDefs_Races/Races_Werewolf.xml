@@ -54,7 +54,7 @@
 		</tools>
 		<comps>
 			<li Class="WMHAnimalBehaviours.CompProperties_Regeneration">
-				<rateInTicks>200</rateInTicks>
+				<rateInTicks>50</rateInTicks>
 
 			</li>
 		</comps>
@@ -62,7 +62,7 @@
 		<race>
 			<body>Human</body>
 			<baseBodySize>1.5</baseBodySize>
-			<baseHealthScale>15</baseHealthScale>
+			<baseHealthScale>8</baseHealthScale>
 			<leatherDef>Leather_Wolf</leatherDef>
 			<useMeatFrom>Human</useMeatFrom>
 			<gestationPeriodDays>45</gestationPeriodDays>

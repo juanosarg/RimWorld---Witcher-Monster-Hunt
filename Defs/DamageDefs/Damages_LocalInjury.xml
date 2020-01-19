@@ -92,6 +92,37 @@
 			</li>
 		</additionalHediffs>
 	</DamageDef>
+	
+	<DamageDef>
+		<defName>WMH_AcidSpit</defName>
+		<label>acid spit</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has been corroded to death.</deathMessage>
+		<hediff>Burn</hediff>
+		<additionalHediffs>
+			<li>
+				<hediff>WMH_AcidBuildup</hediff>
+				<severityPerDamageDealt>0.01</severityPerDamageDealt>
+				
+			</li>
+		</additionalHediffs>
+		<isRanged>true</isRanged>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<armorCategory>Heat</armorCategory>
+	</DamageDef>
+	
+	<DamageDef>
+		<defName>WMH_SecondaryAcidBurn</defName>
+		<label>acid burn</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has been corroded to death.</deathMessage>
+		<hediff>Burn</hediff>
+		
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<armorCategory>Heat</armorCategory>
+	</DamageDef>
 
 	<DamageDef>
 		<defName>WMH_RockBomb</defName>
