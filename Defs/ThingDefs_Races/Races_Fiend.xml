@@ -66,8 +66,8 @@
 		</tools>
 		<comps>
 			<li Class="WMHAnimalBehaviours.CompProperties_MindEffecter">
-				<radius>30</radius>
-				<tickInterval>750</tickInterval>
+				<radius>40</radius>
+				<tickInterval>450</tickInterval>
 				<mentalState>Wander_Psychotic</mentalState>
 			</li>
 		</comps>
@@ -76,7 +76,7 @@
 			<body>WMH_QuadrupedWithPawsAndHorns</body>
 			<baseBodySize>7.00</baseBodySize>
 			<baseHungerRate>3.0</baseHungerRate>
-			<baseHealthScale>25</baseHealthScale>
+			<baseHealthScale>20</baseHealthScale>
 			<foodType>OmnivoreAnimal</foodType>
 			<leatherDef>Leather_Heavy</leatherDef>
 			<useMeatFrom>WMH_Chort</useMeatFrom>

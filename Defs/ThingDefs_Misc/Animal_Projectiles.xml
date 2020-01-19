@@ -30,8 +30,8 @@
 		</graphicData>
 		<projectile>
 			<flyOverhead>false</flyOverhead>
-			<damageDef>Crush</damageDef>
-			<damageAmountBase>40</damageAmountBase>
+			<damageDef>WMH_RockBomb</damageDef>
+			<damageAmountBase>30</damageAmountBase>
 			<speed>15</speed>
 		</projectile>
 	</ThingDef>
@@ -46,7 +46,7 @@
 		</graphicData>
 		<projectile>
 			<flyOverhead>false</flyOverhead>
-			<damageDef>Burn</damageDef>
+			<damageDef>Flame</damageDef>
 			<damageAmountBase>6</damageAmountBase>
 			<speed>10</speed>
 		</projectile>

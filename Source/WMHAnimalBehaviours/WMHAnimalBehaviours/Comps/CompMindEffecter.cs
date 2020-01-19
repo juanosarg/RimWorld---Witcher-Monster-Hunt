@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using Verse;
+using Verse.Sound;
 using UnityEngine;
 using System.Collections;
 
@@ -65,7 +66,7 @@ namespace WMHAnimalBehaviours
                                   if (!chosenOne.Dead && !chosenOne.Downed)
                                   {
                                     Find.TickManager.slower.SignalForceNormalSpeedShort();
-
+                                    SoundDefOf.PsychicPulseGlobal.PlayOneShot(new TargetInfo(this.parent.Position, this.parent.Map, false));
                                     chosenOne.mindState.mentalStateHandler.TryStartMentalState(DefDatabase<MentalStateDef>.GetNamed(Props.mentalState, true), null, true, false, null, false);
                                   }
 

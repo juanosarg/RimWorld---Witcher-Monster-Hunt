@@ -11,9 +11,9 @@
 			<MarketValue>55</MarketValue>
 			<LeatherAmount>0</LeatherAmount>
 			<MeatAmount>0</MeatAmount>
-			<ArmorRating_Blunt>.3</ArmorRating_Blunt>
+			
 			<ArmorRating_Heat>-0.3</ArmorRating_Heat>
-			<ArmorRating_Sharp>.3</ArmorRating_Sharp>
+			
 		</statBases>
 		<tools>
 			<li>

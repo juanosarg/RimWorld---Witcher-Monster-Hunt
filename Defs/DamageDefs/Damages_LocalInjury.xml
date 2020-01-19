@@ -27,7 +27,7 @@
 			</li>
 		</additionalHediffs>
 	</DamageDef>
-	
+
 	<DamageDef ParentName="Bite">
 		<defName>WMH_EkimmaraBite</defName>
 		<label>ekimmara bite</label>
@@ -51,14 +51,14 @@
 			</li>
 		</additionalHediffs>
 	</DamageDef>	
-	
+
 	<DamageDef ParentName="Bite">
 		<defName>WMH_Berserk</defName>
 		<label>berserk wave</label>
 		<workerClass>WMHAnimalBehaviours.DamageWorker_Berserk</workerClass>
 
 	</DamageDef>
-	
+
 	<DamageDef ParentName="BluntBase">
 		<defName>WMH_HymPunch</defName>
 		<label>hym claws</label>
@@ -79,9 +79,9 @@
 			</li>
 		</additionalHediffs>
 	</DamageDef>
-	
 
-	
+
+
 	<DamageDef ParentName="Bite">
 		<defName>WMH_ParalysingBite</defName>
 		<label>paralysing bite</label>
@@ -91,6 +91,34 @@
 				<severityPerDamageDealt>0.01</severityPerDamageDealt>
 			</li>
 		</additionalHediffs>
+	</DamageDef>
+
+	<DamageDef>
+		<defName>WMH_RockBomb</defName>
+		<label>rock</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<externalViolence>true</externalViolence>
+		<isExplosive>true</isExplosive>
+		<deathMessage>{0} has died crushed by a huge boulder.</deathMessage>
+		<hediff>Crush</hediff>
+		<hediffSkin>Cut</hediffSkin>
+		<hediffSolid>Crack</hediffSolid>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Blunt</impactSoundType>
+		<armorCategory>Blunt</armorCategory>
+		<minDamageToFragment>15</minDamageToFragment>
+		<defaultDamage>30</defaultDamage>
+		<defaultStoppingPower>0.5</defaultStoppingPower>
+		<defaultArmorPenetration>0.10</defaultArmorPenetration>
+		<buildingDamageFactor>4</buildingDamageFactor>
+		<plantDamageFactor>4</plantDamageFactor>
+		<explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+		<explosionHeatEnergyPerCell>5</explosionHeatEnergyPerCell>
+		<explosionCellMote>Mote_DustPuff</explosionCellMote>
+		<explosionColorCenter>(0.6, 0.6, 0.6)</explosionColorCenter>
+		<explosionColorEdge>(0.5, 0.5, 0.5)</explosionColorEdge>
+		<soundExplosion>Explosion_Smoke</soundExplosion>
+		<combatLogRules>Damage_Bomb</combatLogRules>
 	</DamageDef>
 
 

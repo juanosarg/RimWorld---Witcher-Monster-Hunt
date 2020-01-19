@@ -12,6 +12,7 @@
 			<MoveSpeed>3.00</MoveSpeed>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
 			<ToxicSensitivity>0</ToxicSensitivity>
+			<ArmorRating_Blunt>.6</ArmorRating_Blunt>
 			<MarketValue>350</MarketValue>
 		</statBases>
 		<tools>
@@ -22,7 +23,7 @@
 					<li>Scratch</li>
 				</capacities>
 				<power>13</power>
-				<cooldownTime>1.5</cooldownTime>
+				<cooldownTime>0.75</cooldownTime>
 				<linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
 
 			</li>
@@ -32,7 +33,7 @@
 					<li>Scratch</li>
 				</capacities>
 				<power>13</power>
-				<cooldownTime>1.5</cooldownTime>
+				<cooldownTime>0.75</cooldownTime>
 				<linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
 
 			</li>
@@ -77,7 +78,7 @@
 
 			<body>WMH_Bird</body>
 			<baseBodySize>3</baseBodySize>
-			<baseHealthScale>5</baseHealthScale>
+			<baseHealthScale>10</baseHealthScale>
 			<leatherDef>Leather_Lizard</leatherDef>
 			<useMeatFrom>Iguana</useMeatFrom>
 			<gestationPeriodDays>30</gestationPeriodDays>

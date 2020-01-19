@@ -10,6 +10,7 @@
 		<defaultPlacingRot>South</defaultPlacingRot>
 		<fillPercent>0.5</fillPercent>
 		<rotatable>true</rotatable>
+		<tradeability>Sellable</tradeability>
 		<statBases>
 			<MaxHitPoints>150</MaxHitPoints>
 			<Mass>7</Mass>
@@ -32,6 +33,7 @@
 		<defaultPlacingRot>South</defaultPlacingRot>
 		<fillPercent>0.5</fillPercent>
 		<rotatable>true</rotatable>
+		<tradeability>Sellable</tradeability>
 		<size>(2,2)</size>
 		<canOverlapZones>false</canOverlapZones>
 		<statBases>

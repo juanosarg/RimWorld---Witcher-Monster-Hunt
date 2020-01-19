@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using Verse.Sound;
 using Verse;
 
 namespace WMHAnimalBehaviours
@@ -62,6 +62,7 @@ namespace WMHAnimalBehaviours
 
                                 if (!chosenOne.Dead && !chosenOne.Downed)
                                 {
+                                    //SoundDefOf.PsychicPulseGlobal.PlayOneShot(new TargetInfo(this.parent.Position, this.parent.Map, false));
 
                                     chosenOne.health.AddHediff(HediffDef.Named(Props.hediff));
                                 }

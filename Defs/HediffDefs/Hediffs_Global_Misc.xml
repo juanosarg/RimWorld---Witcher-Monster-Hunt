@@ -171,7 +171,7 @@
 		<stages>
 			<li>
 				<label>minor</label>
-				<vomitMtbDays>0.4</vomitMtbDays>
+				<vomitMtbDays>0.1</vomitMtbDays>
 				<painOffset>0.2</painOffset>
 				<capMods>
 					<li>
@@ -184,7 +184,7 @@
 			<li>
 				<label>major</label>
 				<minSeverity>0.4</minSeverity>
-				<vomitMtbDays>0.2</vomitMtbDays>
+				<vomitMtbDays>0.05</vomitMtbDays>
 				<painOffset>0.4</painOffset>
 				<capMods>
 					<li>
@@ -197,7 +197,7 @@
 			<li>
 				<label>extreme</label>
 				<minSeverity>0.8</minSeverity>
-				<vomitMtbDays>0.1</vomitMtbDays>
+				<vomitMtbDays>0.01</vomitMtbDays>
 				<painOffset>0.2</painOffset>
 				<capMods>
 					<li>
