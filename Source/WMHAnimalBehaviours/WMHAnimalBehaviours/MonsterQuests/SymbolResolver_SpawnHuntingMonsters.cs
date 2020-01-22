@@ -31,17 +31,25 @@ namespace WMHAnimalBehaviours
             int spawnCount;
             PawnKindDef huntingTarget = rp.singlePawnKindDef;
 
-          
-                if (huntingTarget.combatPower > 102)
+            if (huntingTarget.wildGroupSize==null) {
+                spawnCount = 1;
+
+            } else {
+                spawnCount = Rand.RangeInclusive(huntingTarget.wildGroupSize.min, huntingTarget.wildGroupSize.max);
+
+            }
+
+            
+           /* if (huntingTarget.combatPower > 102)
                 {
-                    spawnCount = Rand.RangeInclusive(6, 8);
+                    
                 }
                 else
                 {
                     spawnCount = Rand.RangeInclusive(4, 5);
                 }
                 spawnCount = (int)((float)spawnCount * (float)(210f / huntingTarget.combatPower));
-            
+            */
 
             for (int i = 0; i < spawnCount; i++)
             {

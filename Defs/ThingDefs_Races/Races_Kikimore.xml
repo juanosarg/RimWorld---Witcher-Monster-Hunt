@@ -146,7 +146,7 @@
 				<pawnDef>WMAux_KikimoreWorker</pawnDef>
 				<groupMinMax>
 					<li>2</li>
-					<li>4</li>
+					<li>6</li>
 				</groupMinMax>
 				
 			</li>
@@ -261,7 +261,7 @@
 				<pawnDef>WMAux_KikimoreWarrior</pawnDef>
 				<groupMinMax>
 					<li>2</li>
-					<li>4</li>
+					<li>5</li>
 				</groupMinMax>				
 			</li>
 		

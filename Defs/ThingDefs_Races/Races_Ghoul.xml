@@ -105,8 +105,8 @@
 		<canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>1</ecoSystemWeight>
 		<wildGroupSize>
-			<min>2</min>
-			<max>6</max>
+			<min>12</min>
+			<max>18</max>
 		</wildGroupSize>
 		<lifeStages>
 			
