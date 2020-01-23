@@ -6,7 +6,7 @@
 
   <ThingDef ParentName="BaseFilth">
     <defName>WMH_Filth_Rocks</defName>
-    <label>blue blood</label>
+    <label>rocks</label>
     <statBases>
       <Beauty>-30</Beauty>
       <Cleanliness>-10</Cleanliness>
