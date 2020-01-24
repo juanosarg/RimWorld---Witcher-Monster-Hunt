@@ -10,6 +10,11 @@
 		<parent>Corpses</parent>
 	</ThingCategoryDef>
 
+	<ThingCategoryDef>
+      <defName>WMH_BuildingsTrophies</defName>
+      <label>trophies</label>
+      <parent>Buildings</parent>
+    </ThingCategoryDef>
 
 
 </Defs>

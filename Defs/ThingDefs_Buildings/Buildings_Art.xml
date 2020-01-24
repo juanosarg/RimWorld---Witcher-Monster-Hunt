@@ -11,6 +11,9 @@
 		<fillPercent>0.5</fillPercent>
 		<rotatable>true</rotatable>
 		<tradeability>Sellable</tradeability>
+		<thingCategories>
+			<li>WMH_BuildingsTrophies</li>
+		</thingCategories>
 		<statBases>
 			<MaxHitPoints>150</MaxHitPoints>
 			<Mass>7</Mass>
@@ -34,6 +37,9 @@
 		<fillPercent>0.5</fillPercent>
 		<rotatable>true</rotatable>
 		<tradeability>Sellable</tradeability>
+		<thingCategories>
+			<li>WMH_BuildingsTrophies</li>
+		</thingCategories>
 		<size>(2,2)</size>
 		<canOverlapZones>false</canOverlapZones>
 		<statBases>
@@ -169,8 +175,8 @@
 			<Corpse_WMH_Wraith>1</Corpse_WMH_Wraith>
 		</costList>
 	</ThingDef>
-	
-	
+
+
 	<ThingDef ParentName="WMH_GrandTrophyBase">
 		<defName>WMHT_TrophyGrandBasilisk</defName>
 		<label>basilisk trophy (grand)</label>
