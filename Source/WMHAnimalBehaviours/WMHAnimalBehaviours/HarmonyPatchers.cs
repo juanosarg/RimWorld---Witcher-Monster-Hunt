@@ -122,5 +122,33 @@ namespace WMHAnimalBehaviours
         }
     }
 
+    /*This Harmony Postfix makes the golem drop rock chunks in Glory Mode
+*/
+    [HarmonyPatch(typeof(Pawn_HealthTracker))]
+    [HarmonyPatch("DropBloodFilth")]
+   
+    public static class Pawn_HealthTracker_DropBloodFilth_Patch
+    {
+        [HarmonyPostfix]
+        public static void MakeGolemDropRockChunksInGloryMode(Pawn_HealthTracker __instance)
+
+        {
+            Pawn pawn = ((Pawn)typeof(Pawn_HealthTracker).GetField("pawn", BindingFlags.Instance | BindingFlags.NonPublic).GetValue(__instance));
+
+            if (WMH_Settings.WMH_GloryMode && pawn.def.defName == "WMH_Golem")
+            {
+                if ((pawn.Spawned || pawn.ParentHolder is Pawn_CarryTracker) && pawn.SpawnedOrAnyParentSpawned)
+                {
+                    Thing thing3 = ThingMaker.MakeThing(ThingDef.Named("ChunkGranite"), null);
+                    GenPlace.TryPlaceThing(thing3, pawn.Position, pawn.Map, ThingPlaceMode.Near, null, null);
+                   
+                }
+            }
+
+
+
+        }
+    }
+
 
 }

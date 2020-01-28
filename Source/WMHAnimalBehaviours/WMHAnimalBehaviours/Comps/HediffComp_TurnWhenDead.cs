@@ -7,7 +7,7 @@ namespace WMHAnimalBehaviours
 {
     public class HediffComp_TurnWhenDead : HediffComp
     {
-       
+        public float minSeverityToTurn = 0.85f;
 
         public HediffCompProperties_TurnWhenDead Props
         {
@@ -20,7 +20,17 @@ namespace WMHAnimalBehaviours
         public override void Notify_PawnDied()
         {
             //base.Notify_PawnDied();
-            if (this.parent.pawn.Corpse.Map != null && this.parent.Severity>0.85) {
+            float severityToTurn;
+
+            if (WMH_Settings.WMH_GloryMode)
+            {
+                severityToTurn=0;
+            }
+            else {
+                severityToTurn = minSeverityToTurn;
+            }
+
+            if (this.parent.pawn.Corpse.Map != null && this.parent.Severity> severityToTurn) {
                 Gender oldGender = this.parent.pawn.gender;
                 PawnGenerationRequest request = new PawnGenerationRequest(PawnKindDef.Named(Props.thingToTurnTo), Find.FactionManager.FirstFactionOfDef(FactionDef.Named("WMH_Monsters")), PawnGenerationContext.NonPlayer, -1, false, true, false, false, true, false, 1f, false, true, true, false, false);
                 Pawn pawn = PawnGenerator.GeneratePawn(request);
