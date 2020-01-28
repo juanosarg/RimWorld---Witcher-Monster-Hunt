@@ -103,7 +103,7 @@
 			<baseBodySize>3</baseBodySize>
 			<baseHealthScale>15</baseHealthScale>
 			<leatherDef>Leather_Lizard</leatherDef>
-			<useMeatFrom>Iguana</useMeatFrom>
+			<useMeatFrom>WMH_Chort</useMeatFrom>
 			<gestationPeriodDays>30</gestationPeriodDays>
 			<lifeExpectancy>18</lifeExpectancy>
 			<foodType>OmnivoreAnimal, AnimalProduct</foodType>

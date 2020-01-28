@@ -67,7 +67,7 @@
 			<body>WMH_RockHumanoid</body>
 			<baseBodySize>8</baseBodySize>
 			<baseHealthScale>10</baseHealthScale>
-			<useMeatFrom>Pig</useMeatFrom>
+			<useMeatFrom>WMH_Chort</useMeatFrom>
 			<useLeatherFrom>Pig</useLeatherFrom>
 			<hasGenders>false</hasGenders>
 			<lifeExpectancy>5000</lifeExpectancy>

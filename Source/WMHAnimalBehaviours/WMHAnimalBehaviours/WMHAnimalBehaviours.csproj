@@ -82,6 +82,7 @@
     <Compile Include="DamageWorker_ExtraInfecter.cs" />
     <Compile Include="DeathActionWorker_GargantuanExplosion.cs" />
     <Compile Include="Enums\MonsterClassEnum.cs" />
+    <Compile Include="GloryModeSkins.cs" />
     <Compile Include="Hediff_AcidBuildup.cs" />
     <Compile Include="LordJob_LongRanged.cs" />
     <Compile Include="MonsterQuests\DefeatAllMonstersQuestComp.cs" />

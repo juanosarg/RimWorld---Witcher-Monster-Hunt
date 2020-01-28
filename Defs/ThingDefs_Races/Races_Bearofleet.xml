@@ -3,9 +3,10 @@
 	<ThingDef ParentName="WMH_MonsterBase">
 		<defName>WMH_Bearofleet</defName>
 		<label>bearofleet</label>
-			  
+		<thingClass>WMHAnimalBehaviours.GloryModeSkins</thingClass>
+
 		<description>Bearofleets are genetic monstrosities created by the hubris of man. They were created by advanced genetic splicing of Aerofleet and Bear genetic material, and released into the wild, where their voracious appetite has proven to be a real challenge for small settlements. Their very presence instills a preternatural hunger in those who witness its bloated belly.\n\nMonster class traits: Being a Relict, Bearofleet contract provides much higher rewards.</description>
-		
+
 		<statBases>
 			<MoveSpeed>3</MoveSpeed>
 			<ComfyTemperatureMin>-55</ComfyTemperatureMin>
@@ -52,38 +53,38 @@
 			</li>
 		</comps>
 		<race>
-		    <deathActionWorkerClass>WMHAnimalBehaviours.DeathActionWorker_GargantuanExplosion</deathActionWorkerClass>
+			<deathActionWorkerClass>WMHAnimalBehaviours.DeathActionWorker_GargantuanExplosion</deathActionWorkerClass>
 			<executionRange>12</executionRange>
-			
+
 			<body>WMH_JellyfishBody</body>
 			<baseBodySize>1</baseBodySize>
 			<baseHealthScale>20</baseHealthScale>
 			<baseHungerRate>0.10</baseHungerRate>
-			<hasGenders>false</hasGenders>
-			<useMeatFrom>Bear_Grizzly</useMeatFrom>
+			
+			<useMeatFrom>WMH_Chort</useMeatFrom>
 			<leatherDef>Leather_Bear</leatherDef>
 			<wildness>1</wildness>
 			<canBePredatorPrey>false</canBePredatorPrey>
 			<trainability>Simple</trainability>
-			
+
 			<mateMtbHours>10000</mateMtbHours>
 			<gestationPeriodDays>10000</gestationPeriodDays>
 			<lifeExpectancy>12</lifeExpectancy>
 			<lifeStageAges>
-				
+
 				<li>
 					<def>AnimalAdult</def>
 					<minAge>0.30</minAge>
-					 <soundWounded>Pawn_Bear_Injured</soundWounded>
-          <soundDeath>Pawn_Bear_Death</soundDeath>
-          <soundCall>Pawn_Bear_Call</soundCall>
-          <soundAngry>Pawn_Bear_Angry</soundAngry>
+					<soundWounded>Pawn_Bear_Injured</soundWounded>
+					<soundDeath>Pawn_Bear_Death</soundDeath>
+					<soundCall>Pawn_Bear_Call</soundCall>
+					<soundAngry>Pawn_Bear_Angry</soundAngry>
 				</li>
 			</lifeStageAges>
-			 <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
-      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
-      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
-			
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+
 		</race>
 		<tradeTags>
 			<li>AnimalMonster</li>
@@ -100,14 +101,18 @@
 		<label>bearofleet</label>
 		<race>WMH_Bearofleet</race>
 		<combatPower>1000</combatPower>
-		
+
 		<lifeStages>
-			
+
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/WMH_Bearofleet/WMH_Bearofleet</texPath>
 					<drawSize>3</drawSize>
 				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>Things/Pawn/Animal/WMH_Bearofleet/WMH_Bearofleet</texPath>
+					<drawSize>3</drawSize>
+				</femaleGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/WMH_Bearofleet/WMH_Dessicated_Bearofleet</texPath>
 					<drawSize>3</drawSize>
@@ -115,7 +120,7 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-	
+
 
 
 </Defs>

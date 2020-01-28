@@ -66,7 +66,7 @@
 			<body>Human</body>
 			<baseBodySize>1</baseBodySize>
 			<baseHealthScale>4</baseHealthScale>
-			<useMeatFrom>Pig</useMeatFrom>
+			<useMeatFrom>WMH_Chort</useMeatFrom>
 			<useLeatherFrom>Pig</useLeatherFrom>
 			<hasGenders>false</hasGenders>
 			<lifeExpectancy>5000</lifeExpectancy>
