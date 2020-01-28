@@ -4,12 +4,13 @@
 		<defName>WMH_Bearofleet</defName>
 		<label>bearofleet</label>
 			  
-		<description>Bearofleets are genetic monstruosities created by the hubris of man. They were created by advanced genetic splicing of Aerofleet and Bear genetic material, and released into the wild, where their voracious appetite has proven to be a real challenge for small settlements. Their very presence instills a preternatural hunger in those who witness its bloated belly.\n\nMonster class traits: Being a Relict, Bearofleet contract provides much higher rewards.</description>
+		<description>Bearofleets are genetic monstrosities created by the hubris of man. They were created by advanced genetic splicing of Aerofleet and Bear genetic material, and released into the wild, where their voracious appetite has proven to be a real challenge for small settlements. Their very presence instills a preternatural hunger in those who witness its bloated belly.\n\nMonster class traits: Being a Relict, Bearofleet contract provides much higher rewards.</description>
 		
 		<statBases>
 			<MoveSpeed>3</MoveSpeed>
 			<ComfyTemperatureMin>-55</ComfyTemperatureMin>
 			<MarketValue>120</MarketValue>
+			<Flammability>0</Flammability>
 			<ArmorRating_Blunt>.5</ArmorRating_Blunt>			
 			<ArmorRating_Sharp>.5</ArmorRating_Sharp>
 		</statBases>

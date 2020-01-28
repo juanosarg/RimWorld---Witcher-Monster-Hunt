@@ -21,10 +21,11 @@ namespace WMHAnimalBehaviours
         {
             //base.Notify_PawnDied();
             if (this.parent.pawn.Corpse.Map != null && this.parent.Severity>0.85) {
-               
+                Gender oldGender = this.parent.pawn.gender;
                 PawnGenerationRequest request = new PawnGenerationRequest(PawnKindDef.Named(Props.thingToTurnTo), Find.FactionManager.FirstFactionOfDef(FactionDef.Named("WMH_Monsters")), PawnGenerationContext.NonPlayer, -1, false, true, false, false, true, false, 1f, false, true, true, false, false);
                 Pawn pawn = PawnGenerator.GeneratePawn(request);
                 PawnUtility.TrySpawnHatchedOrBornPawn(pawn, this.parent.pawn.Corpse);
+                pawn.gender = oldGender;
                 pawn.mindState.mentalStateHandler.TryStartMentalState(DefDatabase<MentalStateDef>.GetNamed("ManhunterPermanent", true), null, true, false, null, false);
 
                 for (int i = 0; i < 20; i++)

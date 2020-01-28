@@ -14,6 +14,7 @@
 			<MoveSpeed>3.5</MoveSpeed>
 			<ComfyTemperatureMin>-20</ComfyTemperatureMin>
 			<MeatAmount>0</MeatAmount>
+			<Flammability>0</Flammability>
 			<LeatherAmount>0</LeatherAmount>
 			<MarketValue>1500</MarketValue>
 		</statBases>

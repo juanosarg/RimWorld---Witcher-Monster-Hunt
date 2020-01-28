@@ -67,7 +67,7 @@ namespace WMHAnimalBehaviours
                                       where !x.Impassable(map)
                                       select x).TryRandomElement(out point))
                     {
-                        lordJob = new LordJob_DefendPoint(point);
+                        lordJob = new LordJob_LongRanged(point);
                     }
                     else
                     {

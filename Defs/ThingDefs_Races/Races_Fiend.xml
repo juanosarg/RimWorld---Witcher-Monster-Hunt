@@ -13,6 +13,7 @@
 		<statBases>
 			<MoveSpeed>5</MoveSpeed>
 			<ComfyTemperatureMin>-100</ComfyTemperatureMin>
+			<Flammability>0</Flammability>
 			<MarketValue>4000</MarketValue>
 		</statBases>
 		<tools>

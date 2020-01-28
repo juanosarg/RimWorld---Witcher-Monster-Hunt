@@ -12,6 +12,7 @@
 			<MoveSpeed>3.00</MoveSpeed>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
 			<ToxicSensitivity>0</ToxicSensitivity>
+			<Flammability>0</Flammability>
 			<ArmorRating_Blunt>.6</ArmorRating_Blunt>
 			<MarketValue>350</MarketValue>
 		</statBases>
