@@ -90,10 +90,13 @@
     <Compile Include="MonsterClass.cs" />
     <Compile Include="HarmonyPatchers.cs" />
     <Compile Include="MonsterQuests\WorldObjectCompProperties_DefeatAllMonstersQuest.cs" />
+    <Compile Include="Options\Settings_Controllers.cs" />
+    <Compile Include="Options\WMH_Settings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="MonsterQuests\SymbolResolver_SpawnHuntingMonsters.cs" />
     <Compile Include="MonsterQuests\WorldObjectCompProperties_MonsterToHunt.cs" />
     <Compile Include="MonsterQuests\WorldObjectComp_MonsterToHunt.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

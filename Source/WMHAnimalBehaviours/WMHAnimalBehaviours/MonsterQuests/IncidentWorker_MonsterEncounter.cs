@@ -23,7 +23,7 @@ namespace WMHAnimalBehaviours
                 return false;
             }
             int num;
-            return GetHostingFaction() != null && this.TryFindTile(out num);
+            return GetHostingFaction() != null && this.TryFindTile(out num) && !WMH_Settings.WMH_DisableEvents;
         }
 
         private bool TryFindTile(out int tile)

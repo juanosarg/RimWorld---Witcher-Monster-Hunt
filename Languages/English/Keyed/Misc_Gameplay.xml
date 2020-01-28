@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
+	<!-- Misc -->
+	<WMH_DisableEvents>Disable all monster events (this efectively disables the mod)</WMH_DisableEvents>
+	<WMH_GloryMode>Glory Mode (you are not prepared)</WMH_GloryMode>
 
 
 	<!-- Hunt completed -->
