@@ -113,7 +113,10 @@
 				<li>
 					<def>AnimalAdult</def>
 					<minAge>0</minAge>
-					
+					<soundWounded>WMH_Pawn_Ogroid_Wounded</soundWounded>
+					<soundDeath>WMH_Pawn_Ogroid_Death</soundDeath>
+					<soundCall>WMH_Pawn_Ogroid_Call</soundCall>
+					<soundAngry>WMH_Pawn_Ogroid_Angry</soundAngry>
 				</li>
 			</lifeStageAges>
 			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>

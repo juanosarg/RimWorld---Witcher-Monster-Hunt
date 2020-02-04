@@ -85,11 +85,13 @@
     <Compile Include="GloryModeSkins.cs" />
     <Compile Include="Hediff_AcidBuildup.cs" />
     <Compile Include="LordJob_LongRanged.cs" />
+    <Compile Include="MonsterMapSpawnsDef.cs" />
     <Compile Include="MonsterQuests\DefeatAllMonstersQuestComp.cs" />
     <Compile Include="MonsterQuests\GenStep_MonsterEncounter.cs" />
     <Compile Include="MonsterQuests\IncidentWorker_MonsterEncounter.cs" />
     <Compile Include="MonsterClass.cs" />
     <Compile Include="HarmonyPatchers.cs" />
+    <Compile Include="MonsterQuests\MapComponentExtender.cs" />
     <Compile Include="MonsterQuests\WorldObjectCompProperties_DefeatAllMonstersQuest.cs" />
     <Compile Include="Options\Settings_Controllers.cs" />
     <Compile Include="Options\WMH_Settings.cs" />

@@ -61,6 +61,11 @@ namespace WMHAnimalBehaviours
                 if (lord == null)
                 {
                     Map map = BaseGen.globalSettings.map;
+                    if (map.GetComponent<MapComponentExtender>() == null) {
+                        map.components.Add(new MapComponentExtender(map));
+                        map.GetComponent<MapComponentExtender>().monsterKindDef = huntingTarget;
+                    } else { map.GetComponent<MapComponentExtender>().monsterKindDef = huntingTarget; }
+                    
                     IntVec3 point;
                     LordJob lordJob;
                     if (Rand.Bool && (from x in rp.rect.Cells

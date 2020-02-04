@@ -107,7 +107,7 @@ namespace WMHAnimalBehaviours
             ThingSetMakerParams parms = default(ThingSetMakerParams);
             parms.totalMarketValueRange = new FloatRange?(SiteTuning.BanditCampQuestRewardMarketValueRange * SiteTuning.QuestRewardMarketValueThreatPointsFactor.Evaluate(siteThreatPoints) * relictModifier);
              
-            return ThingSetMakerDefOf.Reward_ItemStashQuestContents.root.Generate(parms);
+            return DefDatabase<ThingSetMakerDef>.GetNamed("WMH_Reward_Monster", true).root.Generate(parms);
         }
 
         private void GetLetterText(Faction alliedFaction, PawnKindDef animalDef, string things,string money, out string letter, out string label)

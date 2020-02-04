@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+  
+   <WMHAnimalBehaviours.MonsterMapSpawnsDef>
+      <defName>WMH_SpawnGhoulBodies</defName>
+      <thingDef>WMH_GhoulBody</thingDef>
+      <allowOnWater>false</allowOnWater>
+	  <numberToSpawn>80</numberToSpawn>
+   	  <associatedMonster>WMH_Ghoul</associatedMonster> 
+   </WMHAnimalBehaviours.MonsterMapSpawnsDef>
+   
+   <WMHAnimalBehaviours.MonsterMapSpawnsDef>
+      <defName>WMH_SpawnKikimoreNests</defName>
+      <thingDef>WMH_KikimoreNest</thingDef>
+      <allowOnWater>false</allowOnWater>
+	  <numberToSpawn>30</numberToSpawn>
+   	  <associatedMonster>WMH_KikimoreQueen</associatedMonster>  
+   </WMHAnimalBehaviours.MonsterMapSpawnsDef>
+   
+   <WMHAnimalBehaviours.MonsterMapSpawnsDef>
+      <defName>WMH_SpawnLeshyTotems</defName>
+      <thingDef>WMH_LeshyTotem</thingDef>
+      <allowOnWater>false</allowOnWater>
+	  <numberToSpawn>15</numberToSpawn>
+   	  <associatedMonster>WMH_Leshy</associatedMonster> 
+   </WMHAnimalBehaviours.MonsterMapSpawnsDef>
+   
+   <WMHAnimalBehaviours.MonsterMapSpawnsDef>
+      <defName>WMH_SpawnWraithGraves</defName>
+      <thingDef>WMH_AncientGrave</thingDef>
+      <allowOnWater>false</allowOnWater>
+	  <numberToSpawn>35</numberToSpawn>
+   	  <associatedMonster>WMH_Wraith</associatedMonster>  
+   </WMHAnimalBehaviours.MonsterMapSpawnsDef>
+   
+   <WMHAnimalBehaviours.MonsterMapSpawnsDef>
+      <defName>WMH_SpawnHymGraves</defName>
+      <thingDef>WMH_AncientGrave</thingDef>
+      <allowOnWater>false</allowOnWater>
+	  <numberToSpawn>35</numberToSpawn>
+   	  <associatedMonster>WMH_Hym</associatedMonster>  
+   </WMHAnimalBehaviours.MonsterMapSpawnsDef>
+   
+
+   
+</Defs>

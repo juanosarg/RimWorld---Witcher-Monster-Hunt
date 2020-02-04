@@ -16,7 +16,7 @@
 		</thingCategories>
 		<statBases>
 			<MaxHitPoints>150</MaxHitPoints>
-			<Mass>7</Mass>
+			<Mass>40</Mass>
 			<Beauty>100</Beauty>
 			<WorkToMake>30000</WorkToMake>
 		</statBases>
@@ -45,7 +45,7 @@
 		<statBases>
 			<MaxHitPoints>250</MaxHitPoints>
 			<Beauty>240</Beauty>
-			<Mass>25</Mass>
+			<Mass>55</Mass>
 			<WorkToMake>65000</WorkToMake>
 		</statBases>
 		<stuffCategories>

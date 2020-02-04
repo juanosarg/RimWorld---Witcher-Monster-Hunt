@@ -2,7 +2,7 @@
 <Defs>  
 
 	<WorldObjectDef Name="WMH_WorldObjectBase" Abstract="True">
-		
+
 		<worldObjectClass>Site</worldObjectClass>
 		<expandingIcon>true</expandingIcon>
 		<expandingIconPriority>70</expandingIconPriority>
@@ -21,91 +21,109 @@
 
 	<WorldObjectDef ParentName="WMH_WorldObjectBase">
 		<defName>WMH_Basilisk_MonsterEncounterWorldObject</defName>
+		<texture>World/WorldObjects/ContractBasilisk</texture>
 		<expandingIconTexture>World/WorldObjects/ContractBasilisk</expandingIconTexture>		
 	</WorldObjectDef>
-	
+
 	<WorldObjectDef ParentName="WMH_WorldObjectBase">
 		<defName>WMH_Bearofleet_MonsterEncounterWorldObject</defName>
+		<texture>World/WorldObjects/ContractBearofleet</texture>
 		<expandingIconTexture>World/WorldObjects/ContractBearofleet</expandingIconTexture>		
 	</WorldObjectDef>
-	
+
 	<WorldObjectDef ParentName="WMH_WorldObjectBase">
 		<defName>WMH_Chort_MonsterEncounterWorldObject</defName>
+		<texture>World/WorldObjects/ContractChort</texture>
 		<expandingIconTexture>World/WorldObjects/ContractChort</expandingIconTexture>		
 	</WorldObjectDef>
-	
+
 	<WorldObjectDef ParentName="WMH_WorldObjectBase">
 		<defName>WMH_Cyclops_MonsterEncounterWorldObject</defName>
+		<texture>World/WorldObjects/ContractCyclops</texture>
 		<expandingIconTexture>World/WorldObjects/ContractCyclops</expandingIconTexture>		
 	</WorldObjectDef>
-	
+
 	<WorldObjectDef ParentName="WMH_WorldObjectBase">
 		<defName>WMH_Djinn_MonsterEncounterWorldObject</defName>
+		<texture>World/WorldObjects/ContractDjinn</texture>
 		<expandingIconTexture>World/WorldObjects/ContractDjinn</expandingIconTexture>		
 	</WorldObjectDef>
-	
+
 	<WorldObjectDef ParentName="WMH_WorldObjectBase">
 		<defName>WMH_Ekimmara_MonsterEncounterWorldObject</defName>
+		<texture>World/WorldObjects/ContractEkimmara</texture>
 		<expandingIconTexture>World/WorldObjects/ContractEkimmara</expandingIconTexture>		
 	</WorldObjectDef>
-	
+
 	<WorldObjectDef ParentName="WMH_WorldObjectBase">
 		<defName>WMH_Fiend_MonsterEncounterWorldObject</defName>
+		<texture>World/WorldObjects/ContractFiend</texture>
 		<expandingIconTexture>World/WorldObjects/ContractFiend</expandingIconTexture>		
 	</WorldObjectDef>
-	
+
 	<WorldObjectDef ParentName="WMH_WorldObjectBase">
 		<defName>WMH_Fleder_MonsterEncounterWorldObject</defName>
+		<texture>World/WorldObjects/ContractFleder</texture>
 		<expandingIconTexture>World/WorldObjects/ContractFleder</expandingIconTexture>		
 	</WorldObjectDef>
-	
+
 	<WorldObjectDef ParentName="WMH_WorldObjectBase">
 		<defName>WMH_Fogler_MonsterEncounterWorldObject</defName>
+		<texture>World/WorldObjects/ContractFogler</texture>
 		<expandingIconTexture>World/WorldObjects/ContractFogler</expandingIconTexture>		
 	</WorldObjectDef>
-	
+
 	<WorldObjectDef ParentName="WMH_WorldObjectBase">
 		<defName>WMH_Ghoul_MonsterEncounterWorldObject</defName>
+		<texture>World/WorldObjects/ContractGhoul</texture>
 		<expandingIconTexture>World/WorldObjects/ContractGhoul</expandingIconTexture>		
 	</WorldObjectDef>
-	
+
 	<WorldObjectDef ParentName="WMH_WorldObjectBase">
 		<defName>WMH_Golem_MonsterEncounterWorldObject</defName>
+		<texture>World/WorldObjects/ContractGolem</texture>
 		<expandingIconTexture>World/WorldObjects/ContractGolem</expandingIconTexture>		
 	</WorldObjectDef>
-	
+
 	<WorldObjectDef ParentName="WMH_WorldObjectBase">
 		<defName>WMH_Hym_MonsterEncounterWorldObject</defName>
+		<texture>World/WorldObjects/ContractHym</texture>
 		<expandingIconTexture>World/WorldObjects/ContractHym</expandingIconTexture>		
 	</WorldObjectDef>
-	
+
 	<WorldObjectDef ParentName="WMH_WorldObjectBase">
 		<defName>WMH_KikimoreQueen_MonsterEncounterWorldObject</defName>
+		<texture>World/WorldObjects/ContractKikimore</texture>
 		<expandingIconTexture>World/WorldObjects/ContractKikimore</expandingIconTexture>		
 	</WorldObjectDef>
-	
+
 	<WorldObjectDef ParentName="WMH_WorldObjectBase">
 		<defName>WMH_Leshy_MonsterEncounterWorldObject</defName>
+		<texture>World/WorldObjects/ContractLeshy</texture>
 		<expandingIconTexture>World/WorldObjects/ContractLeshy</expandingIconTexture>		
 	</WorldObjectDef>
-	
+
 	<WorldObjectDef ParentName="WMH_WorldObjectBase">
 		<defName>WMH_Nekker_MonsterEncounterWorldObject</defName>
+		<texture>World/WorldObjects/ContractNekker</texture>
 		<expandingIconTexture>World/WorldObjects/ContractNekker</expandingIconTexture>		
 	</WorldObjectDef>
-	
+
 	<WorldObjectDef ParentName="WMH_WorldObjectBase">
 		<defName>WMH_Werewolf_MonsterEncounterWorldObject</defName>
+		<texture>World/WorldObjects/ContractWerewolf</texture>
 		<expandingIconTexture>World/WorldObjects/ContractWerewolf</expandingIconTexture>		
 	</WorldObjectDef>
-	
+
 	<WorldObjectDef ParentName="WMH_WorldObjectBase">
 		<defName>WMH_Wraith_MonsterEncounterWorldObject</defName>
+		<texture>World/WorldObjects/ContractWraith</texture>
 		<expandingIconTexture>World/WorldObjects/ContractWraith</expandingIconTexture>		
 	</WorldObjectDef>
-	
+
 	<WorldObjectDef ParentName="WMH_WorldObjectBase">
 		<defName>WMH_Wyvern_MonsterEncounterWorldObject</defName>
+		<texture>World/WorldObjects/ContractWyvern</texture>
 		<expandingIconTexture>World/WorldObjects/ContractWyvern</expandingIconTexture>		
 	</WorldObjectDef>
 

@@ -63,7 +63,7 @@ namespace WMHAnimalBehaviours
                             if (chosenOne != null)
                             {
 
-                                if (!chosenOne.Dead && !chosenOne.Downed)
+                                if (!chosenOne.Dead && !chosenOne.Downed && chosenOne.GetStatValue(StatDefOf.PsychicSensitivity, true) > 0f)
                                 {
                                     Find.TickManager.slower.SignalForceNormalSpeedShort();
 

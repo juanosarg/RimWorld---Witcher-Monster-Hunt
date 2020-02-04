@@ -114,6 +114,10 @@
 				<li>
 					<def>AnimalAdult</def>
 					<minAge>0</minAge>
+					<soundWounded>WMH_Pawn_Wyvern_Wounded</soundWounded>
+					<soundDeath>WMH_Pawn_Wyvern_Death</soundDeath>
+					<soundCall>WMH_Pawn_Wyvern_Call</soundCall>
+					<soundAngry>WMH_Pawn_Wyvern_Angry</soundAngry>
 				</li>
 
 			</lifeStageAges>

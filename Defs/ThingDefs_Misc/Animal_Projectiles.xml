@@ -23,8 +23,8 @@
 		<label>wyvern acid spit</label>
 		<thingClass>WMHAnimalRangeUnlocker.AnimalProjectile</thingClass>
 		<graphicData>
-			<texPath>Things/Projectiles/WMH_PoisonBolt</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Projectiles/WMH_AcidSpit</texPath>
+			<graphicClass>Graphic_Flicker</graphicClass>
 		</graphicData>
 		<projectile>
 			<flyOverhead>false</flyOverhead>
@@ -41,7 +41,7 @@
 
 		<graphicData>
 			<texPath>Things/Projectiles/WMH_Boulder</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
+			<graphicClass>Graphic_Flicker</graphicClass>
 			<drawSize>2</drawSize>
 		</graphicData>
 		<projectile>
@@ -58,7 +58,7 @@
 				<thingClass>WMHAnimalRangeUnlocker.AnimalProjectile</thingClass>
 		<graphicData>
 			<texPath>Things/Projectiles/WMH_WispProjectile</texPath>
-			<graphicClass>Graphic_Random</graphicClass>
+			<graphicClass>Graphic_Flicker</graphicClass>
 		</graphicData>
 		<projectile>
 			<flyOverhead>false</flyOverhead>

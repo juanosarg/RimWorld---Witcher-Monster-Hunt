@@ -82,7 +82,10 @@
 				<li>
 					<def>AnimalAdult</def>
 					<minAge>0</minAge>
-					
+					<soundWounded>WMH_Pawn_Wraith_Wounded</soundWounded>
+					<soundDeath>WMH_Pawn_Wraith_Death</soundDeath>
+					<soundCall>WMH_Pawn_Wraith_Call</soundCall>
+					<soundAngry>WMH_Pawn_Wraith_Angry</soundAngry>
 				</li>
 			</lifeStageAges>
 			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>

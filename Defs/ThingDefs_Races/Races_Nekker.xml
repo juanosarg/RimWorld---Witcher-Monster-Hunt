@@ -82,6 +82,10 @@
 				<li>
 					<def>AnimalAdult</def>
 					<minAge>0</minAge>
+					<soundWounded>WMH_Pawn_Nekker_Wounded</soundWounded>
+					<soundDeath>WMH_Pawn_Nekker_Death</soundDeath>
+					<soundCall>WMH_Pawn_Nekker_Call</soundCall>
+					<soundAngry>WMH_Pawn_Nekker_Angry</soundAngry>
 
 				</li>
 			</lifeStageAges>

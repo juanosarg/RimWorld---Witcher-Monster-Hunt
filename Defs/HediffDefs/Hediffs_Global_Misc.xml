@@ -11,7 +11,7 @@
 
 		<stages>
 			<li>
-				<painFactor>0.5</painFactor>
+				<painFactor>0.01</painFactor>
 				<statOffsets>
 					<PainShockThreshold>1</PainShockThreshold>
 				</statOffsets>

@@ -12,7 +12,7 @@
 			<MoveSpeed>3.00</MoveSpeed>
 			<ArmorRating_Heat>-0.5</ArmorRating_Heat>
 			<Flammability>1.5</Flammability>
-			<ComfyTemperatureMin>0</ComfyTemperatureMin>
+			<ComfyTemperatureMin>-30</ComfyTemperatureMin>
 			<MarketValue>100</MarketValue>
 			<LeatherAmount>0</LeatherAmount>
 		</statBases>
@@ -112,7 +112,7 @@
 			<MoveSpeed>3.00</MoveSpeed>
 			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.5</ArmorRating_Sharp>
-			<ComfyTemperatureMin>0</ComfyTemperatureMin>
+			<ComfyTemperatureMin>-30</ComfyTemperatureMin>
 			<ArmorRating_Heat>-0.3</ArmorRating_Heat>
 			<Flammability>1.5</Flammability>
 			<MarketValue>200</MarketValue>
@@ -229,7 +229,7 @@
 			<ArmorRating_Sharp>0.80</ArmorRating_Sharp>
 			<ArmorRating_Heat>-0.2</ArmorRating_Heat>
 			<Flammability>1.25</Flammability>
-			<ComfyTemperatureMin>0</ComfyTemperatureMin>
+			<ComfyTemperatureMin>-30</ComfyTemperatureMin>
 			<MarketValue>450</MarketValue>
 			<LeatherAmount>0</LeatherAmount>
 		</statBases>
