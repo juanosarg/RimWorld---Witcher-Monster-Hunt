@@ -2,7 +2,52 @@
 <Defs>
 
 
-	<ThingDef ParentName="SculptureBase" Name="WMH_LargeTrophyBase" Abstract="True">
+	<ThingDef ParentName="BuildingBase" Name="WMH_SculptureBase" Abstract="True">
+		<thingClass>Building_Art</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<castEdgeShadows>true</castEdgeShadows>
+		<useHitPoints>true</useHitPoints>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		
+		<statBases>
+			<Flammability>1.0</Flammability>
+			<SellPriceFactor>1.50</SellPriceFactor>
+		</statBases>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtSculpture</nameMaker>
+				<descriptionMaker>ArtDescription_Sculpture</descriptionMaker>
+				<canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
+			</li>
+		</comps>
+		<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>
+		<recipeMaker>
+			<workSpeedStat>SculptingSpeed</workSpeedStat>
+			<workSkill>Artistic</workSkill>
+			<unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
+			<effectWorking>Sculpt</effectWorking>
+			<soundWorking>Recipe_Sculpt</soundWorking>
+			<recipeUsers>
+				<li>TableSculpting</li>
+			</recipeUsers>
+			<defaultIngredientFilter>
+				<categories>
+					<li>Root</li>
+				</categories>
+				
+			</defaultIngredientFilter>
+		</recipeMaker>
+	</ThingDef>
+
+
+	<ThingDef ParentName="WMH_SculptureBase" Name="WMH_LargeTrophyBase" Abstract="True">
 		<graphicData>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2,2)</drawSize>
@@ -28,7 +73,7 @@
 		<costStuffCount>100</costStuffCount>
 	</ThingDef>
 
-	<ThingDef ParentName="SculptureBase" Name="WMH_GrandTrophyBase" Abstract="True">
+	<ThingDef ParentName="WMH_SculptureBase" Name="WMH_GrandTrophyBase" Abstract="True">
 		<graphicData>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(4,4)</drawSize>

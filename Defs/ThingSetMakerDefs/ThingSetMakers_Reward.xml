@@ -6,13 +6,13 @@
     <debugParams> <!-- debug only! -->
       <totalMarketValueRange>
         <min>1700</min>
-        <max>3500</max>
+        <max>3700</max>
       </totalMarketValueRange>
     </debugParams>
     <root Class="ThingSetMaker_RandomOption">
       <fixedParams>
         <qualityGenerator>Reward</qualityGenerator>
-		<maxTotalMass>25</maxTotalMass>
+		<maxTotalMass>75</maxTotalMass>
       </fixedParams>
       <options>
         
