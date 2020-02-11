@@ -102,5 +102,10 @@
 		<defName>WMH_Wyvern_MonsterEncounterCore</defName>
 		<expandingIconTexture>World/WorldObjects/ContractWyvern</expandingIconTexture>		
 	</SiteCoreDef>
+	
+	<SiteCoreDef ParentName="WMH_MonsterEncounterCoreBase">
+		<defName>WMHAux_Uwutross_MonsterEncounterCore</defName>
+		<expandingIconTexture>World/WorldObjects/ContractUwutross</expandingIconTexture>		
+	</SiteCoreDef>
 
 </Defs>

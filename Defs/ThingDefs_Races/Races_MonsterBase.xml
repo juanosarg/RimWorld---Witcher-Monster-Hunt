@@ -35,7 +35,7 @@
 
 	<ThingDef ParentName="BasePawn" Name="WMH_UndeadMonsterBase" Abstract="True">
 		<statBases>
-			<Flammability>0</Flammability>
+			
 			<LeatherAmount>30</LeatherAmount>
 		</statBases>
 		<race>

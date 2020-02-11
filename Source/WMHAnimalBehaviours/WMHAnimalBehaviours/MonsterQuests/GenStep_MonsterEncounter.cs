@@ -365,5 +365,23 @@ namespace WMHAnimalBehaviours
         }
     }
 
-   
+    public class GenStep_MonsterEncounter_Uwutross : GenStep_BasicGenWMH
+    {
+        public const int edgeSize = 40;
+
+        public override void Generate(Map map, GenStepParams parms)
+        {
+            PawnKindDef huntingKind = Find.WorldObjects.WorldObjectAt(map.Tile, DefDatabase<WorldObjectDef>.GetNamed("WMHAux_Uwutross_MonsterEncounterWorldObject", true)).GetComponent<WorldObjectComp_MonsterToHunt>().monsterKindDef;
+            base.Generate(map, parms);
+            CellRect rect = new CellRect(Rand.RangeInclusive(this.adventureRegion.minX + 10, this.adventureRegion.maxX - (edgeSize + 10)), Rand.RangeInclusive(this.adventureRegion.minZ + 10, this.adventureRegion.maxZ - (edgeSize + 10)), edgeSize, edgeSize);
+            rect.ClipInsideMap(map);
+            ResolveParams animalResolveParams = this.baseResolveParams;
+            animalResolveParams.rect = rect;
+            animalResolveParams.singlePawnKindDef = huntingKind;
+            BaseGen.symbolStack.Push("WMH_SpawnHuntingMonstersSymbol", animalResolveParams);
+            BaseGen.Generate();
+        }
+    }
+
+
 }

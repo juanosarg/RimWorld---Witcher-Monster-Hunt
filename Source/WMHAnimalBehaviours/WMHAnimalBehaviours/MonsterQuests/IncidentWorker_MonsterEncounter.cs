@@ -1,6 +1,7 @@
 ﻿using Verse;
 using System.Collections.Generic;
 using System.Linq;
+using System;
 using RimWorld;
 using RimWorld.Planet;
 
@@ -73,11 +74,20 @@ namespace WMHAnimalBehaviours
             IEnumerable<PawnKindDef> animalList = (from k in DefDatabase<PawnKindDef>.AllDefs
                                                    where k.defName.Contains("WMH_")
                                                    select k);
+
             if (animalList.Count() < 1)
             {
                 return false;
             }
+            
             PawnKindDef huntingTarget = animalList.RandomElement();
+
+            Random random = new Random();
+            if (WMH_Settings.WMH_GloryMode && random.NextDouble() > 0.95)
+            {
+                huntingTarget = PawnKindDef.Named("WMHAux_Uwutross");
+            }
+
             Site site = MakeSite(tile, 20, faction, huntingTarget);
             site.sitePartsKnown = true;
             List<Thing> list = GenerateRewards(faction, site.desiredThreatPoints, huntingTarget);

@@ -126,5 +126,12 @@
 		<texture>World/WorldObjects/ContractWyvern</texture>
 		<expandingIconTexture>World/WorldObjects/ContractWyvern</expandingIconTexture>		
 	</WorldObjectDef>
+	
+	<WorldObjectDef ParentName="WMH_WorldObjectBase">
+		<defName>WMHAux_Uwutross_MonsterEncounterWorldObject</defName>
+		<texture>World/WorldObjects/ContractUwutross</texture>
+		<expandingIconTexture>World/WorldObjects/ContractUwutross</expandingIconTexture>		
+	</WorldObjectDef>
+
 
 </Defs>

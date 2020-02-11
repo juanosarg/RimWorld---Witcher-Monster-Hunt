@@ -67,6 +67,24 @@
 			<speed>10</speed>
 		</projectile>
 	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>WMH_Bullet_Rock</defName>
+		<label>rock</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectiles/WMH_UwuBoulder</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<flyOverhead>true</flyOverhead>
+			<explosionRadius >1.9</explosionRadius >
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>40</damageAmountBase>
+			<speed>20</speed>
+		</projectile>
+	</ThingDef>
+
 
 
 

@@ -12,7 +12,6 @@
 			<LeatherAmount>0</LeatherAmount>
 			<MeatAmount>0</MeatAmount>
 			<Flammability>1.5</Flammability>
-			<ArmorRating_Heat>-0.3</ArmorRating_Heat>
 			
 		</statBases>
 		<tools>
