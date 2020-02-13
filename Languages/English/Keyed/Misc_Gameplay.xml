@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
+
+
+	<!-- Incident Letters -->
+	<WMH_Nekker_LetterText>is reporting missing caravans and slaughtered livestock. All clues point to a nest of Nekkers.</WMH_Nekker_LetterText>
+	
+
 	<!-- Misc -->
 	<WMH_DisableEvents>Disable all monster events (this efectively disables the mod)</WMH_DisableEvents>
 	<WMH_GloryMode>Glory Mode (you are not prepared)</WMH_GloryMode>

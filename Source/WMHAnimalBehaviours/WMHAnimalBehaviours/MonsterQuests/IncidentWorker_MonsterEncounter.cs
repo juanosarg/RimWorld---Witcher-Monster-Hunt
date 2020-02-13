@@ -122,7 +122,7 @@ namespace WMHAnimalBehaviours
 
         private void GetLetterText(Faction alliedFaction, PawnKindDef animalDef, string things,string money, out string letter, out string label)
         {
-            letter = string.Format(base.def.letterText, alliedFaction.leader.LabelShort, alliedFaction.def.leaderTitle, alliedFaction.Name, animalDef.LabelCap,money,things);
+            letter = string.Format(base.def.letterText, alliedFaction.leader.LabelShort, alliedFaction.def.leaderTitle, alliedFaction.Name, (animalDef.defName+"_LetterText").Translate(), money,things);
             label = this.def.letterLabel;
 
 
