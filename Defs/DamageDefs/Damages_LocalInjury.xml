@@ -3,17 +3,26 @@
 
 
 
-	<DamageDef ParentName="Bite">
+
+	
+	<DamageDef>
 		<defName>WMH_VeryToxicBite</defName>
 		<label>virulent toxic bite</label>
+		<workerClass>DamageWorker_Stab</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has been stung to death.</deathMessage>
+		<hediff>Stab</hediff>
+		<hediffSolid>Crack</hediffSolid>
 		<additionalHediffs>
 			<li>
 				<hediff>WMH_ToxicBuildup</hediff>
 				<severityPerDamageDealt>0.03</severityPerDamageDealt>
 				<victimSeverityScaling>ToxicSensitivity</victimSeverityScaling>
-
 			</li>
 		</additionalHediffs>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Slice</impactSoundType>
+		<armorCategory>Sharp</armorCategory>
 	</DamageDef>
 
 	<DamageDef ParentName="Bite">
