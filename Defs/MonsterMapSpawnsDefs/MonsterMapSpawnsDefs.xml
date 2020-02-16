@@ -7,6 +7,17 @@
       <allowOnWater>false</allowOnWater>
 	  <numberToSpawn>80</numberToSpawn>
    	  <associatedMonster>WMH_Ghoul</associatedMonster> 
+	   <terrainValidationDisallowed>
+         
+		 <li>WaterDeep</li>
+		 <li>WaterOceanDeep</li>
+		 <li>WaterMovingChestDeep</li>
+		 <li>WaterOceanDeep</li>
+		 <li>WaterShallow</li>
+		 <li>WaterOceanShallow</li>
+		<li>WaterMovingShallow</li>
+
+      </terrainValidationDisallowed>
    </WMHAnimalBehaviours.MonsterMapSpawnsDef>
    
    <WMHAnimalBehaviours.MonsterMapSpawnsDef>
@@ -15,6 +26,17 @@
       <allowOnWater>false</allowOnWater>
 	  <numberToSpawn>30</numberToSpawn>
    	  <associatedMonster>WMH_KikimoreQueen</associatedMonster>  
+	  <terrainValidationDisallowed>
+         
+		 <li>WaterDeep</li>
+		 <li>WaterOceanDeep</li>
+		 <li>WaterMovingChestDeep</li>
+		 <li>WaterOceanDeep</li>
+		 <li>WaterShallow</li>
+		 <li>WaterOceanShallow</li>
+		<li>WaterMovingShallow</li>
+
+      </terrainValidationDisallowed>
    </WMHAnimalBehaviours.MonsterMapSpawnsDef>
    
    <WMHAnimalBehaviours.MonsterMapSpawnsDef>
@@ -23,6 +45,17 @@
       <allowOnWater>false</allowOnWater>
 	  <numberToSpawn>15</numberToSpawn>
    	  <associatedMonster>WMH_Leshy</associatedMonster> 
+	  <terrainValidationDisallowed>
+         
+		 <li>WaterDeep</li>
+		 <li>WaterOceanDeep</li>
+		 <li>WaterMovingChestDeep</li>
+		 <li>WaterOceanDeep</li>
+		 <li>WaterShallow</li>
+		 <li>WaterOceanShallow</li>
+		<li>WaterMovingShallow</li>
+
+      </terrainValidationDisallowed>
    </WMHAnimalBehaviours.MonsterMapSpawnsDef>
    
    <WMHAnimalBehaviours.MonsterMapSpawnsDef>
@@ -31,6 +64,17 @@
       <allowOnWater>false</allowOnWater>
 	  <numberToSpawn>35</numberToSpawn>
    	  <associatedMonster>WMH_Wraith</associatedMonster>  
+	  <terrainValidationDisallowed>
+         
+		 <li>WaterDeep</li>
+		 <li>WaterOceanDeep</li>
+		 <li>WaterMovingChestDeep</li>
+		 <li>WaterOceanDeep</li>
+		 <li>WaterShallow</li>
+		 <li>WaterOceanShallow</li>
+		<li>WaterMovingShallow</li>
+
+      </terrainValidationDisallowed>
    </WMHAnimalBehaviours.MonsterMapSpawnsDef>
    
    <WMHAnimalBehaviours.MonsterMapSpawnsDef>
@@ -39,6 +83,17 @@
       <allowOnWater>false</allowOnWater>
 	  <numberToSpawn>35</numberToSpawn>
    	  <associatedMonster>WMH_Hym</associatedMonster>  
+	  <terrainValidationDisallowed>
+         
+		 <li>WaterDeep</li>
+		 <li>WaterOceanDeep</li>
+		 <li>WaterMovingChestDeep</li>
+		 <li>WaterOceanDeep</li>
+		 <li>WaterShallow</li>
+		 <li>WaterOceanShallow</li>
+		<li>WaterMovingShallow</li>
+
+      </terrainValidationDisallowed>
    </WMHAnimalBehaviours.MonsterMapSpawnsDef>
    
 

@@ -12,8 +12,8 @@ namespace WMHAnimalBehaviours
             public ThingDef thingDef;
             public bool allowOnWater;
             public int numberToSpawn;
-           
-            public PawnKindDef associatedMonster;
+        public List<string> terrainValidationDisallowed;
+        public PawnKindDef associatedMonster;
 
         }
     }

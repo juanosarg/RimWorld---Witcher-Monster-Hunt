@@ -63,8 +63,15 @@ namespace WMHAnimalBehaviours
 
                         TerrainDef terrain = c.GetTerrain(map);
 
-                      
-                       
+
+                        foreach (string notAllowed in element.terrainValidationDisallowed)
+                        {
+                            if (terrain.defName == notAllowed)
+                            {
+                                canSpawn = false;
+                                break;
+                            }
+                        }
 
                         if (canSpawn)
                         {
