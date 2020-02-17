@@ -2,9 +2,17 @@
 <ModMetaData>
 	<name>RimWorld - Witcher Monster Hunt</name>
 	<author>Oskar Potocki, Sarg Bjornson</author>
-	<supportedVersions><li>1.0</li></supportedVersions>
+	<supportedGameVersions>
+
+		<li>1.1</li>
+	</supportedGameVersions>
+	<supportedVersions>
+		<li>1.0</li>
+		<li>1.1</li>
+	</supportedVersions>
+	<packageId>sargoskar.witcherhunt</packageId>
 	<description>Beta
-	
+
 &lt;size=24&gt;Features&lt;/size&gt;
 
 
@@ -21,7 +29,7 @@
 
 v0.1: Prerelease
 
-	
+
 
 	</description>
 </ModMetaData>

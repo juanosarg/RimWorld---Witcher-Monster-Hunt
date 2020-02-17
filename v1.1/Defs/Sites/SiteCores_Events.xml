@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>  
+
+	<SitePartDef Name="WMH_MonsterEncounterCoreBase" Abstract="True">
+
+		<label>monster encounter</label>
+		<description>The place where a monster is roaming.</description>
+		<siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
+
+		<forceExitAndRemoveMapCountdownDurationDays>6</forceExitAndRemoveMapCountdownDurationDays>
+		<wantsThreatPoints>true</wantsThreatPoints>
+
+	</SitePartDef>
+
+	<SitePartDef ParentName="WMH_MonsterEncounterCoreBase">
+		<defName>WMH_Basilisk_MonsterEncounterCore</defName>
+		<expandingIconTexture>World/WorldObjects/ContractBasilisk</expandingIconTexture>
+	</SitePartDef>
+	
+	<SitePartDef ParentName="WMH_MonsterEncounterCoreBase">
+		<defName>WMH_Bearofleet_MonsterEncounterCore</defName>
+		<expandingIconTexture>World/WorldObjects/ContractBearofleet</expandingIconTexture>		
+	</SitePartDef>
+	
+	<SitePartDef ParentName="WMH_MonsterEncounterCoreBase">
+		<defName>WMH_Chort_MonsterEncounterCore</defName>
+		<expandingIconTexture>World/WorldObjects/ContractChort</expandingIconTexture>		
+	</SitePartDef>
+	
+	<SitePartDef ParentName="WMH_MonsterEncounterCoreBase">
+		<defName>WMH_Cyclops_MonsterEncounterCore</defName>
+		<expandingIconTexture>World/WorldObjects/ContractCyclops</expandingIconTexture>		
+	</SitePartDef>
+	
+	<SitePartDef ParentName="WMH_MonsterEncounterCoreBase">
+		<defName>WMH_Djinn_MonsterEncounterCore</defName>
+		<expandingIconTexture>World/WorldObjects/ContractDjinn</expandingIconTexture>		
+	</SitePartDef>
+	
+	<SitePartDef ParentName="WMH_MonsterEncounterCoreBase">
+		<defName>WMH_Ekimmara_MonsterEncounterCore</defName>
+		<expandingIconTexture>World/WorldObjects/ContractEkimmara</expandingIconTexture>		
+	</SitePartDef>
+	
+	<SitePartDef ParentName="WMH_MonsterEncounterCoreBase">
+		<defName>WMH_Fiend_MonsterEncounterCore</defName>
+		<expandingIconTexture>World/WorldObjects/ContractFiend</expandingIconTexture>		
+	</SitePartDef>
+	
+	<SitePartDef ParentName="WMH_MonsterEncounterCoreBase">
+		<defName>WMH_Fleder_MonsterEncounterCore</defName>
+		<expandingIconTexture>World/WorldObjects/ContractFleder</expandingIconTexture>		
+	</SitePartDef>
+	
+	<SitePartDef ParentName="WMH_MonsterEncounterCoreBase">
+		<defName>WMH_Fogler_MonsterEncounterCore</defName>
+		<expandingIconTexture>World/WorldObjects/ContractFogler</expandingIconTexture>		
+	</SitePartDef>
+	
+	<SitePartDef ParentName="WMH_MonsterEncounterCoreBase">
+		<defName>WMH_Ghoul_MonsterEncounterCore</defName>
+		<expandingIconTexture>World/WorldObjects/ContractGhoul</expandingIconTexture>		
+	</SitePartDef>
+	
+	<SitePartDef ParentName="WMH_MonsterEncounterCoreBase">
+		<defName>WMH_Golem_MonsterEncounterCore</defName>
+		<expandingIconTexture>World/WorldObjects/ContractGolem</expandingIconTexture>		
+	</SitePartDef>
+	
+	<SitePartDef ParentName="WMH_MonsterEncounterCoreBase">
+		<defName>WMH_Hym_MonsterEncounterCore</defName>
+		<expandingIconTexture>World/WorldObjects/ContractHym</expandingIconTexture>		
+	</SitePartDef>
+	
+	<SitePartDef ParentName="WMH_MonsterEncounterCoreBase">
+		<defName>WMH_KikimoreQueen_MonsterEncounterCore</defName>
+		<expandingIconTexture>World/WorldObjects/ContractKikimore</expandingIconTexture>		
+	</SitePartDef>
+	
+	<SitePartDef ParentName="WMH_MonsterEncounterCoreBase">
+		<defName>WMH_Leshy_MonsterEncounterCore</defName>
+		<expandingIconTexture>World/WorldObjects/ContractLeshy</expandingIconTexture>		
+	</SitePartDef>
+	
+	<SitePartDef ParentName="WMH_MonsterEncounterCoreBase">
+		<defName>WMH_Nekker_MonsterEncounterCore</defName>
+		<expandingIconTexture>World/WorldObjects/ContractNekker</expandingIconTexture>		
+	</SitePartDef>
+	
+	<SitePartDef ParentName="WMH_MonsterEncounterCoreBase">
+		<defName>WMH_Werewolf_MonsterEncounterCore</defName>
+		<expandingIconTexture>World/WorldObjects/ContractWerewolf</expandingIconTexture>		
+	</SitePartDef>
+	
+	<SitePartDef ParentName="WMH_MonsterEncounterCoreBase">
+		<defName>WMH_Wraith_MonsterEncounterCore</defName>
+		<expandingIconTexture>World/WorldObjects/ContractWraith</expandingIconTexture>		
+	</SitePartDef>
+	
+	<SitePartDef ParentName="WMH_MonsterEncounterCoreBase">
+		<defName>WMH_Wyvern_MonsterEncounterCore</defName>
+		<expandingIconTexture>World/WorldObjects/ContractWyvern</expandingIconTexture>		
+	</SitePartDef>
+	
+	<SitePartDef ParentName="WMH_MonsterEncounterCoreBase">
+		<defName>WMHAux_Uwutross_MonsterEncounterCore</defName>
+		<expandingIconTexture>World/WorldObjects/ContractUwutross</expandingIconTexture>		
+	</SitePartDef>
+
+</Defs>
