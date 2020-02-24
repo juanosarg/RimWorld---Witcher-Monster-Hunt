@@ -3,7 +3,7 @@
   
 	
 	
-	<IncidentDef>
+	<!--<IncidentDef>
 		<defName>WMH_MonsterEncounterIncident</defName>
 		<label>monster hunt</label>
 		<category>Misc</category>
@@ -17,7 +17,7 @@
 		<baseChance>1</baseChance>
 		<minRefireDays>15</minRefireDays>
 		
-	</IncidentDef>
+	</IncidentDef>-->
 	
 	
   

@@ -7,7 +7,8 @@
 		<label>monster encounter</label>
 		<description>The place where a monster is roaming.</description>
 		<siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
-
+		<approachOrderString>Attack {0}</approachOrderString>
+		<approachingReportString>Attacking {0}</approachingReportString>
 		<forceExitAndRemoveMapCountdownDurationDays>6</forceExitAndRemoveMapCountdownDurationDays>
 		<wantsThreatPoints>true</wantsThreatPoints>
 
@@ -16,6 +17,9 @@
 	<SitePartDef ParentName="WMH_MonsterEncounterCoreBase">
 		<defName>WMH_Basilisk_MonsterEncounterCore</defName>
 		<expandingIconTexture>World/WorldObjects/ContractBasilisk</expandingIconTexture>
+		<tags Inherit="False">
+			<li>WMH_Basilisk_MonsterEncounterCore</li>
+		</tags>
 	</SitePartDef>
 	
 	<SitePartDef ParentName="WMH_MonsterEncounterCoreBase">
