@@ -66,13 +66,14 @@ namespace WMHAnimalBehaviours
 
         public override void Generate(Map map, GenStepParams parms)
         {
-            PawnKindDef huntingKind = Find.WorldObjects.WorldObjectAt(map.Tile, DefDatabase<WorldObjectDef>.GetNamed("WMH_Bearofleet_MonsterEncounterWorldObject", true)).GetComponent<WorldObjectComp_MonsterToHunt>().monsterKindDef;
+            PawnKindDef huntingKind = PawnKindDef.Named("WMH_Bearofleet");
             base.Generate(map, parms);
             CellRect rect = new CellRect(Rand.RangeInclusive(this.adventureRegion.minX + 10, this.adventureRegion.maxX - (edgeSize + 10)), Rand.RangeInclusive(this.adventureRegion.minZ + 10, this.adventureRegion.maxZ - (edgeSize + 10)), edgeSize, edgeSize);
             rect.ClipInsideMap(map);
             ResolveParams animalResolveParams = this.baseResolveParams;
             animalResolveParams.rect = rect;
             animalResolveParams.singlePawnKindDef = huntingKind;
+            animalResolveParams.faction = FactionUtility.DefaultFactionFrom(huntingKind.defaultFactionType);
             BaseGen.symbolStack.Push("WMH_SpawnHuntingMonstersSymbol", animalResolveParams);
             BaseGen.Generate();
         }
@@ -84,13 +85,15 @@ namespace WMHAnimalBehaviours
 
         public override void Generate(Map map, GenStepParams parms)
         {
-            PawnKindDef huntingKind = Find.WorldObjects.WorldObjectAt(map.Tile, DefDatabase<WorldObjectDef>.GetNamed("WMH_Chort_MonsterEncounterWorldObject", true)).GetComponent<WorldObjectComp_MonsterToHunt>().monsterKindDef;
+            PawnKindDef huntingKind = PawnKindDef.Named("WMH_Chort");
             base.Generate(map, parms);
             CellRect rect = new CellRect(Rand.RangeInclusive(this.adventureRegion.minX + 10, this.adventureRegion.maxX - (edgeSize + 10)), Rand.RangeInclusive(this.adventureRegion.minZ + 10, this.adventureRegion.maxZ - (edgeSize + 10)), edgeSize, edgeSize);
             rect.ClipInsideMap(map);
             ResolveParams animalResolveParams = this.baseResolveParams;
             animalResolveParams.rect = rect;
             animalResolveParams.singlePawnKindDef = huntingKind;
+            animalResolveParams.faction = FactionUtility.DefaultFactionFrom(huntingKind.defaultFactionType);
+
             BaseGen.symbolStack.Push("WMH_SpawnHuntingMonstersSymbol", animalResolveParams);
             BaseGen.Generate();
         }
@@ -102,13 +105,15 @@ namespace WMHAnimalBehaviours
 
         public override void Generate(Map map, GenStepParams parms)
         {
-            PawnKindDef huntingKind = Find.WorldObjects.WorldObjectAt(map.Tile, DefDatabase<WorldObjectDef>.GetNamed("WMH_Cyclops_MonsterEncounterWorldObject", true)).GetComponent<WorldObjectComp_MonsterToHunt>().monsterKindDef;
+            PawnKindDef huntingKind = PawnKindDef.Named("WMH_Cyclops");
             base.Generate(map, parms);
             CellRect rect = new CellRect(Rand.RangeInclusive(this.adventureRegion.minX + 10, this.adventureRegion.maxX - (edgeSize + 10)), Rand.RangeInclusive(this.adventureRegion.minZ + 10, this.adventureRegion.maxZ - (edgeSize + 10)), edgeSize, edgeSize);
             rect.ClipInsideMap(map);
             ResolveParams animalResolveParams = this.baseResolveParams;
             animalResolveParams.rect = rect;
             animalResolveParams.singlePawnKindDef = huntingKind;
+            animalResolveParams.faction = FactionUtility.DefaultFactionFrom(huntingKind.defaultFactionType);
+
             BaseGen.symbolStack.Push("WMH_SpawnHuntingMonstersSymbol", animalResolveParams);
             BaseGen.Generate();
         }
@@ -120,13 +125,15 @@ namespace WMHAnimalBehaviours
 
         public override void Generate(Map map, GenStepParams parms)
         {
-            PawnKindDef huntingKind = Find.WorldObjects.WorldObjectAt(map.Tile, DefDatabase<WorldObjectDef>.GetNamed("WMH_Djinn_MonsterEncounterWorldObject", true)).GetComponent<WorldObjectComp_MonsterToHunt>().monsterKindDef;
+            PawnKindDef huntingKind = PawnKindDef.Named("WMH_Djinn");
             base.Generate(map, parms);
             CellRect rect = new CellRect(Rand.RangeInclusive(this.adventureRegion.minX + 10, this.adventureRegion.maxX - (edgeSize + 10)), Rand.RangeInclusive(this.adventureRegion.minZ + 10, this.adventureRegion.maxZ - (edgeSize + 10)), edgeSize, edgeSize);
             rect.ClipInsideMap(map);
             ResolveParams animalResolveParams = this.baseResolveParams;
             animalResolveParams.rect = rect;
             animalResolveParams.singlePawnKindDef = huntingKind;
+            animalResolveParams.faction = FactionUtility.DefaultFactionFrom(huntingKind.defaultFactionType);
+
             BaseGen.symbolStack.Push("WMH_SpawnHuntingMonstersSymbol", animalResolveParams);
             BaseGen.Generate();
         }
@@ -138,13 +145,15 @@ namespace WMHAnimalBehaviours
 
         public override void Generate(Map map, GenStepParams parms)
         {
-            PawnKindDef huntingKind = Find.WorldObjects.WorldObjectAt(map.Tile, DefDatabase<WorldObjectDef>.GetNamed("WMH_Ekimmara_MonsterEncounterWorldObject", true)).GetComponent<WorldObjectComp_MonsterToHunt>().monsterKindDef;
+            PawnKindDef huntingKind = PawnKindDef.Named("WMH_Ekimmara");
             base.Generate(map, parms);
             CellRect rect = new CellRect(Rand.RangeInclusive(this.adventureRegion.minX + 10, this.adventureRegion.maxX - (edgeSize + 10)), Rand.RangeInclusive(this.adventureRegion.minZ + 10, this.adventureRegion.maxZ - (edgeSize + 10)), edgeSize, edgeSize);
             rect.ClipInsideMap(map);
             ResolveParams animalResolveParams = this.baseResolveParams;
             animalResolveParams.rect = rect;
             animalResolveParams.singlePawnKindDef = huntingKind;
+            animalResolveParams.faction = FactionUtility.DefaultFactionFrom(huntingKind.defaultFactionType);
+
             BaseGen.symbolStack.Push("WMH_SpawnHuntingMonstersSymbol", animalResolveParams);
             BaseGen.Generate();
         }
@@ -156,13 +165,15 @@ namespace WMHAnimalBehaviours
 
         public override void Generate(Map map, GenStepParams parms)
         {
-            PawnKindDef huntingKind = Find.WorldObjects.WorldObjectAt(map.Tile, DefDatabase<WorldObjectDef>.GetNamed("WMH_Fiend_MonsterEncounterWorldObject", true)).GetComponent<WorldObjectComp_MonsterToHunt>().monsterKindDef;
+            PawnKindDef huntingKind = PawnKindDef.Named("WMH_Fiend");
             base.Generate(map, parms);
             CellRect rect = new CellRect(Rand.RangeInclusive(this.adventureRegion.minX + 10, this.adventureRegion.maxX - (edgeSize + 10)), Rand.RangeInclusive(this.adventureRegion.minZ + 10, this.adventureRegion.maxZ - (edgeSize + 10)), edgeSize, edgeSize);
             rect.ClipInsideMap(map);
             ResolveParams animalResolveParams = this.baseResolveParams;
             animalResolveParams.rect = rect;
             animalResolveParams.singlePawnKindDef = huntingKind;
+            animalResolveParams.faction = FactionUtility.DefaultFactionFrom(huntingKind.defaultFactionType);
+
             BaseGen.symbolStack.Push("WMH_SpawnHuntingMonstersSymbol", animalResolveParams);
             BaseGen.Generate();
         }
@@ -174,13 +185,15 @@ namespace WMHAnimalBehaviours
 
         public override void Generate(Map map, GenStepParams parms)
         {
-            PawnKindDef huntingKind = Find.WorldObjects.WorldObjectAt(map.Tile, DefDatabase<WorldObjectDef>.GetNamed("WMH_Fleder_MonsterEncounterWorldObject", true)).GetComponent<WorldObjectComp_MonsterToHunt>().monsterKindDef;
+            PawnKindDef huntingKind = PawnKindDef.Named("WMH_Fleder");
             base.Generate(map, parms);
             CellRect rect = new CellRect(Rand.RangeInclusive(this.adventureRegion.minX + 10, this.adventureRegion.maxX - (edgeSize + 10)), Rand.RangeInclusive(this.adventureRegion.minZ + 10, this.adventureRegion.maxZ - (edgeSize + 10)), edgeSize, edgeSize);
             rect.ClipInsideMap(map);
             ResolveParams animalResolveParams = this.baseResolveParams;
             animalResolveParams.rect = rect;
             animalResolveParams.singlePawnKindDef = huntingKind;
+            animalResolveParams.faction = FactionUtility.DefaultFactionFrom(huntingKind.defaultFactionType);
+
             BaseGen.symbolStack.Push("WMH_SpawnHuntingMonstersSymbol", animalResolveParams);
             BaseGen.Generate();
         }
@@ -192,13 +205,15 @@ namespace WMHAnimalBehaviours
 
         public override void Generate(Map map, GenStepParams parms)
         {
-            PawnKindDef huntingKind = Find.WorldObjects.WorldObjectAt(map.Tile, DefDatabase<WorldObjectDef>.GetNamed("WMH_Fogler_MonsterEncounterWorldObject", true)).GetComponent<WorldObjectComp_MonsterToHunt>().monsterKindDef;
+            PawnKindDef huntingKind = PawnKindDef.Named("WMH_Fogler");
             base.Generate(map, parms);
             CellRect rect = new CellRect(Rand.RangeInclusive(this.adventureRegion.minX + 10, this.adventureRegion.maxX - (edgeSize + 10)), Rand.RangeInclusive(this.adventureRegion.minZ + 10, this.adventureRegion.maxZ - (edgeSize + 10)), edgeSize, edgeSize);
             rect.ClipInsideMap(map);
             ResolveParams animalResolveParams = this.baseResolveParams;
             animalResolveParams.rect = rect;
             animalResolveParams.singlePawnKindDef = huntingKind;
+            animalResolveParams.faction = FactionUtility.DefaultFactionFrom(huntingKind.defaultFactionType);
+
             BaseGen.symbolStack.Push("WMH_SpawnHuntingMonstersSymbol", animalResolveParams);
             BaseGen.Generate();
         }
@@ -210,13 +225,15 @@ namespace WMHAnimalBehaviours
 
         public override void Generate(Map map, GenStepParams parms)
         {
-            PawnKindDef huntingKind = Find.WorldObjects.WorldObjectAt(map.Tile, DefDatabase<WorldObjectDef>.GetNamed("WMH_Ghoul_MonsterEncounterWorldObject", true)).GetComponent<WorldObjectComp_MonsterToHunt>().monsterKindDef;
+            PawnKindDef huntingKind = PawnKindDef.Named("WMH_Ghoul");
             base.Generate(map, parms);
             CellRect rect = new CellRect(Rand.RangeInclusive(this.adventureRegion.minX + 10, this.adventureRegion.maxX - (edgeSize + 10)), Rand.RangeInclusive(this.adventureRegion.minZ + 10, this.adventureRegion.maxZ - (edgeSize + 10)), edgeSize, edgeSize);
             rect.ClipInsideMap(map);
             ResolveParams animalResolveParams = this.baseResolveParams;
             animalResolveParams.rect = rect;
             animalResolveParams.singlePawnKindDef = huntingKind;
+            animalResolveParams.faction = FactionUtility.DefaultFactionFrom(huntingKind.defaultFactionType);
+
             BaseGen.symbolStack.Push("WMH_SpawnHuntingMonstersSymbol", animalResolveParams);
             BaseGen.Generate();
         }
@@ -228,13 +245,15 @@ namespace WMHAnimalBehaviours
 
         public override void Generate(Map map, GenStepParams parms)
         {
-            PawnKindDef huntingKind = Find.WorldObjects.WorldObjectAt(map.Tile, DefDatabase<WorldObjectDef>.GetNamed("WMH_Golem_MonsterEncounterWorldObject", true)).GetComponent<WorldObjectComp_MonsterToHunt>().monsterKindDef;
+            PawnKindDef huntingKind = PawnKindDef.Named("WMH_Golem");
             base.Generate(map, parms);
             CellRect rect = new CellRect(Rand.RangeInclusive(this.adventureRegion.minX + 10, this.adventureRegion.maxX - (edgeSize + 10)), Rand.RangeInclusive(this.adventureRegion.minZ + 10, this.adventureRegion.maxZ - (edgeSize + 10)), edgeSize, edgeSize);
             rect.ClipInsideMap(map);
             ResolveParams animalResolveParams = this.baseResolveParams;
             animalResolveParams.rect = rect;
             animalResolveParams.singlePawnKindDef = huntingKind;
+            animalResolveParams.faction = FactionUtility.DefaultFactionFrom(huntingKind.defaultFactionType);
+
             BaseGen.symbolStack.Push("WMH_SpawnHuntingMonstersSymbol", animalResolveParams);
             BaseGen.Generate();
         }
@@ -246,13 +265,15 @@ namespace WMHAnimalBehaviours
 
         public override void Generate(Map map, GenStepParams parms)
         {
-            PawnKindDef huntingKind = Find.WorldObjects.WorldObjectAt(map.Tile, DefDatabase<WorldObjectDef>.GetNamed("WMH_Hym_MonsterEncounterWorldObject", true)).GetComponent<WorldObjectComp_MonsterToHunt>().monsterKindDef;
+            PawnKindDef huntingKind = PawnKindDef.Named("WMH_Hym");
             base.Generate(map, parms);
             CellRect rect = new CellRect(Rand.RangeInclusive(this.adventureRegion.minX + 10, this.adventureRegion.maxX - (edgeSize + 10)), Rand.RangeInclusive(this.adventureRegion.minZ + 10, this.adventureRegion.maxZ - (edgeSize + 10)), edgeSize, edgeSize);
             rect.ClipInsideMap(map);
             ResolveParams animalResolveParams = this.baseResolveParams;
             animalResolveParams.rect = rect;
             animalResolveParams.singlePawnKindDef = huntingKind;
+            animalResolveParams.faction = FactionUtility.DefaultFactionFrom(huntingKind.defaultFactionType);
+
             BaseGen.symbolStack.Push("WMH_SpawnHuntingMonstersSymbol", animalResolveParams);
             BaseGen.Generate();
         }
@@ -264,13 +285,15 @@ namespace WMHAnimalBehaviours
 
         public override void Generate(Map map, GenStepParams parms)
         {
-            PawnKindDef huntingKind = Find.WorldObjects.WorldObjectAt(map.Tile, DefDatabase<WorldObjectDef>.GetNamed("WMH_KikimoreQueen_MonsterEncounterWorldObject", true)).GetComponent<WorldObjectComp_MonsterToHunt>().monsterKindDef;
+            PawnKindDef huntingKind = PawnKindDef.Named("WMH_KikimoreQueen");
             base.Generate(map, parms);
             CellRect rect = new CellRect(Rand.RangeInclusive(this.adventureRegion.minX + 10, this.adventureRegion.maxX - (edgeSize + 10)), Rand.RangeInclusive(this.adventureRegion.minZ + 10, this.adventureRegion.maxZ - (edgeSize + 10)), edgeSize, edgeSize);
             rect.ClipInsideMap(map);
             ResolveParams animalResolveParams = this.baseResolveParams;
             animalResolveParams.rect = rect;
             animalResolveParams.singlePawnKindDef = huntingKind;
+            animalResolveParams.faction = FactionUtility.DefaultFactionFrom(huntingKind.defaultFactionType);
+
             BaseGen.symbolStack.Push("WMH_SpawnHuntingMonstersSymbol", animalResolveParams);
             BaseGen.Generate();
         }
@@ -282,13 +305,15 @@ namespace WMHAnimalBehaviours
 
         public override void Generate(Map map, GenStepParams parms)
         {
-            PawnKindDef huntingKind = Find.WorldObjects.WorldObjectAt(map.Tile, DefDatabase<WorldObjectDef>.GetNamed("WMH_Leshy_MonsterEncounterWorldObject", true)).GetComponent<WorldObjectComp_MonsterToHunt>().monsterKindDef;
+            PawnKindDef huntingKind = PawnKindDef.Named("WMH_Leshy");
             base.Generate(map, parms);
             CellRect rect = new CellRect(Rand.RangeInclusive(this.adventureRegion.minX + 10, this.adventureRegion.maxX - (edgeSize + 10)), Rand.RangeInclusive(this.adventureRegion.minZ + 10, this.adventureRegion.maxZ - (edgeSize + 10)), edgeSize, edgeSize);
             rect.ClipInsideMap(map);
             ResolveParams animalResolveParams = this.baseResolveParams;
             animalResolveParams.rect = rect;
             animalResolveParams.singlePawnKindDef = huntingKind;
+            animalResolveParams.faction = FactionUtility.DefaultFactionFrom(huntingKind.defaultFactionType);
+
             BaseGen.symbolStack.Push("WMH_SpawnHuntingMonstersSymbol", animalResolveParams);
             BaseGen.Generate();
         }
@@ -300,13 +325,15 @@ namespace WMHAnimalBehaviours
 
         public override void Generate(Map map, GenStepParams parms)
         {
-            PawnKindDef huntingKind = Find.WorldObjects.WorldObjectAt(map.Tile, DefDatabase<WorldObjectDef>.GetNamed("WMH_Nekker_MonsterEncounterWorldObject", true)).GetComponent<WorldObjectComp_MonsterToHunt>().monsterKindDef;
+            PawnKindDef huntingKind = PawnKindDef.Named("WMH_Nekker");
             base.Generate(map, parms);
             CellRect rect = new CellRect(Rand.RangeInclusive(this.adventureRegion.minX + 10, this.adventureRegion.maxX - (edgeSize + 10)), Rand.RangeInclusive(this.adventureRegion.minZ + 10, this.adventureRegion.maxZ - (edgeSize + 10)), edgeSize, edgeSize);
             rect.ClipInsideMap(map);
             ResolveParams animalResolveParams = this.baseResolveParams;
             animalResolveParams.rect = rect;
             animalResolveParams.singlePawnKindDef = huntingKind;
+            animalResolveParams.faction = FactionUtility.DefaultFactionFrom(huntingKind.defaultFactionType);
+
             BaseGen.symbolStack.Push("WMH_SpawnHuntingMonstersSymbol", animalResolveParams);
             BaseGen.Generate();
         }
@@ -318,13 +345,15 @@ namespace WMHAnimalBehaviours
 
         public override void Generate(Map map, GenStepParams parms)
         {
-            PawnKindDef huntingKind = Find.WorldObjects.WorldObjectAt(map.Tile, DefDatabase<WorldObjectDef>.GetNamed("WMH_Werewolf_MonsterEncounterWorldObject", true)).GetComponent<WorldObjectComp_MonsterToHunt>().monsterKindDef;
+            PawnKindDef huntingKind = PawnKindDef.Named("WMH_Werewolf");
             base.Generate(map, parms);
             CellRect rect = new CellRect(Rand.RangeInclusive(this.adventureRegion.minX + 10, this.adventureRegion.maxX - (edgeSize + 10)), Rand.RangeInclusive(this.adventureRegion.minZ + 10, this.adventureRegion.maxZ - (edgeSize + 10)), edgeSize, edgeSize);
             rect.ClipInsideMap(map);
             ResolveParams animalResolveParams = this.baseResolveParams;
             animalResolveParams.rect = rect;
             animalResolveParams.singlePawnKindDef = huntingKind;
+            animalResolveParams.faction = FactionUtility.DefaultFactionFrom(huntingKind.defaultFactionType);
+
             BaseGen.symbolStack.Push("WMH_SpawnHuntingMonstersSymbol", animalResolveParams);
             BaseGen.Generate();
         }
@@ -336,13 +365,15 @@ namespace WMHAnimalBehaviours
 
         public override void Generate(Map map, GenStepParams parms)
         {
-            PawnKindDef huntingKind = Find.WorldObjects.WorldObjectAt(map.Tile, DefDatabase<WorldObjectDef>.GetNamed("WMH_Wraith_MonsterEncounterWorldObject", true)).GetComponent<WorldObjectComp_MonsterToHunt>().monsterKindDef;
+            PawnKindDef huntingKind = PawnKindDef.Named("WMH_Wraith");
             base.Generate(map, parms);
             CellRect rect = new CellRect(Rand.RangeInclusive(this.adventureRegion.minX + 10, this.adventureRegion.maxX - (edgeSize + 10)), Rand.RangeInclusive(this.adventureRegion.minZ + 10, this.adventureRegion.maxZ - (edgeSize + 10)), edgeSize, edgeSize);
             rect.ClipInsideMap(map);
             ResolveParams animalResolveParams = this.baseResolveParams;
             animalResolveParams.rect = rect;
             animalResolveParams.singlePawnKindDef = huntingKind;
+            animalResolveParams.faction = FactionUtility.DefaultFactionFrom(huntingKind.defaultFactionType);
+
             BaseGen.symbolStack.Push("WMH_SpawnHuntingMonstersSymbol", animalResolveParams);
             BaseGen.Generate();
         }
@@ -354,19 +385,23 @@ namespace WMHAnimalBehaviours
 
         public override void Generate(Map map, GenStepParams parms)
         {
-            PawnKindDef huntingKind = Find.WorldObjects.WorldObjectAt(map.Tile, DefDatabase<WorldObjectDef>.GetNamed("WMH_Wyvern_MonsterEncounterWorldObject", true)).GetComponent<WorldObjectComp_MonsterToHunt>().monsterKindDef;
+            PawnKindDef huntingKind = PawnKindDef.Named("WMH_Wyvern");
             base.Generate(map, parms);
             CellRect rect = new CellRect(Rand.RangeInclusive(this.adventureRegion.minX + 10, this.adventureRegion.maxX - (edgeSize + 10)), Rand.RangeInclusive(this.adventureRegion.minZ + 10, this.adventureRegion.maxZ - (edgeSize + 10)), edgeSize, edgeSize);
             rect.ClipInsideMap(map);
             ResolveParams animalResolveParams = this.baseResolveParams;
             animalResolveParams.rect = rect;
             animalResolveParams.singlePawnKindDef = huntingKind;
+            animalResolveParams.faction = FactionUtility.DefaultFactionFrom(huntingKind.defaultFactionType);
+
             BaseGen.symbolStack.Push("WMH_SpawnHuntingMonstersSymbol", animalResolveParams);
             BaseGen.Generate();
         }
     }
 
-    public class GenStep_MonsterEncounter_Uwutross : GenStep_BasicGenWMH
+   // Poor Uwutross can't be made optional anymore :(
+
+   /* public class GenStep_MonsterEncounter_Uwutross : GenStep_BasicGenWMH
     {
         public const int edgeSize = 40;
 
@@ -382,7 +417,7 @@ namespace WMHAnimalBehaviours
             BaseGen.symbolStack.Push("WMH_SpawnHuntingMonstersSymbol", animalResolveParams);
             BaseGen.Generate();
         }
-    }
+    }*/
 
 
 }

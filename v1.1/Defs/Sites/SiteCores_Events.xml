@@ -21,92 +21,143 @@
 			<li>WMH_Basilisk_MonsterEncounterCore</li>
 		</tags>
 	</SitePartDef>
-	
+
 	<SitePartDef ParentName="WMH_MonsterEncounterCoreBase">
 		<defName>WMH_Bearofleet_MonsterEncounterCore</defName>
 		<expandingIconTexture>World/WorldObjects/ContractBearofleet</expandingIconTexture>		
+		<tags Inherit="False">
+			<li>WMH_Bearofleet_MonsterEncounterCore</li>
+		</tags>
 	</SitePartDef>
-	
+
 	<SitePartDef ParentName="WMH_MonsterEncounterCoreBase">
 		<defName>WMH_Chort_MonsterEncounterCore</defName>
 		<expandingIconTexture>World/WorldObjects/ContractChort</expandingIconTexture>		
+		<tags Inherit="False">
+			<li>WMH_Chort_MonsterEncounterCore</li>
+		</tags>
 	</SitePartDef>
-	
+
 	<SitePartDef ParentName="WMH_MonsterEncounterCoreBase">
 		<defName>WMH_Cyclops_MonsterEncounterCore</defName>
 		<expandingIconTexture>World/WorldObjects/ContractCyclops</expandingIconTexture>		
+		<tags Inherit="False">
+			<li>WMH_Cyclops_MonsterEncounterCore</li>
+		</tags>
 	</SitePartDef>
-	
+
 	<SitePartDef ParentName="WMH_MonsterEncounterCoreBase">
 		<defName>WMH_Djinn_MonsterEncounterCore</defName>
 		<expandingIconTexture>World/WorldObjects/ContractDjinn</expandingIconTexture>		
+		<tags Inherit="False">
+			<li>WMH_Djinn_MonsterEncounterCore</li>
+		</tags>
 	</SitePartDef>
-	
+
 	<SitePartDef ParentName="WMH_MonsterEncounterCoreBase">
 		<defName>WMH_Ekimmara_MonsterEncounterCore</defName>
-		<expandingIconTexture>World/WorldObjects/ContractEkimmara</expandingIconTexture>		
+		<expandingIconTexture>World/WorldObjects/ContractEkimmara</expandingIconTexture>	
+		<tags Inherit="False">
+			<li>WMH_Ekimmara_MonsterEncounterCore</li>
+		</tags>		
 	</SitePartDef>
-	
+
 	<SitePartDef ParentName="WMH_MonsterEncounterCoreBase">
 		<defName>WMH_Fiend_MonsterEncounterCore</defName>
 		<expandingIconTexture>World/WorldObjects/ContractFiend</expandingIconTexture>		
+		<tags Inherit="False">
+			<li>WMH_Fiend_MonsterEncounterCore</li>
+		</tags>
 	</SitePartDef>
-	
+
 	<SitePartDef ParentName="WMH_MonsterEncounterCoreBase">
 		<defName>WMH_Fleder_MonsterEncounterCore</defName>
 		<expandingIconTexture>World/WorldObjects/ContractFleder</expandingIconTexture>		
+		<tags Inherit="False">
+			<li>WMH_Fleder_MonsterEncounterCore</li>
+		</tags>
 	</SitePartDef>
-	
+
 	<SitePartDef ParentName="WMH_MonsterEncounterCoreBase">
 		<defName>WMH_Fogler_MonsterEncounterCore</defName>
-		<expandingIconTexture>World/WorldObjects/ContractFogler</expandingIconTexture>		
+		<expandingIconTexture>World/WorldObjects/ContractFogler</expandingIconTexture>	
+		<tags Inherit="False">
+			<li>WMH_Fogler_MonsterEncounterCore</li>
+		</tags>		
 	</SitePartDef>
-	
+
 	<SitePartDef ParentName="WMH_MonsterEncounterCoreBase">
 		<defName>WMH_Ghoul_MonsterEncounterCore</defName>
-		<expandingIconTexture>World/WorldObjects/ContractGhoul</expandingIconTexture>		
+		<expandingIconTexture>World/WorldObjects/ContractGhoul</expandingIconTexture>	
+		<tags Inherit="False">
+			<li>WMH_Ghoul_MonsterEncounterCore</li>
+		</tags>		
 	</SitePartDef>
-	
+
 	<SitePartDef ParentName="WMH_MonsterEncounterCoreBase">
 		<defName>WMH_Golem_MonsterEncounterCore</defName>
-		<expandingIconTexture>World/WorldObjects/ContractGolem</expandingIconTexture>		
+		<expandingIconTexture>World/WorldObjects/ContractGolem</expandingIconTexture>	
+		<tags Inherit="False">
+			<li>WMH_Golem_MonsterEncounterCore</li>
+		</tags>		
 	</SitePartDef>
-	
+
 	<SitePartDef ParentName="WMH_MonsterEncounterCoreBase">
 		<defName>WMH_Hym_MonsterEncounterCore</defName>
-		<expandingIconTexture>World/WorldObjects/ContractHym</expandingIconTexture>		
+		<expandingIconTexture>World/WorldObjects/ContractHym</expandingIconTexture>	
+		<tags Inherit="False">
+			<li>WMH_Hym_MonsterEncounterCore</li>
+		</tags>		
 	</SitePartDef>
-	
+
 	<SitePartDef ParentName="WMH_MonsterEncounterCoreBase">
 		<defName>WMH_KikimoreQueen_MonsterEncounterCore</defName>
-		<expandingIconTexture>World/WorldObjects/ContractKikimore</expandingIconTexture>		
+		<expandingIconTexture>World/WorldObjects/ContractKikimore</expandingIconTexture>	
+		<tags Inherit="False">
+			<li>WMH_KikimoreQueen_MonsterEncounterCore</li>
+		</tags>		
 	</SitePartDef>
-	
+
 	<SitePartDef ParentName="WMH_MonsterEncounterCoreBase">
 		<defName>WMH_Leshy_MonsterEncounterCore</defName>
 		<expandingIconTexture>World/WorldObjects/ContractLeshy</expandingIconTexture>		
+		<tags Inherit="False">
+			<li>WMH_Leshy_MonsterEncounterCore</li>
+		</tags>
 	</SitePartDef>
-	
+
 	<SitePartDef ParentName="WMH_MonsterEncounterCoreBase">
 		<defName>WMH_Nekker_MonsterEncounterCore</defName>
 		<expandingIconTexture>World/WorldObjects/ContractNekker</expandingIconTexture>		
+		<tags Inherit="False">
+			<li>WMH_Nekker_MonsterEncounterCore</li>
+		</tags>
 	</SitePartDef>
-	
+
 	<SitePartDef ParentName="WMH_MonsterEncounterCoreBase">
 		<defName>WMH_Werewolf_MonsterEncounterCore</defName>
-		<expandingIconTexture>World/WorldObjects/ContractWerewolf</expandingIconTexture>		
+		<expandingIconTexture>World/WorldObjects/ContractWerewolf</expandingIconTexture>	
+		<tags Inherit="False">
+			<li>WMH_Werewolf_MonsterEncounterCore</li>
+		</tags>		
 	</SitePartDef>
-	
+
 	<SitePartDef ParentName="WMH_MonsterEncounterCoreBase">
 		<defName>WMH_Wraith_MonsterEncounterCore</defName>
-		<expandingIconTexture>World/WorldObjects/ContractWraith</expandingIconTexture>		
+		<expandingIconTexture>World/WorldObjects/ContractWraith</expandingIconTexture>	
+		<tags Inherit="False">
+			<li>WMH_Wraith_MonsterEncounterCore</li>
+		</tags>		
 	</SitePartDef>
-	
+
 	<SitePartDef ParentName="WMH_MonsterEncounterCoreBase">
 		<defName>WMH_Wyvern_MonsterEncounterCore</defName>
-		<expandingIconTexture>World/WorldObjects/ContractWyvern</expandingIconTexture>		
+		<expandingIconTexture>World/WorldObjects/ContractWyvern</expandingIconTexture>	
+		<tags Inherit="False">
+			<li>WMH_Wyvern_MonsterEncounterCore</li>
+		</tags>		
 	</SitePartDef>
-	
+
 	<SitePartDef ParentName="WMH_MonsterEncounterCoreBase">
 		<defName>WMHAux_Uwutross_MonsterEncounterCore</defName>
 		<expandingIconTexture>World/WorldObjects/ContractUwutross</expandingIconTexture>		

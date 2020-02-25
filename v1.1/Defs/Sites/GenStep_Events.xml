@@ -148,12 +148,12 @@
     </genStep>
   </GenStepDef>
   
-    <GenStepDef>
+   <!-- <GenStepDef>
     <defName>WMHAux_Uwutross_MonsterEncounterGen</defName>
     <linkWithSite>WMHAux_Uwutross_MonsterEncounterCore</linkWithSite>
     <order>805</order>
     <genStep Class="WMHAnimalBehaviours.GenStep_MonsterEncounter_Uwutross">
     </genStep>
-  </GenStepDef>
+  </GenStepDef>-->
 
 </Defs>
