@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using Verse.Sound;
 using Verse;
+using RimWorld;
+using UnityEngine;
 
 namespace WMHAnimalBehaviours
 {
@@ -63,6 +65,7 @@ namespace WMHAnimalBehaviours
                                 if (!chosenOne.Dead && !chosenOne.Downed)
                                 {
                                     //SoundDefOf.PsychicPulseGlobal.PlayOneShot(new TargetInfo(this.parent.Position, this.parent.Map, false));
+                                    MoteMaker.MakeAttachedOverlay(this.parent, ThingDef.Named("Mote_PsycastPsychicEffect"), Vector3.zero, 1f, -1f);
 
                                     chosenOne.health.AddHediff(HediffDef.Named(Props.hediff));
                                 }

@@ -67,6 +67,7 @@ namespace WMHAnimalBehaviours
                                   {
                                     Find.TickManager.slower.SignalForceNormalSpeedShort();
                                     SoundDefOf.PsychicPulseGlobal.PlayOneShot(new TargetInfo(this.parent.Position, this.parent.Map, false));
+                                    MoteMaker.MakeAttachedOverlay(this.parent, ThingDef.Named("Mote_PsycastPsychicEffect"), Vector3.zero, 1f, -1f);
                                     chosenOne.mindState.mentalStateHandler.TryStartMentalState(DefDatabase<MentalStateDef>.GetNamed(Props.mentalState, true), null, true, false, null, false);
                                   }
 

@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using Verse;
+using Verse.Sound;
 using UnityEngine;
 using System.Collections;
 
@@ -66,6 +67,9 @@ namespace WMHAnimalBehaviours
                                 if (!chosenOne.Dead && !chosenOne.Downed && chosenOne.GetStatValue(StatDefOf.PsychicSensitivity, true) > 0f)
                                 {
                                     Find.TickManager.slower.SignalForceNormalSpeedShort();
+                                    SoundDefOf.PsychicPulseGlobal.PlayOneShot(new TargetInfo(this.parent.Position, this.parent.Map, false));
+
+                                    MoteMaker.MakeAttachedOverlay(this.parent, ThingDef.Named("Mote_PsycastPsychicEffect"), Vector3.zero, 1f, -1f);
 
                                     chosenOne.needs.mood.thoughts.memories.TryGainMemory(ThoughtDef.Named(Props.thoughtDef), null);
                                 }
