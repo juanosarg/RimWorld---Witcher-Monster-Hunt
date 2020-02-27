@@ -20,7 +20,7 @@
 		<canUseAvoidGrid>false</canUseAvoidGrid>
 		<techLevel>Animal</techLevel>
 		<permanentEnemy>true</permanentEnemy>
-		<homeIconPath>World/WorldObjects/DefaultSettlement</homeIconPath>
+		<homeIconPath>World/WorldObjects/WitcherMonsters</homeIconPath>
 		<allowedArrivalTemperatureRange>
 			<min>0</min>
 			<max>45</max>
