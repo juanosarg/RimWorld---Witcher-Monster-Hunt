@@ -160,6 +160,8 @@
 		<soundExplosion>Explosion_Smoke</soundExplosion>
 		<combatLogRules>Damage_Bomb</combatLogRules>
 	</DamageDef>
+	
+	
 
 
 

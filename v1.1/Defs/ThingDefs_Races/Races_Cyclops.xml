@@ -75,10 +75,10 @@
 				<defaultProjectile>WMH_Rock</defaultProjectile>
 				<warmupTime>4</warmupTime>
 				<burstShotCount>1</burstShotCount>
-				
+				<forcedMissRadius>2</forcedMissRadius>
 				<minRange>10</minRange>
 				<range>30</range>
-				<!--<soundCast>AA_RockThrow</soundCast>-->
+				<soundCast>WMH_RockThrow</soundCast>
 				<muzzleFlashScale>0</muzzleFlashScale>
 				<!--Commanility determines how frequent this range verb is chosen.-->
 				<commonality>0.5</commonality>

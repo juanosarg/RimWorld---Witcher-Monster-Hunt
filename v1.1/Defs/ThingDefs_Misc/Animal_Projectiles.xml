@@ -37,7 +37,7 @@
 	<ThingDef ParentName="BaseBullet">
 		<defName>WMH_Rock</defName>
 		<label>rock</label>
-		<thingClass>WMHAnimalRangeUnlocker.AnimalProjectile</thingClass>
+		<thingClass>Projectile_Explosive</thingClass>
 
 		<graphicData>
 			<texPath>Things/Projectiles/WMH_Boulder</texPath>
@@ -46,6 +46,8 @@
 		</graphicData>
 		<projectile>
 			<flyOverhead>false</flyOverhead>
+						<explosionRadius >1.9</explosionRadius >
+
 			<damageDef>WMH_RockBomb</damageDef>
 			<damageAmountBase>30</damageAmountBase>
 			<speed>15</speed>
