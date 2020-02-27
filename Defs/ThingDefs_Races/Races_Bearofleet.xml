@@ -101,7 +101,7 @@
 		<label>bearofleet</label>
 		<race>WMH_Bearofleet</race>
 		<combatPower>1000</combatPower>
-
+<canArriveManhunter>false</canArriveManhunter>
 		<lifeStages>
 
 			<li>
