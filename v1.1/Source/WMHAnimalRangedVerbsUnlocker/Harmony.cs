@@ -194,7 +194,7 @@ namespace WMHAnimalRangeUnlocker
 				}
 				
 				//Log.Warning("Trying initiate job");
-				__result = new Job(DefDatabase<JobDef>.GetNamed("RttR_AnimalRangeAttack"), shootable, JobGiver_AIFightEnemy.ExpiryInterval_ShooterSucceeded.RandomInRange, true)
+				__result = new Job(DefDatabase<JobDef>.GetNamed("WMH_AnimalRangeAttack"), shootable, JobGiver_AIFightEnemy.ExpiryInterval_ShooterSucceeded.RandomInRange, true)
 				{
 					verbToUse = rangeVerb
 				};
@@ -343,7 +343,7 @@ namespace WMHAnimalRangeUnlocker
 			if (flag1 && flag2 && flag3 || flag4 && flag3)
 			{
 				//Log.Warning("Shooting");
-				__result = new Job(DefDatabase<JobDef>.GetNamed("RttR_AnimalRangeAttack"), enemyTarget, JobGiver_AIFightEnemy.ExpiryInterval_ShooterSucceeded.RandomInRange, true)
+				__result = new Job(DefDatabase<JobDef>.GetNamed("WMH_AnimalRangeAttack"), enemyTarget, JobGiver_AIFightEnemy.ExpiryInterval_ShooterSucceeded.RandomInRange, true)
 				{
 					verbToUse = rangeVerb
 
@@ -388,7 +388,7 @@ namespace WMHAnimalRangeUnlocker
 			if (dest == pawn.Position)
 			{
 				//Log.Warning("I will stay here and attack");
-				__result = new Job(DefDatabase<JobDef>.GetNamed("RttR_AnimalRangeAttack"), enemyTarget, JobGiver_AIFightEnemy.ExpiryInterval_ShooterSucceeded.RandomInRange, true)
+				__result = new Job(DefDatabase<JobDef>.GetNamed("WMH_AnimalRangeAttack"), enemyTarget, JobGiver_AIFightEnemy.ExpiryInterval_ShooterSucceeded.RandomInRange, true)
 				{
 					verbToUse = rangeVerb
 				};

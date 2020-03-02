@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+
+	<ThingCategoryDef>
+		<defName>WMH_Flesh</defName>
+		<label>monster corpses</label>
+		<parent>Corpses</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+      <defName>WMH_BuildingsTrophies</defName>
+      <label>trophies</label>
+      <parent>Buildings</parent>
+    </ThingCategoryDef>
+
+
+</Defs>
