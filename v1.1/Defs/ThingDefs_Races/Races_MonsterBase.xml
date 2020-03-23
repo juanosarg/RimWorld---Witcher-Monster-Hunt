@@ -4,6 +4,7 @@
 	<ThingDef ParentName="AnimalThingBase" Name="WMH_MonsterBase" Abstract="True">
 
 		<race>
+		<herdMigrationAllowed>false</herdMigrationAllowed>
 			<fleshType>WMH_Flesh</fleshType>
 			<needsRest>false</needsRest>
 			<foodType>None</foodType>
@@ -16,6 +17,7 @@
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
 		</statBases>
 		<race>
+		<herdMigrationAllowed>false</herdMigrationAllowed>
 			<fleshType>Insectoid</fleshType>
 			<bloodDef>Filth_BloodInsect</bloodDef>
 			<meatColor>(160,168,139)</meatColor>
@@ -39,6 +41,7 @@
 			<LeatherAmount>30</LeatherAmount>
 		</statBases>
 		<race>
+		<herdMigrationAllowed>false</herdMigrationAllowed>
 			<fleshType>WMH_Flesh</fleshType>
 			<needsRest>false</needsRest>
 			<foodType>None</foodType>

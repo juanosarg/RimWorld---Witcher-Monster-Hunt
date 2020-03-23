@@ -64,6 +64,7 @@
 
 		</verbs>
 		<race>
+			
 			<body>WMH_Wisp</body>
 			<baseBodySize>1</baseBodySize>
 			<baseHealthScale>20</baseHealthScale>
