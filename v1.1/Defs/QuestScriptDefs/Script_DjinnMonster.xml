@@ -3,7 +3,7 @@
 
   <QuestScriptDef>
     <defName>WMH_Djinn_MonsterEncounterQuest</defName>
-    <rootSelectionWeight>0.1</rootSelectionWeight>
+    <rootSelectionWeight>0.2</rootSelectionWeight>
     <rootMinPoints>0</rootMinPoints>
     <autoAccept>true</autoAccept>
     <canGiveRoyalFavor>true</canGiveRoyalFavor>
@@ -104,7 +104,7 @@
           <inSignal>site.AllEnemiesDefeated</inSignal>
           <node Class="QuestNode_GiveRewards">
             <parms>
-              <allowGoodwill>true</allowGoodwill>
+              <allowGoodwill>false</allowGoodwill>
               <allowRoyalFavor>true</allowRoyalFavor>
               <chosenPawnSignal>ChosenPawnForReward</chosenPawnSignal>
             </parms>

@@ -31,18 +31,33 @@
 		<defName>WMH_Cytoplasm</defName>
 		<label>cytoplasm</label>
 		<hitPoints>30</hitPoints>
+		<delicate>false</delicate>
+		<skinCovered>false</skinCovered>
+		<canSuggestAmputation>false</canSuggestAmputation>
+
+		<tags>
+			
+			<li>BloodPumpingSource</li>
+			<li>BloodFiltrationSource</li>
+			<li>MetabolismSource</li>			
+			<li>EatingSource</li>
+
+
+		</tags>
+	</BodyPartDef>
+	
+		<BodyPartDef>
+		<defName>WMH_EcholocationOrgans</defName>
+		<label>echolocation organs</label>
+		<hitPoints>30</hitPoints>
 		<delicate>true</delicate>
 		<skinCovered>false</skinCovered>
 		<canSuggestAmputation>false</canSuggestAmputation>
 
 		<tags>
-			<li>ConsciousnessSource</li>
-			<li>BloodPumpingSource</li>
-			<li>BloodFiltrationSource</li>
-			<li>MetabolismSource</li>
+			<li>ConsciousnessSource</li>			
 			<li>SightSource</li>
-			<li>EatingSource</li>
-
+			
 
 		</tags>
 	</BodyPartDef>

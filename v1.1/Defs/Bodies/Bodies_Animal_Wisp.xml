@@ -12,10 +12,17 @@
 			<parts>
 				<li>
 					<def>WMH_Cytoplasm</def>
-					<coverage>0.9</coverage>
+					<coverage>0.8</coverage>
 					<groups>
 						<li>WMH_Pseudopods</li>
 					</groups>
+					<depth>Inside</depth>
+				</li>
+				
+				<li>
+					<def>WMH_EcholocationOrgans</def>
+					<coverage>0.1</coverage>
+					
 					<depth>Inside</depth>
 				</li>
 				
