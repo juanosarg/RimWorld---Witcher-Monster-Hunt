@@ -116,22 +116,7 @@
             </thingSetMaker>
           </thingSetMaker>
         </li>
-        <li>
-          <weight>2</weight> 
-          <thingSetMaker Class="ThingSetMaker_Conditional_FactionRelation">
-            <factionDef MayRequire="Ludeon.RimWorld.Royalty">Empire</factionDef>
-            <allowHostile>true</allowHostile>
-            <thingSetMaker Class="ThingSetMaker_MarketValue">
-              <fixedParams>
-                <filter>
-                  <thingDefs>
-                    <li MayRequire="Ludeon.RimWorld.Royalty">PsychicSilencer</li>
-                  </thingDefs>
-                </filter>
-              </fixedParams>
-            </thingSetMaker>
-          </thingSetMaker>
-        </li>
+       
 
 
 

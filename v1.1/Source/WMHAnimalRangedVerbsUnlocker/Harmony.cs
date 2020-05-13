@@ -312,8 +312,12 @@ namespace WMHAnimalRangeUnlocker
 					};
 					return false;
 				}
-				//Only go if I am to be released. This prevent animal running off.
-				if (pawn.CanReach(enemyTarget, PathEndMode.Touch, Danger.Deadly, false) && pawn.playerSettings.Master.playerSettings.animalsReleased)
+                if (pawn.Faction != null && !pawn.Faction.def.isPlayer)
+                {
+                    //Log.Warning("This is just here for Giddy-Up compat. I hope.");
+
+                }
+                else if (pawn.CanReach(enemyTarget, PathEndMode.Touch, Danger.Deadly, false) && pawn.playerSettings.Master.playerSettings.animalsReleased)
 				{
 					//Log.Warning("Melee Attack");
 					__result = new Job(JobDefOf.AttackMelee,enemyTarget)
