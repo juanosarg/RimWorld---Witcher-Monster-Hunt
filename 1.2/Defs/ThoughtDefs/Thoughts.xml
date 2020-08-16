@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+	<ThoughtDef>
+		<defName>WMH_HymPunchEffect</defName>
+		<durationDays>15</durationDays>
+		<stackLimit>5</stackLimit>
+		<stages>
+			<li>
+				<label>Tormented by guilt</label>
+				<description>Was it all my fault? I can see their screaming faces, the anguish in their voice...</description>
+				<baseMoodEffect>-30</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>WMH_SpectreEffect</defName>
+		<durationDays>1</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+			<li>
+				<label>Bone chilling fear</label>
+				<description>I must not fear, fear is the mind-killer. Fear is the little-death that brings total obliteration...</description>
+				<baseMoodEffect>-15</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+
+
+	
+
+</Defs>

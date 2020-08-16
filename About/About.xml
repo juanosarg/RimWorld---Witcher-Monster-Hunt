@@ -5,6 +5,7 @@
 		<supportedVersions>
 		<li>1.0</li>
 		<li>1.1</li>
+		<li>1.2</li>
 	</supportedVersions>
 	<packageId>sargoskar.witcherhunt</packageId>
 	<description>&lt;size=24&gt;Features&lt;/size&gt;
@@ -21,6 +22,7 @@ Excellent execution of the code by Sarg Bjornson.
 
 &lt;size=24&gt;Changelog&lt;/size&gt;
 
+1.1 (16/08/20): Tweaks to adjust code to 1.2
 1.0.0 (27/02/2020): Release
 
 

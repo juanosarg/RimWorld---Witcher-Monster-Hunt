@@ -1,0 +1,4 @@
+E:\SteamLibrary\steamapps\common\RimWorld\Mods\RaceToTheRim\Assemblies\RttRAnimalBehaviours.dll
+E:\SteamLibrary\steamapps\common\RimWorld\Mods\RaceToTheRim\Source\AEXPAnimalBehaviours\AEXPAnimalBehaviours\obj\Debug\RttRAnimalBehaviours.csprojAssemblyReference.cache
+E:\SteamLibrary\steamapps\common\RimWorld\Mods\RaceToTheRim\Source\AEXPAnimalBehaviours\AEXPAnimalBehaviours\obj\Debug\RttRAnimalBehaviours.csproj.CoreCompileInputs.cache
+E:\SteamLibrary\steamapps\common\RimWorld\Mods\RaceToTheRim\Source\AEXPAnimalBehaviours\AEXPAnimalBehaviours\obj\Debug\RttRAnimalBehaviours.dll
