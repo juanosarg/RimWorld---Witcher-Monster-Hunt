@@ -62,6 +62,10 @@
 				<tickInterval>750</tickInterval>
 				<mentalState>Berserk</mentalState>
 			</li>
+			<li Class="AnimalBehaviours.CompProperties_Untameable">
+				<factionToReturnTo>WMH_Monsters</factionToReturnTo>
+				
+			</li>
 		</comps>
 		<race>
 

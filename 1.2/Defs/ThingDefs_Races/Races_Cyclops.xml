@@ -63,6 +63,10 @@
 				<rateInTicks>50</rateInTicks>
 
 			</li>
+			<li Class="AnimalBehaviours.CompProperties_Untameable">
+				<factionToReturnTo>WMH_Monsters</factionToReturnTo>
+				
+			</li>
 		</comps>
 		<verbs>
 			<li>
@@ -80,7 +84,7 @@
 				<range>30</range>
 				<soundCast>WMH_RockThrow</soundCast>
 				<muzzleFlashScale>0</muzzleFlashScale>
-				<!--Commanility determines how frequent this range verb is chosen.-->
+				<label>rock</label>
 				<commonality>0.5</commonality>
 			</li>
 

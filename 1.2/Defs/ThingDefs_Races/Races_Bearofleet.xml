@@ -51,6 +51,10 @@
 				<tickInterval>1000</tickInterval>
 				<mentalState>Binging_Food</mentalState>
 			</li>
+			<li Class="AnimalBehaviours.CompProperties_Untameable">
+				<factionToReturnTo>WMH_Monsters</factionToReturnTo>
+				
+			</li>
 		</comps>
 		<race>
 			<deathActionWorkerClass>WMHAnimalBehaviours.DeathActionWorker_GargantuanExplosion</deathActionWorkerClass>

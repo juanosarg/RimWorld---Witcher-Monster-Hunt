@@ -51,13 +51,11 @@
 				<defaultProjectile>WMH_WispProjectile</defaultProjectile>
 				<warmupTime>0.1</warmupTime>
 				<ticksBetweenBurstShots>2</ticksBetweenBurstShots>
-
 				<burstShotCount>75</burstShotCount>
 				<minRange>0</minRange>
 				<range>25</range>
-				<!--<soundCast>MM_PoisonBreathSound</soundCast>-->
 				<muzzleFlashScale>0</muzzleFlashScale>
-				<!--Commanility determines how frequent this range verb is chosen.-->
+				<label>djinn fire</label>
 				<commonality>1</commonality>
 			</li>
 

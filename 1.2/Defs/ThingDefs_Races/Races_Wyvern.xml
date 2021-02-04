@@ -85,13 +85,11 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>WMH_WyvernAcidSpit</defaultProjectile>
 				<warmupTime>3</warmupTime>
-				<burstShotCount>1</burstShotCount>
-				
+				<burstShotCount>1</burstShotCount>				
 				<minRange>10</minRange>
 				<range>30</range>
-				<!--<soundCast>AA_RockThrow</soundCast>-->
+				<label>wyvern acid spit</label>
 				<muzzleFlashScale>0</muzzleFlashScale>
-				<!--Commanility determines how frequent this range verb is chosen.-->
 				<commonality>0.5</commonality>
 			</li>
 

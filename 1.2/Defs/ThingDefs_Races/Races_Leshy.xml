@@ -78,13 +78,11 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>WMH_LeshyWave</defaultProjectile>
 				<warmupTime>1.5</warmupTime>
-				<burstShotCount>1</burstShotCount>
-				
+				<burstShotCount>1</burstShotCount>				
 				<minRange>5</minRange>
 				<range>40</range>
-				<!--<soundCast>AA_RockThrow</soundCast>-->
 				<muzzleFlashScale>0</muzzleFlashScale>
-				<!--Commanility determines how frequent this range verb is chosen.-->
+				<label>rage of nature</label>
 				<commonality>1</commonality>
 			</li>
 
