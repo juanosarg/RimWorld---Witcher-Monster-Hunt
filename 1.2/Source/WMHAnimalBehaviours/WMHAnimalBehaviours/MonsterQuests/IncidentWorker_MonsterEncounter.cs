@@ -25,7 +25,7 @@ namespace WMHAnimalBehaviours
                 return false;
             }
             int num;
-            return GetHostingFaction() != null && this.TryFindTile(out num) && !WMH_Settings.WMH_DisableEvents;
+            return GetHostingFaction() != null && this.TryFindTile(out num);
         }
 
         private bool TryFindTile(out int tile)
@@ -84,10 +84,7 @@ namespace WMHAnimalBehaviours
             PawnKindDef huntingTarget = animalList.RandomElement();
 
             Random random = new Random();
-            if (WMH_Settings.WMH_GloryMode && random.NextDouble() > 0.95)
-            {
-                huntingTarget = PawnKindDef.Named("WMHAux_Uwutross");
-            }
+            
 
             Site site = MakeSite(tile, 20, faction, huntingTarget);
             site.sitePartsKnown = true;
