@@ -64,7 +64,7 @@
 	<DamageDef ParentName="Bite">
 		<defName>WMH_Berserk</defName>
 		<label>berserk wave</label>
-		<workerClass>WMHAnimalBehaviours.DamageWorker_Berserk</workerClass>
+		<workerClass>AnimalBehaviours.DamageWorker_Berserk</workerClass>
 
 	</DamageDef>
 
