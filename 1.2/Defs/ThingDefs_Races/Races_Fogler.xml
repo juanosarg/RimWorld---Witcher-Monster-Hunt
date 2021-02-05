@@ -56,13 +56,17 @@
 			</li>
 		</tools>
 		<comps>
-			<li Class="WMHAnimalBehaviours.CompProperties_Infecter">
+			<li Class="AnimalBehaviours.CompProperties_Infecter">
 				<infectionChance>40</infectionChance>
 				
 			</li>
 		
-			<li Class="WMHAnimalBehaviours.CompProperties_ChangeWeather">
+			<li Class="AnimalBehaviours.CompProperties_ChangeWeather">
 				<weatherDef>Fog</weatherDef>
+				
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_Untameable">
+				<factionToReturnTo>WMH_Monsters</factionToReturnTo>
 				
 			</li>
 		</comps>

@@ -56,9 +56,13 @@
 			</li>
 		</tools>
 		<comps>
-			<li Class="WMHAnimalBehaviours.CompProperties_Regeneration">
+			<li Class="AnimalBehaviours.CompProperties_Regeneration">
 				<rateInTicks>300</rateInTicks>
 
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_Untameable">
+				<factionToReturnTo>WMH_Monsters</factionToReturnTo>
+				
 			</li>
 		</comps>
 

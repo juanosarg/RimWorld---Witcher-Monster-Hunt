@@ -19,7 +19,7 @@
 			</li>
 		</stages>
 	</HediffDef>
-	
+
 	<HediffDef>
 		<defName>WMH_Hunger</defName>
 		<description>An abnormally strong sensation of hunger is causing this person to feel weakened and nauseated. If food is not provided soon, starvation will follow.</description>
@@ -39,7 +39,7 @@
 			<li>
 				<painOffset>0.1</painOffset>
 				<hungerRateFactorOffset>10</hungerRateFactorOffset>
-				
+
 			</li>
 		</stages>
 	</HediffDef>
@@ -237,8 +237,13 @@
 				<baseTendDurationHours>24</baseTendDurationHours>
 				<severityPerDayTended>-0.53</severityPerDayTended>
 			</li>
-			<li Class="WMHAnimalBehaviours.HediffCompProperties_TurnWhenDead">
+			<li Class="AnimalBehaviours.HediffCompProperties_TurnWhenDead">
 				<thingToTurnTo>WMH_Werewolf</thingToTurnTo>
+				<severityToTurn>0.85</severityToTurn>
+				<numberOfSpawn><li>1</li></numberOfSpawn>
+				<isHostile>true</isHostile> 
+				<keepGender>true</keepGender>
+				<factionToTurnTo>WMH_Monsters</factionToTurnTo>
 
 			</li>
 			<li Class="HediffCompProperties_Immunizable">
@@ -294,7 +299,7 @@
 	<HediffDef ParentName="InfectionBase">
 		<defName>WMH_VampirismEkimmara</defName>
 		<label>vampirism (ekimmara)</label>
-				<description>This colonist has been affected by vampirism. If the disease is not properly treated, or if the colonist dies when it is sufficiently advanced, he will turn into an Ekimmara.</description>
+		<description>This colonist has been affected by vampirism. If the disease is not properly treated, or if the colonist dies when it is sufficiently advanced, he will turn into an Ekimmara.</description>
 
 		<makesSickThought>true</makesSickThought>
 		<lethalSeverity>1</lethalSeverity>
@@ -304,9 +309,13 @@
 				<baseTendDurationHours>24</baseTendDurationHours>
 				<severityPerDayTended>-0.53</severityPerDayTended>
 			</li>
-			<li Class="WMHAnimalBehaviours.HediffCompProperties_TurnWhenDead">
+			<li Class="AnimalBehaviours.HediffCompProperties_TurnWhenDead">
 				<thingToTurnTo>WMH_Ekimmara</thingToTurnTo>
-
+				<severityToTurn>0.85</severityToTurn>
+				<numberOfSpawn><li>1</li></numberOfSpawn>
+				<isHostile>true</isHostile> 
+				<keepGender>true</keepGender>
+				<factionToTurnTo>WMH_Monsters</factionToTurnTo>
 			</li>
 			<li Class="HediffCompProperties_Immunizable">
 				<severityPerDayNotImmune>0.84</severityPerDayNotImmune>
@@ -361,7 +370,7 @@
 	<HediffDef ParentName="InfectionBase">
 		<defName>WMH_VampirismFleder</defName>
 		<label>vampirism (fleder)</label>
-				<description>This colonist has been affected by vampirism. If the disease is not properly treated, or if the colonist dies when it is sufficiently advanced, he will turn into a Fleder.</description>
+		<description>This colonist has been affected by vampirism. If the disease is not properly treated, or if the colonist dies when it is sufficiently advanced, he will turn into a Fleder.</description>
 
 		<makesSickThought>true</makesSickThought>
 		<lethalSeverity>1</lethalSeverity>
@@ -371,8 +380,13 @@
 				<baseTendDurationHours>24</baseTendDurationHours>
 				<severityPerDayTended>-0.53</severityPerDayTended>
 			</li>
-			<li Class="WMHAnimalBehaviours.HediffCompProperties_TurnWhenDead">
+			<li Class="AnimalBehaviours.HediffCompProperties_TurnWhenDead">
 				<thingToTurnTo>WMH_Fleder</thingToTurnTo>
+				<severityToTurn>0.85</severityToTurn>
+				<numberOfSpawn><li>1</li></numberOfSpawn>
+				<isHostile>true</isHostile> 
+				<keepGender>true</keepGender>
+				<factionToTurnTo>WMH_Monsters</factionToTurnTo>
 
 			</li>
 			<li Class="HediffCompProperties_Immunizable">
@@ -424,119 +438,119 @@
 			</li>
 		</stages>
 	</HediffDef>
-	
-	  <HediffDef ParentName="DiseaseBase">
-    <defName>WMH_Paralysis</defName>
-			<description>A fast acting toxin is coursing through this colonist's veins, paralyzing his muscles. It will wear off after a while.</description>
 
-    <label>paralysis</label>
-    <isBad>false</isBad>
-    <comps>
+	<HediffDef ParentName="DiseaseBase">
+		<defName>WMH_Paralysis</defName>
+		<description>A fast acting toxin is coursing through this colonist's veins, paralyzing his muscles. It will wear off after a while.</description>
+
+		<label>paralysis</label>
+		<isBad>false</isBad>
+		<comps>
 			<li Class="HediffCompProperties_SeverityPerDay">
 				<severityPerDay>-2</severityPerDay>
 			</li>
 		</comps>
-    <stages>
-      <li>
-	    <label>lightly stunned</label>
-        <capMods>
-          <li>
-            <capacity>Consciousness</capacity>
-            <setMax>0.9</setMax>
-          </li>
-        </capMods>
-      </li>
-	   <li>
-	    <label>stunned</label>
-		<minSeverity>0.2</minSeverity>
+		<stages>
+			<li>
+				<label>lightly stunned</label>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.9</setMax>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>stunned</label>
+				<minSeverity>0.2</minSeverity>
 
-        <capMods>
-          <li>
-            <capacity>Consciousness</capacity>
-            <setMax>0.6</setMax>
-          </li>
-        </capMods>
-      </li>
-	  <li>
-	    <label>very stunned</label>
-		<minSeverity>0.5</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.6</setMax>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>very stunned</label>
+				<minSeverity>0.5</minSeverity>
 
-        <capMods>
-          <li>
-            <capacity>Consciousness</capacity>
-            <setMax>0.4</setMax>
-          </li>
-        </capMods>
-      </li>
-	  <li>
-	    <label>paralysed</label>
-		<minSeverity>0.8</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.4</setMax>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>paralysed</label>
+				<minSeverity>0.8</minSeverity>
 
-        <capMods>
-          <li>
-            <capacity>Consciousness</capacity>
-            <setMax>0.1</setMax>
-          </li>
-        </capMods>
-      </li>
-    </stages>
-  </HediffDef>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.1</setMax>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
 
- <HediffDef>
-    <defName>WMH_AcidBuildup</defName>
-	<hediffClass>WMHAnimalBehaviours.Hediff_AcidBuildup</hediffClass>
-			<description>A splash of acid that continues to cause burn wounds for quite some time after the initial attack.</description>
+	<HediffDef>
+		<defName>WMH_AcidBuildup</defName>
+		<hediffClass>AnimalBehaviours.Hediff_AcidBuildup</hediffClass>
+		<description>A splash of acid that continues to cause burn wounds for quite some time after the initial attack.</description>
 
-    <defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
-    <label>acid burn</label>
-    <lethalSeverity>1</lethalSeverity>
-    <makesSickThought>true</makesSickThought>
-    
-    <comps>
-      <li Class="HediffCompProperties_Immunizable">
-        <severityPerDayNotImmune>-4</severityPerDayNotImmune>
-      </li>
-    </comps>
-    <stages>
-      
-      
-      <li>
-        <label>minor, receiving burns</label>
-        <minSeverity>0</minSeverity>
-        <capMods>
-          <li>
-            <capacity>Consciousness</capacity>
-            <offset>-0.10</offset>
-          </li>
-        </capMods>
-      </li>
-      <li>
-        <label>moderate, receiving burns</label>
-        <minSeverity>0.40</minSeverity>
-        <vomitMtbDays>5</vomitMtbDays>
-        <capMods>
-          <li>
-            <capacity>Consciousness</capacity>
-            <offset>-0.15</offset>
-          </li>
-        </capMods>
-       
-      </li>
-      <li>
-        <label>serious, receiving burns</label>
-        <minSeverity>0.60</minSeverity>
-        <vomitMtbDays>1</vomitMtbDays>
-        <capMods>
-          <li>
-            <capacity>Consciousness</capacity>
-            <offset>-0.4</offset>
-          </li>
-        </capMods>
-        
-      </li>
-      
-    </stages>
-  </HediffDef>
+		<defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
+		<label>acid burn</label>
+		<lethalSeverity>1</lethalSeverity>
+		<makesSickThought>true</makesSickThought>
+
+		<comps>
+			<li Class="HediffCompProperties_Immunizable">
+				<severityPerDayNotImmune>-4</severityPerDayNotImmune>
+			</li>
+		</comps>
+		<stages>
+
+
+			<li>
+				<label>minor, receiving burns</label>
+				<minSeverity>0</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.10</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>moderate, receiving burns</label>
+				<minSeverity>0.40</minSeverity>
+				<vomitMtbDays>5</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.15</offset>
+					</li>
+				</capMods>
+
+			</li>
+			<li>
+				<label>serious, receiving burns</label>
+				<minSeverity>0.60</minSeverity>
+				<vomitMtbDays>1</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.4</offset>
+					</li>
+				</capMods>
+
+			</li>
+
+		</stages>
+	</HediffDef>
 
 
 </Defs>

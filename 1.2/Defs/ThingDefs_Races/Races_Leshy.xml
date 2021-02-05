@@ -89,13 +89,17 @@
 
 		</verbs>
 		<comps>
-			<li Class="WMHAnimalBehaviours.CompProperties_SummonOnSpawn">
+			<li Class="AnimalBehaviours.CompProperties_SummonOnSpawn">
 				<pawnDef>Wolf_Timber</pawnDef>
 				<groupMinMax>
 					<li>4</li>
 					<li>8</li>
 				</groupMinMax>
 				
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_Untameable">
+				<factionToReturnTo>WMH_Monsters</factionToReturnTo>
+
 			</li>
 		</comps>
 		<race>

@@ -3,8 +3,7 @@
 	<ThingDef ParentName="WMH_MonsterBase">
 		<defName>WMH_Bearofleet</defName>
 		<label>bearofleet</label>
-		<thingClass>WMHAnimalBehaviours.GloryModeSkins</thingClass>
-
+		
 		<description>Bearofleets are genetic monstrosities created by the hubris of man. They were created by advanced genetic splicing of Aerofleet and Bear genetic material, and released into the wild, where their voracious appetite has proven to be a real challenge for small settlements. Their very presence instills a preternatural hunger in those who witness its bloated belly.\n\nMonster class traits: Being a Relict, Bearofleet contract provides much higher rewards.</description>
 
 		<statBases>
@@ -40,13 +39,13 @@
 				<isFloater>true</isFloater>
 				<canCrossWater>true</canCrossWater>
 			</li>
-			<li Class="WMHAnimalBehaviours.CompProperties_HediffEffecter">
+			<li Class="AnimalBehaviours.CompProperties_HediffEffecter">
 				<radius>40</radius>
 				<severity>1</severity>
 				<tickInterval>100</tickInterval>
 				<hediff>WMH_Hunger</hediff>
 			</li>
-			<li Class="WMHAnimalBehaviours.CompProperties_MindEffecter">
+			<li Class="AnimalBehaviours.CompProperties_MindEffecter">
 				<radius>20</radius>
 				<tickInterval>1000</tickInterval>
 				<mentalState>Binging_Food</mentalState>

@@ -66,10 +66,14 @@
 
 		</tools>
 		<comps>
-			<li Class="WMHAnimalBehaviours.CompProperties_MindEffecter">
+			<li Class="AnimalBehaviours.CompProperties_MindEffecter">
 				<radius>40</radius>
 				<tickInterval>450</tickInterval>
 				<mentalState>Wander_Psychotic</mentalState>
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_Untameable">
+				<factionToReturnTo>WMH_Monsters</factionToReturnTo>
+				
 			</li>
 		</comps>
 		<race>

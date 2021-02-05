@@ -16,10 +16,10 @@
 			<ToxicSensitivity>0</ToxicSensitivity>
 			<Flammability>0</Flammability>
 			<ArmorRating_Heat>1</ArmorRating_Heat>
-			
+
 		</statBases>
 		<tools>
-			
+
 			<li>
 				<label>pseudopod</label>
 				<capacities>
@@ -37,10 +37,10 @@
 					</extraMeleeDamages>
 				</surpriseAttack>
 			</li>
-			
+
 		</tools>
-		
-<verbs>
+
+		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<accuracyTouch>0.15</accuracyTouch>
@@ -61,8 +61,14 @@
 
 
 		</verbs>
+		<comps>
+			<li Class="AnimalBehaviours.CompProperties_Untameable">
+				<factionToReturnTo>WMH_Monsters</factionToReturnTo>
+
+			</li>
+		</comps>
 		<race>
-			
+
 			<body>WMH_Wisp</body>
 			<baseBodySize>1</baseBodySize>
 			<baseHealthScale>20</baseHealthScale>
@@ -79,7 +85,7 @@
 			<gestationPeriodDays>10000</gestationPeriodDays>
 
 			<lifeStageAges>
-			
+
 				<li>
 					<def>AnimalAdult</def>
 					<minAge>0</minAge>
@@ -92,9 +98,9 @@
 			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
-			
+
 		</race>
-		
+
 		<tradeTags>
 			<li>AnimalMonster</li>
 		</tradeTags>
@@ -111,9 +117,9 @@
 		<combatPower>120</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>1</ecoSystemWeight>
-		
+
 		<lifeStages>
-			
+
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/WMH_Djinn/WMH_Djinn</texPath>

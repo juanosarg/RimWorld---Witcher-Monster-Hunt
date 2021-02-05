@@ -74,6 +74,10 @@
 				<isFloater>true</isFloater>
 				<canCrossWater>true</canCrossWater>
 			</li>
+			<li Class="AnimalBehaviours.CompProperties_Untameable">
+				<factionToReturnTo>WMH_Monsters</factionToReturnTo>
+
+			</li>
 		</comps>
 		<verbs>
 			<li>

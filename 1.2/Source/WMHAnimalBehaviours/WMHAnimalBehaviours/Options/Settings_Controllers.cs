@@ -6,7 +6,7 @@ namespace WMHAnimalBehaviours
 {
    
 
-  
+  /*
         class WMH_Mod : Mod
         {
 
@@ -20,5 +20,5 @@ namespace WMHAnimalBehaviours
             {
                 WMH_Settings.DoWindowContents(inRect);
             }
-        }
+        }*/
     }

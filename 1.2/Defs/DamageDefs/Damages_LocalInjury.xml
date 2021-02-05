@@ -78,7 +78,7 @@
 	<DamageDef ParentName="CutBase">
 		<defName>WMH_InfectedClaws</defName>
 		<label>infected claws</label>
-		<workerClass>WMHAnimalBehaviours.DamageWorker_ExtraInfecter</workerClass>
+		<workerClass>AnimalBehaviours.DamageWorker_ExtraInfecter</workerClass>
 		<additionalHediffs>
 			<li>
 				<hediff>WMH_Vomiting</hediff>

@@ -52,14 +52,19 @@
 		</tools>
 		
 		<comps>
-			<li Class="WMHAnimalBehaviours.CompProperties_ThoughtEffecter">
+			<li Class="AnimalBehaviours.CompProperties_ThoughtEffecter">
 				<radius>50</radius>
 				<tickInterval>50</tickInterval>
 				<thoughtDef>WMH_SpectreEffect</thoughtDef>
+				<showEffect>true</showEffect>
 			</li>
-			<li Class="WMHAnimalBehaviours.CompProperties_InitialHediff">
+			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
 				<hediffname>WMH_NoPain</hediffname>
 				<hediffseverity>1</hediffseverity>
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_Untameable">
+				<factionToReturnTo>WMH_Monsters</factionToReturnTo>
+
 			</li>
 		</comps>
 		<race>

@@ -6,7 +6,7 @@ namespace WMHAnimalBehaviours
 {
     
 
-   
+   /*
     
         public class WMH_Settings : ModSettings
 
@@ -62,7 +62,7 @@ namespace WMHAnimalBehaviours
 
 
 
-
+    */
 
 
     }

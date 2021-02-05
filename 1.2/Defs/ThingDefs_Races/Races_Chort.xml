@@ -57,7 +57,7 @@
 
 		</tools>
 		<comps>
-			<li Class="WMHAnimalBehaviours.CompProperties_MindEffecter">
+			<li Class="AnimalBehaviours.CompProperties_MindEffecter">
 				<radius>20</radius>
 				<tickInterval>750</tickInterval>
 				<mentalState>Berserk</mentalState>

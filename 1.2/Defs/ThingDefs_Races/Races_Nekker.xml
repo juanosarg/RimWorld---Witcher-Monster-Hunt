@@ -53,14 +53,18 @@
 			</li>
 		</tools>
 		<comps>
-			<li Class="WMHAnimalBehaviours.CompProperties_Regeneration">
+			<li Class="AnimalBehaviours.CompProperties_Regeneration">
 				<rateInTicks>100</rateInTicks>
 
 			</li>
-			<li Class="WMHAnimalBehaviours.CompProperties_StateAfterHealthLoss">
+			<li Class="AnimalBehaviours.CompProperties_StateAfterHealthLoss">
 				<healthPercent>70</healthPercent>
 				<tickInterval>50</tickInterval>
 				<mentalState>PanicFlee</mentalState>
+
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_Untameable">
+				<factionToReturnTo>WMH_Monsters</factionToReturnTo>
 
 			</li>
 		</comps>
