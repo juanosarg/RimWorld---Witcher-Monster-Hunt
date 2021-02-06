@@ -240,7 +240,7 @@
 			<li Class="AnimalBehaviours.HediffCompProperties_TurnWhenDead">
 				<thingToTurnTo>WMH_Werewolf</thingToTurnTo>
 				<severityToTurn>0.85</severityToTurn>
-				<numberOfSpawn><li>1</li></numberOfSpawn>
+				<numberOfSpawn><li>1</li><li>1</li></numberOfSpawn>
 				<isHostile>true</isHostile> 
 				<keepGender>true</keepGender>
 				<factionToTurnTo>WMH_Monsters</factionToTurnTo>
@@ -312,7 +312,7 @@
 			<li Class="AnimalBehaviours.HediffCompProperties_TurnWhenDead">
 				<thingToTurnTo>WMH_Ekimmara</thingToTurnTo>
 				<severityToTurn>0.85</severityToTurn>
-				<numberOfSpawn><li>1</li></numberOfSpawn>
+				<numberOfSpawn><li>1</li><li>1</li></numberOfSpawn>
 				<isHostile>true</isHostile> 
 				<keepGender>true</keepGender>
 				<factionToTurnTo>WMH_Monsters</factionToTurnTo>
@@ -383,7 +383,7 @@
 			<li Class="AnimalBehaviours.HediffCompProperties_TurnWhenDead">
 				<thingToTurnTo>WMH_Fleder</thingToTurnTo>
 				<severityToTurn>0.85</severityToTurn>
-				<numberOfSpawn><li>1</li></numberOfSpawn>
+				<numberOfSpawn><li>1</li><li>1</li></numberOfSpawn>
 				<isHostile>true</isHostile> 
 				<keepGender>true</keepGender>
 				<factionToTurnTo>WMH_Monsters</factionToTurnTo>
