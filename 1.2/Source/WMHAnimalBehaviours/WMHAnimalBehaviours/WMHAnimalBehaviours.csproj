@@ -298,8 +298,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Comps\CompHovering.cs" />
-    <Compile Include="Comps\CompProperties_Hovering.cs" />
     <Compile Include="DamageWorkers\DamageWorker_Demoralizer.cs" />
     <Compile Include="DeathActionWorkers\DeathActionWorker_GargantuanExplosion.cs" />
     <Compile Include="Enums\MonsterClassEnum.cs" />

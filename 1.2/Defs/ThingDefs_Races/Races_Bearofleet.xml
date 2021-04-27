@@ -35,9 +35,8 @@
 			</li>
 		</tools>
 		<comps>
-			<li Class="WMHAnimalBehaviours.CompProperties_Hovering">
-				<isFloater>true</isFloater>
-				<canCrossWater>true</canCrossWater>
+			<li Class="AnimalBehaviours.CompProperties_Floating">
+
 			</li>
 			<li Class="AnimalBehaviours.CompProperties_HediffEffecter">
 				<radius>40</radius>
