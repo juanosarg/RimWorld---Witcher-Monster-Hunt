@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+	<!-- ============================================================ -->
+
+	<ThingDef ParentName="WMH_MonsterBase">
+		<defName>WMH_Chort</defName>
+		<label>chort</label>
+
+		<description>Chorts are the somewhat smaller kin of fiends. They fight with little finesse, running straight towards their opponent and trying to knock him to the ground with the force of their charge. If surrounded by enemies, Chorts often use their third eye to throw an enemy into a berserk rage, making him turn on his allies.\n\nMonster class traits: Being a Relict, Chort contract provides much higher rewards.</description>
+		<statBases>
+			<MoveSpeed>5.7</MoveSpeed>
+			<ComfyTemperatureMin>-100</ComfyTemperatureMin>
+			<Flammability>0</Flammability>
+			<MarketValue>4000</MarketValue>
+		</statBases>
+		<tools>
+			<li>
+				<label>horn</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>35</power>
+				<cooldownTime>0.85</cooldownTime>
+				<linkedBodyPartsGroup>HornAttackTool</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>horn</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>27</power>
+				<cooldownTime>1.7</cooldownTime>
+				<linkedBodyPartsGroup>HornAttackTool</linkedBodyPartsGroup>
+			</li>
+
+			<li>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>1.65</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1.65</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+
+		</tools>
+		<comps>
+			<li Class="AnimalBehaviours.CompProperties_MindEffecter">
+				<radius>20</radius>
+				<tickInterval>750</tickInterval>
+				<mentalState>Berserk</mentalState>
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_Untameable">
+				<factionToReturnTo>WMH_Monsters</factionToReturnTo>
+				
+			</li>
+		</comps>
+		<race>
+
+			<body>WMH_QuadrupedWithPawsAndHorns</body>
+			<baseBodySize>6.00</baseBodySize>
+			<baseHungerRate>5.0</baseHungerRate>
+			<baseHealthScale>30</baseHealthScale>
+			<foodType>OmnivoreAnimal</foodType>
+			<leatherDef>Leather_Heavy</leatherDef>
+			<meatLabel>monster meat</meatLabel>
+			<wildness>0.99</wildness>
+			<manhunterOnDamageChance>1.0</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>1.0</manhunterOnTameFailChance>
+			<trainability>Advanced</trainability>
+			<gestationPeriodDays>75</gestationPeriodDays>
+			<litterSizeCurve>
+				<points>
+					<li>(0.99, 0)</li>
+					<li>(1, 1)</li>
+					<li>(1.01, 0)</li>
+				</points>
+			</litterSizeCurve>
+			<lifeExpectancy>300</lifeExpectancy>
+			<lifeStageAges>
+				
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0</minAge>
+					<soundWounded>WMH_Pawn_Chort_Wounded</soundWounded>
+					<soundDeath>WMH_Pawn_Chort_Death</soundDeath>
+					<soundCall>WMH_Pawn_Chort_Call</soundCall>
+					<soundAngry>WMH_Pawn_Chort_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+			<li>AnimalMonster</li>
+		</tradeTags>
+		<modExtensions>
+			<li Class="WMHAnimalBehaviours.MonsterClass">
+				<monsterClass>Relict</monsterClass>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<PawnKindDef ParentName="WMH_MonsterKindBase">
+		<defName>WMH_Chort</defName>
+		<label>chort</label>
+		<race>WMH_Chort</race>
+		<combatPower>1000</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+
+		<lifeStages>
+		
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/WMH_Chort/WMH_Chort</texPath>
+					<drawSize>4.5</drawSize>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/WMH_Chort/WMH_Dessicated_Chort</texPath>
+					<drawSize>4.5</drawSize>
+				</dessicatedBodyGraphicData>
+				
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+</Defs>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>WMH_LeshyWave</defName>
+		<label>rage of nature</label>
+		
+		<graphicData>
+			<texPath>Things/Projectiles/WMH_LeshyAttack</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>WMH_VeryToxicBite</damageDef>
+			<damageAmountBase>35</damageAmountBase>
+			<speed>20</speed>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>WMH_WyvernAcidSpit</defName>
+		<label>wyvern acid spit</label>
+		
+		<graphicData>
+			<texPath>Things/Projectiles/WMH_AcidSpit</texPath>
+			<graphicClass>Graphic_Flicker</graphicClass>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>WMH_AcidSpit</damageDef>
+			<damageAmountBase>35</damageAmountBase>
+			<speed>20</speed>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>WMH_Rock</defName>
+		<label>rock</label>
+		<thingClass>Projectile_Explosive</thingClass>
+
+		<graphicData>
+			<texPath>Things/Projectiles/WMH_Boulder</texPath>
+			<graphicClass>Graphic_Flicker</graphicClass>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+						<explosionRadius >1.9</explosionRadius >
+
+			<damageDef>WMH_RockBomb</damageDef>
+			<damageAmountBase>30</damageAmountBase>
+			<speed>15</speed>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>WMH_WispProjectile</defName>
+		<label>djinn fire</label>
+			
+		<graphicData>
+			<texPath>Things/Projectiles/WMH_WispProjectile</texPath>
+			<graphicClass>Graphic_Flicker</graphicClass>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Flame</damageDef>
+			<damageAmountBase>6</damageAmountBase>
+			<speed>10</speed>
+		</projectile>
+	</ThingDef>
+	
+	
+
+
+
+
+	
+	
+
+
+
+</Defs>

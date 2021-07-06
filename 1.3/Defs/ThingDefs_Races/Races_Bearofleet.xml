@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="WMH_MonsterBase">
+		<defName>WMH_Bearofleet</defName>
+		<label>bearofleet</label>
+		
+		<description>Bearofleets are genetic monstrosities created by the hubris of man. They were created by advanced genetic splicing of Aerofleet and Bear genetic material, and released into the wild, where their voracious appetite has proven to be a real challenge for small settlements. Their very presence instills a preternatural hunger in those who witness its bloated belly.\n\nMonster class traits: Being a Relict, Bearofleet contract provides much higher rewards.</description>
+
+		<statBases>
+			<MoveSpeed>3</MoveSpeed>
+			<ComfyTemperatureMin>-55</ComfyTemperatureMin>
+			<MarketValue>120</MarketValue>
+			<Flammability>0</Flammability>
+			<ArmorRating_Blunt>.5</ArmorRating_Blunt>			
+			<ArmorRating_Sharp>.5</ArmorRating_Sharp>
+		</statBases>
+		<tools>
+			<li>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>45</power>
+				<cooldownTime>2.5</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>tentacles</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>1.65</cooldownTime>
+				<linkedBodyPartsGroup>Arms</linkedBodyPartsGroup>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<comps>
+			<li Class="AnimalBehaviours.CompProperties_Floating">
+
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_HediffEffecter">
+				<radius>40</radius>
+				<severity>1</severity>
+				<tickInterval>100</tickInterval>
+				<hediff>WMH_Hunger</hediff>
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_MindEffecter">
+				<radius>20</radius>
+				<tickInterval>1000</tickInterval>
+				<mentalState>Binging_Food</mentalState>
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_Untameable">
+				<factionToReturnTo>WMH_Monsters</factionToReturnTo>
+				
+			</li>
+		</comps>
+		<race>
+			<deathActionWorkerClass>WMHAnimalBehaviours.DeathActionWorker_GargantuanExplosion</deathActionWorkerClass>
+			<executionRange>12</executionRange>
+
+			<body>WMH_JellyfishBody</body>
+			<baseBodySize>1</baseBodySize>
+			<baseHealthScale>20</baseHealthScale>
+			<baseHungerRate>0.10</baseHungerRate>
+			
+			<useMeatFrom>WMH_Chort</useMeatFrom>
+			<leatherDef>Leather_Bear</leatherDef>
+			<wildness>1</wildness>
+			<canBePredatorPrey>false</canBePredatorPrey>
+			<trainability>None</trainability>
+
+			<mateMtbHours>10000</mateMtbHours>
+			<gestationPeriodDays>10000</gestationPeriodDays>
+			<lifeExpectancy>12</lifeExpectancy>
+			<lifeStageAges>
+
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.30</minAge>
+					<soundWounded>WMH_Pawn_Relict_Wounded</soundWounded>
+					<soundDeath>WMH_Pawn_Relict_Death</soundDeath>
+					<soundCall>WMH_Pawn_Relict_Call</soundCall>
+					<soundAngry>WMH_Pawn_Relict_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+
+		</race>
+		<tradeTags>
+			<li>AnimalMonster</li>
+		</tradeTags>
+		<modExtensions>
+			<li Class="WMHAnimalBehaviours.MonsterClass">
+				<monsterClass>Relict</monsterClass>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<PawnKindDef ParentName="WMH_MonsterKindBase">
+		<defName>WMH_Bearofleet</defName>
+		<label>bearofleet</label>
+		<race>WMH_Bearofleet</race>
+		<combatPower>1000</combatPower>
+		 <canArriveManhunter>false</canArriveManhunter>
+
+		<lifeStages>
+
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/WMH_Bearofleet/WMH_Bearofleet</texPath>
+					<drawSize>3</drawSize>
+				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>Things/Pawn/Animal/WMH_Bearofleet/WMH_Bearofleet</texPath>
+					<drawSize>3</drawSize>
+				</femaleGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/WMH_Bearofleet/WMH_Dessicated_Bearofleet</texPath>
+					<drawSize>3</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+
+
+</Defs>

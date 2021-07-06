@@ -6,6 +6,7 @@
 		<li>1.0</li>
 		<li>1.1</li>
 		<li>1.2</li>
+		<li>1.3</li>
 	</supportedVersions>
 	 <modDependencies>
 		
@@ -43,6 +44,7 @@ Excellent execution of the code by Sarg Bjornson.
 
 &lt;size=24&gt;Changelog&lt;/size&gt;
 
+v1.3: Updated for Rimworld 1.3 (06/07/21)
 v1.2: Complete overhaul of the ranged animal system (04/02/21)
 1.1 (16/08/20): Tweaks to adjust code to 1.2
 1.0.0 (27/02/2020): Release

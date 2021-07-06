@@ -1,0 +1,846 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>A Dog Said... Animal Prosthetics</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+
+
+
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Alpha Animals</li>
+					</mods>
+
+					<nomatch Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<li Class="PatchOperationAdd"> 
+								<success>Always</success>
+								<xpath>/Defs</xpath>
+								<value>
+									<ResearchProjectDef>
+										<defName>VEF_ExoticProsthetics</defName>
+										<label>Exotic Animal Prosthetics</label>
+										<description>Learn to use and craft exotic animal prosthetics to replace such things as tentacles, wings, echolocation organs and so on</description>
+										<baseCost>500</baseCost>
+										<techLevel>Industrial</techLevel>
+										<researchViewX>2</researchViewX>
+										<researchViewY>2</researchViewY>
+										<prerequisites>
+											<li>SimpleAnimalProsthetics</li>
+										</prerequisites>
+										<tab>ADogSaid</tab>
+									</ResearchProjectDef>
+									<ResearchProjectDef>
+										<defName>VEF_ExoticBionics</defName>
+										<label>Exotic Animal Bionics</label>
+										<description>Learn to use and craft exotic bionics to create bionic tentacles, wings, echolocation organs, etc</description>
+										<baseCost>1000</baseCost>
+										<techLevel>Spacer</techLevel>
+										<researchViewX>2</researchViewX>
+										<researchViewY>3</researchViewY>
+										<prerequisites>
+											<li>AnimalBionics</li>
+										</prerequisites>
+										<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+										<tab>ADogSaid</tab>
+									</ResearchProjectDef>
+									<ResearchProjectDef>
+										<defName>VEF_AdvancedAnimalImplants</defName>
+										<label>Advanced Animal Implants</label>
+										<description>Learn to extract certain abilities from animals and implant them in others. Ranged animal attacks can also be implanted in a different animal</description>
+										<baseCost>2500</baseCost>
+										<techLevel>Spacer</techLevel>
+										<researchViewX>2</researchViewX>
+										<researchViewY>4</researchViewY>
+										<prerequisites>
+											<li>AnimalBionics</li>
+											<li>VEF_ExoticBionics</li>
+										</prerequisites>
+										<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+										<tab>ADogSaid</tab>
+									</ResearchProjectDef>
+									<ThingDef ParentName="BenchBaseADS">
+										<defName>VEF_AdvancedAnimalImplantsTable</defName>
+										<label>advanced animal prosthetics table</label>
+										<thingClass>Building_WorkTable</thingClass>
+										<description>Allows you to extract certain abilities from animals and implant them in others. Ranged animal attacks can also be implanted in a different animal</description>
+										<graphicData>
+											<texPath>Things/Building/VEF_AdvancedAnimalImplantsTable</texPath>
+											<graphicClass>Graphic_Multi</graphicClass>
+											<drawSize>(2.33,1.5)</drawSize>
+											<damageData>
+												<cornerTL>Damage/Corner</cornerTL>
+												<cornerTR>Damage/Corner</cornerTR>
+												<cornerBL>Damage/Corner</cornerBL>
+												<cornerBR>Damage/Corner</cornerBR>
+											</damageData>
+										</graphicData>
+										<size>(2,1)</size>
+										<costList>
+											<Steel>200</Steel>								
+											<ComponentSpacer>5</ComponentSpacer>
+										</costList>
+										<altitudeLayer>Building</altitudeLayer>
+										<fillPercent>0.5</fillPercent>
+										<useHitPoints>True</useHitPoints>
+										<statBases>
+											<WorkToBuild>7500</WorkToBuild>
+											<MaxHitPoints>300</MaxHitPoints>
+											<Flammability>0</Flammability>
+											<Cleanliness>-2</Cleanliness>
+										</statBases>
+										<designationCategory>Production</designationCategory>
+										<passability>PassThroughOnly</passability>
+										<pathCost>70</pathCost>
+										<hasInteractionCell>True</hasInteractionCell>
+										<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+										<surfaceType>Item</surfaceType>
+										<inspectorTabs>
+											<li>ITab_Bills</li>
+										</inspectorTabs>
+										<building>
+											<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+										</building>
+										<researchPrerequisites>
+											<li>Electricity</li>
+											<li>VEF_AdvancedAnimalImplants</li>
+										</researchPrerequisites>
+										<comps>
+											<li Class="CompProperties_Power">
+												<compClass>CompPowerTrader</compClass>
+												<shortCircuitInRain>true</shortCircuitInRain>
+												<basePowerConsumption>150</basePowerConsumption>
+											</li>
+											<li Class="CompProperties_AffectedByFacilities">
+												<linkableFacilities>
+													<li>ToolCabinet</li>
+												</linkableFacilities>
+											</li>
+											<li Class="CompProperties_Flickable"/>
+											<li Class="CompProperties_Breakdownable"/>
+										</comps>
+										<placeWorkers>
+											<li>PlaceWorker_ShowFacilitiesConnections</li>
+										</placeWorkers>
+										<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+									</ThingDef>
+
+									<WorkGiverDef>
+										<defName>VEF_DoBillsAdvancedAnimalImplantsTable</defName>
+										<label>make advanced animal implants</label>
+										<giverClass>WorkGiver_DoBill</giverClass>
+										<workType>Crafting</workType>
+										<priorityInType>85</priorityInType>
+										<fixedBillGiverDefs>
+											<li>VEF_AdvancedAnimalImplantsTable</li>
+										</fixedBillGiverDefs>
+										<verb>make advanced animal implants</verb>
+										<gerund>making advanced animal implants at</gerund>
+										<requiredCapacities>
+											<li>Manipulation</li>
+										</requiredCapacities>
+										<prioritizeSustains>true</prioritizeSustains>
+									</WorkGiverDef>
+
+									<BodyPartDef>
+										<defName>AA_JellyfishMainBody</defName>
+										<label>hood</label>
+										<hitPoints>30</hitPoints>
+										<skinCovered>true</skinCovered>
+										<tags>
+											<li>MovingLimbCore</li>
+										</tags>
+									</BodyPartDef>
+									<BodyPartDef>
+										<defName>AA_Protoplasm</defName>
+										<label>protoplasm</label>
+										<hitPoints>30</hitPoints>
+										<skinCovered>true</skinCovered>
+										<tags>
+											<li>MovingLimbCore</li>
+											<li>BloodPumpingSource</li>
+											<li>BloodFiltrationSource</li>
+											<li>MetabolismSource</li>
+											<li>BreathingSource</li>
+										</tags>
+									</BodyPartDef>
+									<BodyPartDef>
+										<defName>AA_Thorax</defName>
+										<label>thorax</label>
+										<hitPoints>60</hitPoints>
+										<frostbiteVulnerability>0.8</frostbiteVulnerability>
+										<skinCovered>false</skinCovered>
+									</BodyPartDef>
+									<BodyPartDef>
+										<defName>AA_SentientPlantBody</defName>
+										<label>sentient plant body</label>
+										<hitPoints>40</hitPoints>
+										<frostbiteVulnerability>1</frostbiteVulnerability>
+										<skinCovered>true</skinCovered>
+										<tags>
+											<li>MovingLimbCore</li>
+										</tags>
+									</BodyPartDef>
+									<BodyPartDef>
+										<defName>AA_SlugBody</defName>
+										<label>slug body</label>
+										<hitPoints>25</hitPoints>
+										<skinCovered>true</skinCovered>
+										<tags>
+											<li>MovingLimbCore</li>
+										</tags>
+									</BodyPartDef>									
+									<BodyPartDef>
+										<defName>AA_InsectSting</defName>
+										<label>stinger</label>
+										<hitPoints>3</hitPoints>
+										<skinCovered>false</skinCovered>
+										<solid>true</solid>
+										<bleedRate>0</bleedRate>
+									</BodyPartDef>
+								</value>
+							</li>
+						</operations>
+					</nomatch>
+
+				</li>
+
+
+
+
+				<!-- Rage of Nature -->
+
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<HediffDef ParentName="ImplantHediffBase">
+							<defName>WMH_RageOfNatureImplant</defName>
+							<label>rage of nature implant</label>
+							<labelNoun>a rage of nature implant</labelNoun>
+							<description>An installed rage of nature implant. This implant will allow this creature to use a very dangerous venomous attack that will cause toxic buildup.\n\nNote that installing this on a creature that already has a rage of nature attack will have no effect.</description>
+							<descriptionHyperlinks>
+								<ThingDef>WMH_RageOfNatureImplant</ThingDef>
+							</descriptionHyperlinks>
+							<spawnThingOnRemoved>WMH_RageOfNatureImplant</spawnThingOnRemoved>
+							<comps>
+								<li Class="MVCF.Comps.HediffCompProperties_ExtendedVerbGiver">
+									<verbs>
+										<li>
+											<verbClass>Verb_Shoot</verbClass>
+											<accuracyTouch>1</accuracyTouch>
+											<accuracyShort>1</accuracyShort>
+											<accuracyMedium>0.9</accuracyMedium>
+											<accuracyLong>0.8</accuracyLong>
+											<hasStandardCommand>true</hasStandardCommand>
+											<defaultProjectile>WMH_LeshyWave</defaultProjectile>
+											<warmupTime>1.5</warmupTime>
+											<burstShotCount>1</burstShotCount>				
+											<minRange>5</minRange>
+											<range>40</range>
+											<muzzleFlashScale>0</muzzleFlashScale>
+											<label>rage of nature</label>
+											<commonality>1</commonality>
+										</li>
+									</verbs>
+									<verbProps>
+										<li>
+											<label>rage of nature</label>
+											<draw>false</draw>
+											<canBeToggled>true</canBeToggled>											
+											<canFireIndependently>false</canFireIndependently>
+										</li>
+									</verbProps>
+								</li>
+							</comps>
+							<addedPartProps>
+								<solid>true</solid>
+
+								<betterThanNatural>true</betterThanNatural>
+							</addedPartProps>
+						</HediffDef>
+
+						<ThingDef ParentName="BodyPartArtificialBaseADS">
+							<graphicData>
+								<texPath>Things/Item/VEF_AnimalBodyPart_ranged</texPath>
+								<graphicClass>Graphic_Single</graphicClass>
+								<drawSize>0.80</drawSize>
+							</graphicData>
+							<defName>WMH_RageOfNatureImplant</defName>
+							<label>rage of nature implant</label>
+							<description>A rage of nature implant. This implant will allow this creature to use a very dangerous venomous attack that will cause toxic buildup.\n\nNote that installing this on a creature that already has a rage of nature attack will have no effect.</description>
+							<descriptionHyperlinks>
+								<RecipeDef>WMH_InstallRageOfNatureImplant</RecipeDef>
+							</descriptionHyperlinks>
+							<statBases>
+								<MarketValue>800</MarketValue>
+								<Mass>2</Mass>
+							</statBases>
+
+						</ThingDef>
+
+						<RecipeDef ParentName="SurgeryFlesh">							
+							<defName>WMH_InstallRageOfNatureImplant</defName>
+							<label>install rage of nature implant</label>
+							<description>Install a rage of nature implant. This implant will allow this creature to use a very dangerous venomous attack that will cause toxic buildup.\n\nNote that installing this on a creature that already has a rage of nature attack will have no effect.</description>
+							<descriptionHyperlinks>
+								<ThingDef>WMH_RageOfNatureImplant</ThingDef>
+								<HediffDef>WMH_RageOfNatureImplant</HediffDef>
+							</descriptionHyperlinks>
+							<workerClass>Recipe_InstallImplant</workerClass>
+							<workAmount>2500</workAmount>
+							<skillRequirements>
+								<Medicine>8</Medicine>
+							</skillRequirements>
+							<jobString>Installing rage of nature implant.</jobString>
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>WMH_RageOfNatureImplant</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+								<li>
+									<filter>
+										<categories>
+											<li>Medicine</li>
+										</categories>
+									</filter>
+									<count>5</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<thingDefs>
+									<li>WMH_RageOfNatureImplant</li>
+								</thingDefs>
+								<categories>
+									<li>Medicine</li>
+								</categories>
+							</fixedIngredientFilter>
+							<appliedOnFixedBodyParts>
+								<li>Body</li>								
+								<li>SnakeBody</li>
+								<li>AA_JellyfishMainBody</li>
+								<li>AA_Protoplasm</li>
+								<li>AA_Thorax</li>
+								<li>AA_SentientPlantBody</li>
+								<li>AA_SlugBody</li>								
+							</appliedOnFixedBodyParts>
+							<addsHediff>WMH_RageOfNatureImplant</addsHediff>
+						</RecipeDef>
+
+						<RecipeDef>
+							<defName>WMH_MakeRageOfNatureImplant</defName>
+							<label>make a rage of nature implant</label>
+							<description>Make a rage of nature implant from a Leshy corpse. This implant will allow this creature to use a very dangerous venomous attack that will cause toxic buildup.\n\nNote that installing this on a creature that already has a rage of nature attack will have no effect.</description>
+							<jobString>Making rage of nature implant</jobString>							
+							<workAmount>15000</workAmount>		
+							<recipeUsers>
+								<li>VEF_AdvancedAnimalImplantsTable</li>
+							</recipeUsers>		
+							<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+							<workSkill>Crafting</workSkill>
+							<effectWorking>Smith</effectWorking>
+							<soundWorking>Recipe_Smith</soundWorking>
+							<skillRequirements>
+								<Crafting>10</Crafting>
+							</skillRequirements>
+							<unfinishedThingDef>UnfinishedAnimalPart</unfinishedThingDef>
+							<researchPrerequisite>VEF_AdvancedAnimalImplants</researchPrerequisite>							
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>Corpse_WMH_Leshy</li>
+
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>Plasteel</li>											
+										</thingDefs>
+									</filter>
+									<count>100</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>ComponentSpacer</li>										
+										</thingDefs>
+									</filter>
+									<count>10</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<thingDefs>
+									<li>Corpse_WMH_Leshy</li>
+									<li>Plasteel</li>
+									<li>ComponentSpacer</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<defaultIngredientFilter>
+								<thingDefs>
+									<li>Corpse_WMH_Leshy</li>
+									<li>Plasteel</li>
+									<li>ComponentSpacer</li>
+								</thingDefs>
+							</defaultIngredientFilter>
+							<products>
+								<WMH_RageOfNatureImplant>1</WMH_RageOfNatureImplant>
+							</products>
+						</RecipeDef>
+
+						<RecipeDef ParentName="SurgeryRemoveImplantBase">
+							<defName>WMH_RemoveRageOfNatureImplant</defName>
+							<label>remove rage of nature implant</label>
+							<description>Remove rage of nature implant. This will remove the rage of nature attack.</description>
+							<descriptionHyperlinks>
+								<ThingDef>WMH_RageOfNatureImplant</ThingDef>
+								<HediffDef>WMH_RageOfNatureImplant</HediffDef>
+							</descriptionHyperlinks>
+							<jobString>Removing rage of nature implant.</jobString>
+							<removesHediff>WMH_RageOfNatureImplant</removesHediff>
+						</RecipeDef>
+					</value>
+				</li>
+
+				<!-- Wyvern Acid Spitter -->
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<HediffDef ParentName="ImplantHediffBase">
+							<defName>WMH_WyvernAcidSpitterImplant</defName>
+							<label>wyvern acid spitter implant</label>
+							<labelNoun>a wyvern acid spitter implant</labelNoun>
+							<description>An installed wyvern acid spitter implant. This implant will allow this creature to use a very potent ranged acid spit attack that causes damage over time.\n\nNote that installing this on a creature that already has a wyvern acid spitter will have no effect. This implant can only be used by animals that have a mouth (and not, for example, a beak or proboscis).</description>
+							<descriptionHyperlinks>
+								<ThingDef>WMH_WyvernAcidSpitterImplant</ThingDef>
+							</descriptionHyperlinks>
+							<spawnThingOnRemoved>WMH_WyvernAcidSpitterImplant</spawnThingOnRemoved>
+							<comps>
+								<li Class="MVCF.Comps.HediffCompProperties_ExtendedVerbGiver">
+									<verbs>
+										<li>
+											<verbClass>Verb_Shoot</verbClass>
+											<accuracyTouch>1</accuracyTouch>
+											<accuracyShort>1</accuracyShort>
+											<accuracyMedium>1</accuracyMedium>
+											<accuracyLong>1</accuracyLong>
+											<hasStandardCommand>true</hasStandardCommand>
+											<defaultProjectile>WMH_WyvernAcidSpit</defaultProjectile>
+											<warmupTime>3</warmupTime>
+											<burstShotCount>1</burstShotCount>				
+											<minRange>10</minRange>
+											<range>30</range>
+											<label>wyvern acid spit</label>
+											<muzzleFlashScale>0</muzzleFlashScale>
+											<commonality>0.5</commonality>
+										</li>
+									</verbs>
+									<verbProps>
+										<li>
+											<label>wyvern acid spit</label>
+											<draw>false</draw>
+											<canBeToggled>true</canBeToggled>											
+											<canFireIndependently>false</canFireIndependently>
+										</li>
+									</verbProps>
+								</li>
+							</comps>
+							<addedPartProps>
+								<solid>true</solid>
+								<partEfficiency>0.75</partEfficiency>
+								<betterThanNatural>true</betterThanNatural>
+							</addedPartProps>
+						</HediffDef>
+
+						<ThingDef ParentName="BodyPartArtificialBaseADS">
+							<graphicData>
+								<texPath>Things/Item/VEF_AnimalBodyPart_ranged</texPath>
+								<graphicClass>Graphic_Single</graphicClass>
+								<drawSize>0.80</drawSize>
+							</graphicData>
+							<defName>WMH_WyvernAcidSpitterImplant</defName>
+							<label>wyvern acid spitter implant</label>
+							<description>A wyvern acid spitter implant. This implant will allow this creature to use a very potent ranged acid spit attack that causes damage over time.\n\nNote that installing this on a creature that already has a wyvern acid spitter will have no effect. This implant can only be used by animals that have a mouth (and not, for example, a beak or proboscis).</description>
+							<descriptionHyperlinks>
+								<RecipeDef>WMH_InstallWyvernAcidSpitterImplant</RecipeDef>
+							</descriptionHyperlinks>
+							<statBases>
+								<MarketValue>800</MarketValue>
+								<Mass>2</Mass>
+							</statBases>
+
+						</ThingDef>
+
+						<RecipeDef ParentName="SurgeryFlesh">							
+							<defName>WMH_InstallWyvernAcidSpitterImplant</defName>
+							<label>install wyvern acid spitter implant</label>
+							<description>Install a wyvern acid spitter implant. This implant will allow this creature to use a very potent ranged acid spit attack that causes damage over time.\n\nNote that installing this on a creature that already has a wyvern acid spitter will have no effect. This implant can only be used by animals that have a mouth (and not, for example, a beak or proboscis).</description>
+							<descriptionHyperlinks>
+								<ThingDef>WMH_WyvernAcidSpitterImplant</ThingDef>
+								<HediffDef>WMH_WyvernAcidSpitterImplant</HediffDef>
+							</descriptionHyperlinks>
+							<workerClass>Recipe_InstallImplant</workerClass>
+							<workAmount>2500</workAmount>
+							<skillRequirements>
+								<Medicine>8</Medicine>
+							</skillRequirements>
+							<jobString>Installing wyvern acid spitter implant.</jobString>
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>WMH_WyvernAcidSpitterImplant</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+								<li>
+									<filter>
+										<categories>
+											<li>Medicine</li>
+										</categories>
+									</filter>
+									<count>5</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<thingDefs>
+									<li>WMH_WyvernAcidSpitterImplant</li>
+								</thingDefs>
+								<categories>
+									<li>Medicine</li>
+								</categories>
+							</fixedIngredientFilter>
+							<appliedOnFixedBodyParts>
+								<li>AnimalJaw</li>								
+													
+							</appliedOnFixedBodyParts>
+							<addsHediff>WMH_WyvernAcidSpitterImplant</addsHediff>
+						</RecipeDef>
+
+						<RecipeDef>
+							<defName>WMH_MakeWyvernAcidSpitterImplant</defName>
+							<label>make a wyvern acid spitter implant</label>
+							<description>Make a wyvern acid spitter implant from a Wyvern corpse. This implant will allow this creature to use a very potent ranged acid spit attack that causes damage over time.\n\nNote that installing this on a creature that already has a wyvern acid spitter will have no effect. This implant can only be used by animals that have a mouth (and not, for example, a beak or proboscis).</description>
+							<jobString>Making wyvern acid spitter implant</jobString>							
+							<workAmount>15000</workAmount>		
+							<recipeUsers>
+								<li>VEF_AdvancedAnimalImplantsTable</li>
+							</recipeUsers>		
+							<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+							<workSkill>Crafting</workSkill>
+							<effectWorking>Smith</effectWorking>
+							<soundWorking>Recipe_Smith</soundWorking>
+							<skillRequirements>
+								<Crafting>10</Crafting>
+							</skillRequirements>
+							<unfinishedThingDef>UnfinishedAnimalPart</unfinishedThingDef>
+							<researchPrerequisite>VEF_AdvancedAnimalImplants</researchPrerequisite>							
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>Corpse_WMH_Wyvern</li>
+
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>Plasteel</li>											
+										</thingDefs>
+									</filter>
+									<count>100</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>ComponentSpacer</li>										
+										</thingDefs>
+									</filter>
+									<count>10</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<thingDefs>
+									<li>Corpse_WMH_Wyvern</li>
+									<li>Plasteel</li>
+									<li>ComponentSpacer</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<defaultIngredientFilter>
+								<thingDefs>
+									<li>Corpse_WMH_Wyvern</li>
+									<li>Plasteel</li>
+									<li>ComponentSpacer</li>
+								</thingDefs>
+							</defaultIngredientFilter>
+							<products>
+								<WMH_WyvernAcidSpitterImplant>1</WMH_WyvernAcidSpitterImplant>
+							</products>
+						</RecipeDef>
+
+						<RecipeDef ParentName="SurgeryRemoveImplantBase">
+							<defName>WMH_RemoveWyvernAcidSpitterImplant</defName>
+							<label>remove wyvern acid spitter implant</label>
+							<description>Remove wyvern acid spitter implant. This will remove the wyvern acid spitter attack.</description>
+							<descriptionHyperlinks>
+								<ThingDef>WMH_WyvernAcidSpitterImplant</ThingDef>
+								<HediffDef>WMH_WyvernAcidSpitterImplant</HediffDef>
+							</descriptionHyperlinks>
+							<jobString>Removing wyvern acid spitter implant.</jobString>
+							<removesHediff>WMH_WyvernAcidSpitterImplant</removesHediff>
+						</RecipeDef>
+					</value>
+				</li>
+
+				<!-- Djinn Fire -->
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<HediffDef ParentName="ImplantHediffBase">
+							<defName>WMH_DjinnFireImplant</defName>
+							<label>djinn fire implant</label>
+							<labelNoun>a djinn fire implant</labelNoun>
+							<description>An installed djinn fire implant. This implant will allow this creature to use a very dangerous flame attack that will set enemies on fire.\n\nNote that installing this on a creature that already has a djinn fire attack will have no effect.</description>
+							<descriptionHyperlinks>
+								<ThingDef>WMH_DjinnFireImplant</ThingDef>
+							</descriptionHyperlinks>
+							<spawnThingOnRemoved>WMH_DjinnFireImplant</spawnThingOnRemoved>
+							<comps>
+								<li Class="MVCF.Comps.HediffCompProperties_ExtendedVerbGiver">
+									<verbs>
+										<li>
+											<verbClass>Verb_Shoot</verbClass>
+											<accuracyTouch>0.15</accuracyTouch>
+											<accuracyShort>0.25</accuracyShort>
+											<accuracyMedium>0.15</accuracyMedium>
+											<accuracyLong>0.1</accuracyLong>
+											<hasStandardCommand>true</hasStandardCommand>
+											<defaultProjectile>WMH_WispProjectile</defaultProjectile>
+											<warmupTime>0.1</warmupTime>
+											<ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+											<burstShotCount>75</burstShotCount>
+											<minRange>0</minRange>
+											<range>25</range>
+											<muzzleFlashScale>0</muzzleFlashScale>
+											<label>djinn fire</label>
+											<commonality>1</commonality>
+										</li>
+									</verbs>
+									<verbProps>
+										<li>
+											<label>djinn fire</label>
+											<draw>false</draw>
+											<canBeToggled>true</canBeToggled>											
+											<canFireIndependently>false</canFireIndependently>
+										</li>
+									</verbProps>
+								</li>
+							</comps>
+							<addedPartProps>
+								<solid>true</solid>
+
+								<betterThanNatural>true</betterThanNatural>
+							</addedPartProps>
+						</HediffDef>
+
+						<ThingDef ParentName="BodyPartArtificialBaseADS">
+							<graphicData>
+								<texPath>Things/Item/VEF_AnimalBodyPart_ranged</texPath>
+								<graphicClass>Graphic_Single</graphicClass>
+								<drawSize>0.80</drawSize>
+							</graphicData>
+							<defName>WMH_DjinnFireImplant</defName>
+							<label>djinn fire implant</label>
+							<description>A djinn fire implant. This implant will allow this creature to use a very dangerous flame attack that will set enemies on fire.\n\nNote that installing this on a creature that already has a djinn fire attack will have no effect.</description>
+							<descriptionHyperlinks>
+								<RecipeDef>WMH_InstallDjinnFireImplant</RecipeDef>
+							</descriptionHyperlinks>
+							<statBases>
+								<MarketValue>800</MarketValue>
+								<Mass>2</Mass>
+							</statBases>
+
+						</ThingDef>
+
+						<RecipeDef ParentName="SurgeryFlesh">							
+							<defName>WMH_InstallDjinnFireImplant</defName>
+							<label>install djinn fire implant</label>
+							<description>Install a djinn fire implant. This implant will allow this creature to use a very dangerous flame attack that will set enemies on fire.\n\nNote that installing this on a creature that already has a djinn fire attack will have no effect.</description>
+							<descriptionHyperlinks>
+								<ThingDef>WMH_DjinnFireImplant</ThingDef>
+								<HediffDef>WMH_DjinnFireImplant</HediffDef>
+							</descriptionHyperlinks>
+							<workerClass>Recipe_InstallImplant</workerClass>
+							<workAmount>2500</workAmount>
+							<skillRequirements>
+								<Medicine>8</Medicine>
+							</skillRequirements>
+							<jobString>Installing djinn fire implant.</jobString>
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>WMH_DjinnFireImplant</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+								<li>
+									<filter>
+										<categories>
+											<li>Medicine</li>
+										</categories>
+									</filter>
+									<count>5</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<thingDefs>
+									<li>WMH_DjinnFireImplant</li>
+								</thingDefs>
+								<categories>
+									<li>Medicine</li>
+								</categories>
+							</fixedIngredientFilter>
+							<appliedOnFixedBodyParts>
+								<li>Body</li>								
+								<li>SnakeBody</li>
+								<li>AA_JellyfishMainBody</li>
+								<li>AA_Protoplasm</li>
+								<li>AA_Thorax</li>
+								<li>AA_SentientPlantBody</li>
+								<li>AA_SlugBody</li>								
+							</appliedOnFixedBodyParts>
+							<addsHediff>WMH_DjinnFireImplant</addsHediff>
+						</RecipeDef>
+
+						<RecipeDef>
+							<defName>WMH_MakeDjinnFireImplant</defName>
+							<label>make a djinn fire implant</label>
+							<description>Make a djinn fire implant from a Djinn corpse. This implant will allow this creature to use a very dangerous flame attack that will set enemies on fire.\n\nNote that installing this on a creature that already has a djinn fire attack will have no effect.</description>
+							<jobString>Making djinn fire implant</jobString>							
+							<workAmount>15000</workAmount>		
+							<recipeUsers>
+								<li>VEF_AdvancedAnimalImplantsTable</li>
+							</recipeUsers>		
+							<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+							<workSkill>Crafting</workSkill>
+							<effectWorking>Smith</effectWorking>
+							<soundWorking>Recipe_Smith</soundWorking>
+							<skillRequirements>
+								<Crafting>10</Crafting>
+							</skillRequirements>
+							<unfinishedThingDef>UnfinishedAnimalPart</unfinishedThingDef>
+							<researchPrerequisite>VEF_AdvancedAnimalImplants</researchPrerequisite>							
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>Corpse_WMH_Djinn</li>
+
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>Plasteel</li>											
+										</thingDefs>
+									</filter>
+									<count>100</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>ComponentSpacer</li>										
+										</thingDefs>
+									</filter>
+									<count>10</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<thingDefs>
+									<li>Corpse_WMH_Djinn</li>
+									<li>Plasteel</li>
+									<li>ComponentSpacer</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<defaultIngredientFilter>
+								<thingDefs>
+									<li>Corpse_WMH_Djinn</li>
+									<li>Plasteel</li>
+									<li>ComponentSpacer</li>
+								</thingDefs>
+							</defaultIngredientFilter>
+							<products>
+								<WMH_DjinnFireImplant>1</WMH_DjinnFireImplant>
+							</products>
+						</RecipeDef>
+
+						<RecipeDef ParentName="SurgeryRemoveImplantBase">
+							<defName>WMH_RemoveDjinnFireImplant</defName>
+							<label>remove djinn fire implant</label>
+							<description>Remove djinn fire implant. This will remove the djinn fire attack.</description>
+							<descriptionHyperlinks>
+								<ThingDef>WMH_DjinnFireImplant</ThingDef>
+								<HediffDef>WMH_DjinnFireImplant</HediffDef>
+							</descriptionHyperlinks>
+							<jobString>Removing djinn fire implant.</jobString>
+							<removesHediff>WMH_DjinnFireImplant</removesHediff>
+						</RecipeDef>
+					</value>
+				</li>
+
+
+
+				<!-- Final patch to vanilla to ensure these operations appear in all animals when they should -->
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[@Name="AnimalThingBase"]/recipes</xpath>
+					<value>
+
+						<li>WMH_InstallRageOfNatureImplant</li>
+						<li>WMH_RemoveRageOfNatureImplant</li>
+						<li>WMH_InstallWyvernAcidSpitterImplant</li>
+						<li>WMH_RemoveWyvernAcidSpitterImplant</li>
+						<li>WMH_InstallDjinnFireImplant</li>
+						<li>WMH_RemoveDjinnFireImplant</li>
+
+					</value>
+				</li>
+
+
+
+
+
+
+
+
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
+

@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+
+	
+	<DamageDef>
+		<defName>WMH_VeryToxicBite</defName>
+		<label>virulent toxic bite</label>
+		<workerClass>DamageWorker_Stab</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has been stung to death.</deathMessage>
+		<hediff>Stab</hediff>
+		<hediffSolid>Crack</hediffSolid>
+		<additionalHediffs>
+			<li>
+				<hediff>WMH_ToxicBuildup</hediff>
+				<severityPerDamageDealt>0.03</severityPerDamageDealt>
+				<victimSeverityScaling>ToxicSensitivity</victimSeverityScaling>
+			</li>
+		</additionalHediffs>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Slice</impactSoundType>
+		<armorCategory>Sharp</armorCategory>
+	</DamageDef>
+
+	<DamageDef ParentName="Bite">
+		<defName>WMH_WerewolfBite</defName>
+		<label>werewolf bite</label>
+		<additionalHediffs>
+			<li>
+				<hediff>WMH_Lycanthropy</hediff>
+				<severityPerDamageDealt>0.0001</severityPerDamageDealt>
+
+			</li>
+		</additionalHediffs>
+	</DamageDef>
+
+	<DamageDef ParentName="Bite">
+		<defName>WMH_EkimmaraBite</defName>
+		<label>ekimmara bite</label>
+		<additionalHediffs>
+			<li>
+				<hediff>WMH_VampirismEkimmara</hediff>
+				<severityPerDamageDealt>0.0001</severityPerDamageDealt>
+
+			</li>
+		</additionalHediffs>
+	</DamageDef>
+
+	<DamageDef ParentName="Bite">
+		<defName>WMH_FlederBite</defName>
+		<label>fleder bite</label>
+		<additionalHediffs>
+			<li>
+				<hediff>WMH_VampirismFleder</hediff>
+				<severityPerDamageDealt>0.0001</severityPerDamageDealt>
+
+			</li>
+		</additionalHediffs>
+	</DamageDef>	
+
+	<DamageDef ParentName="Bite">
+		<defName>WMH_Berserk</defName>
+		<label>berserk wave</label>
+		<workerClass>AnimalBehaviours.DamageWorker_Berserk</workerClass>
+
+	</DamageDef>
+
+	<DamageDef ParentName="BluntBase">
+		<defName>WMH_HymPunch</defName>
+		<label>hym claws</label>
+		<workerClass>WMHAnimalBehaviours.DamageWorker_Demoralizer</workerClass>
+
+	</DamageDef>
+
+	<DamageDef ParentName="CutBase">
+		<defName>WMH_InfectedClaws</defName>
+		<label>infected claws</label>
+		<workerClass>AnimalBehaviours.DamageWorker_ExtraInfecter</workerClass>
+		<additionalHediffs>
+			<li>
+				<hediff>WMH_Vomiting</hediff>
+				<severityPerDamageDealt>0.03</severityPerDamageDealt>
+				<victimSeverityScaling>ToxicSensitivity</victimSeverityScaling>
+
+			</li>
+		</additionalHediffs>
+	</DamageDef>
+
+
+
+	<DamageDef ParentName="Bite">
+		<defName>WMH_ParalysingBite</defName>
+		<label>paralysing bite</label>
+		<additionalHediffs>
+			<li>
+				<hediff>WMH_Paralysis</hediff>
+				<severityPerDamageDealt>0.01</severityPerDamageDealt>
+			</li>
+		</additionalHediffs>
+	</DamageDef>
+	
+	<DamageDef>
+		<defName>WMH_AcidSpit</defName>
+		<label>acid spit</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has been corroded to death.</deathMessage>
+		<hediff>Burn</hediff>
+		<additionalHediffs>
+			<li>
+				<hediff>WMH_AcidBuildup</hediff>
+				<severityPerDamageDealt>0.01</severityPerDamageDealt>
+				
+			</li>
+		</additionalHediffs>
+		<isRanged>true</isRanged>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<armorCategory>Heat</armorCategory>
+	</DamageDef>
+	
+	<DamageDef>
+		<defName>WMH_SecondaryAcidBurn</defName>
+		<label>acid burn</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has been corroded to death.</deathMessage>
+		<hediff>Burn</hediff>
+		
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<armorCategory>Heat</armorCategory>
+	</DamageDef>
+
+	<DamageDef>
+		<defName>WMH_RockBomb</defName>
+		<label>rock</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<externalViolence>true</externalViolence>
+		<isExplosive>true</isExplosive>
+		<deathMessage>{0} has died crushed by a huge boulder.</deathMessage>
+		<hediff>Crush</hediff>
+		<hediffSkin>Cut</hediffSkin>
+		<hediffSolid>Crack</hediffSolid>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Blunt</impactSoundType>
+		<armorCategory>Blunt</armorCategory>
+		<minDamageToFragment>15</minDamageToFragment>
+		<defaultDamage>30</defaultDamage>
+		<defaultStoppingPower>0.5</defaultStoppingPower>
+		<defaultArmorPenetration>0.10</defaultArmorPenetration>
+		<buildingDamageFactor>4</buildingDamageFactor>
+		<plantDamageFactor>4</plantDamageFactor>
+		<explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+		<explosionHeatEnergyPerCell>5</explosionHeatEnergyPerCell>
+		<explosionCellFleck>DustPuff</explosionCellFleck>
+		<explosionColorCenter>(0.6, 0.6, 0.6)</explosionColorCenter>
+		<explosionColorEdge>(0.5, 0.5, 0.5)</explosionColorEdge>
+		<soundExplosion>Explosion_Smoke</soundExplosion>
+		<combatLogRules>Damage_Bomb</combatLogRules>
+	</DamageDef>
+	
+	
+
+
+
+
+
+
+
+</Defs>

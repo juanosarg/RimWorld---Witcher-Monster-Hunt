@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<AchievementsExpanded.AchievementDef>
+		<defName>BasiliskContract</defName>
+		<label>Basilisk Contract</label>
+		<description>Kill a basilisk</description>
+		<tab>WitcherMonsterHunt</tab>
+		<tracker Class="AchievementsExpanded.KillTracker">
+			<kindDef>WMH_Basilisk</kindDef>
+			<count>1</count>
+		</tracker>
+		
+		<texPath>Achievements/AchievementBasilisk</texPath>
+		<points>25</points>
+	</AchievementsExpanded.AchievementDef>
+	
+	<AchievementsExpanded.AchievementDef>
+		<defName>BearofleetContract</defName>
+		<label>Bearofleet Contract</label>
+		<description>Kill a bearofleet</description>
+		<tab>WitcherMonsterHunt</tab>
+		<tracker Class="AchievementsExpanded.KillTracker">
+			<kindDef>WMH_Bearofleet</kindDef>
+			<count>1</count>
+		</tracker>
+		
+		<texPath>Achievements/AchievementBearofleet</texPath>
+		<points>100</points>
+	</AchievementsExpanded.AchievementDef>
+	
+	<AchievementsExpanded.AchievementDef>
+		<defName>ChortContract</defName>
+		<label>Chort Contract</label>
+		<description>Kill a chort</description>
+		<tab>WitcherMonsterHunt</tab>
+		<tracker Class="AchievementsExpanded.KillTracker">
+			<kindDef>WMH_Chort</kindDef>
+			<count>1</count>
+		</tracker>
+		
+		<texPath>Achievements/AchievementChort</texPath>
+		<points>100</points>
+	</AchievementsExpanded.AchievementDef>
+	
+	<AchievementsExpanded.AchievementDef>
+		<defName>CyclopsContract</defName>
+		<label>Cyclops Contract</label>
+		<description>Kill a cyclops</description>
+		<tab>WitcherMonsterHunt</tab>
+		<tracker Class="AchievementsExpanded.KillTracker">
+			<kindDef>WMH_Cyclops</kindDef>
+			<count>1</count>
+		</tracker>
+		
+		<texPath>Achievements/AchievementCyclops</texPath>
+		<points>25</points>
+	</AchievementsExpanded.AchievementDef>
+	
+	<AchievementsExpanded.AchievementDef>
+		<defName>DjinnContract</defName>
+		<label>Djinn Contract</label>
+		<description>Kill a djinn</description>
+		<tab>WitcherMonsterHunt</tab>
+		<tracker Class="AchievementsExpanded.KillTracker">
+			<kindDef>WMH_Djinn</kindDef>
+			<count>1</count>
+		</tracker>
+		
+		<texPath>Achievements/AchievementDjinn</texPath>
+		<points>50</points>
+	</AchievementsExpanded.AchievementDef>
+	
+	<AchievementsExpanded.AchievementDef>
+		<defName>EkimmaraContract</defName>
+		<label>Ekimarra Contract</label>
+		<description>Kill an ekimmara</description>
+		<tab>WitcherMonsterHunt</tab>
+		<tracker Class="AchievementsExpanded.KillTracker">
+			<kindDef>WMH_Ekimmara</kindDef>
+			<count>1</count>
+		</tracker>
+		
+		<texPath>Achievements/AchievementEkimmara</texPath>
+		<points>25</points>
+	</AchievementsExpanded.AchievementDef>
+	
+	<AchievementsExpanded.AchievementDef>
+		<defName>FiendContract</defName>
+		<label>Fiend Contract</label>
+		<description>Kill a fiend</description>
+		<tab>WitcherMonsterHunt</tab>
+		<tracker Class="AchievementsExpanded.KillTracker">
+			<kindDef>WMH_Fiend</kindDef>
+			<count>1</count>
+		</tracker>
+		
+		<texPath>Achievements/AchievementFiend</texPath>
+		<points>100</points>
+	</AchievementsExpanded.AchievementDef>
+	
+	<AchievementsExpanded.AchievementDef>
+		<defName>FlederContract</defName>
+		<label>Fleder Contract</label>
+		<description>Kill a fleder</description>
+		<tab>WitcherMonsterHunt</tab>
+		<tracker Class="AchievementsExpanded.KillTracker">
+			<kindDef>WMH_Fleder</kindDef>
+			<count>1</count>
+		</tracker>
+		
+		<texPath>Achievements/AchievementFleder</texPath>
+		<points>25</points>
+	</AchievementsExpanded.AchievementDef>
+	
+	<AchievementsExpanded.AchievementDef>
+		<defName>FoglerContract</defName>
+		<label>Fogler Contract</label>
+		<description>Kill a fogler</description>
+		<tab>WitcherMonsterHunt</tab>
+		<tracker Class="AchievementsExpanded.KillTracker">
+			<kindDef>WMH_Fogler</kindDef>
+			<count>1</count>
+		</tracker>
+		
+		<texPath>Achievements/AchievementFogler</texPath>
+		<points>10</points>
+	</AchievementsExpanded.AchievementDef>
+	
+	<AchievementsExpanded.AchievementDef>
+		<defName>GhoulContract</defName>
+		<label>Ghoul Contract</label>
+		<description>Kill a ghoul</description>
+		<tab>WitcherMonsterHunt</tab>
+		<tracker Class="AchievementsExpanded.KillTracker">
+			<kindDef>WMH_Ghoul</kindDef>
+			<count>1</count>
+		</tracker>
+		
+		<texPath>Achievements/AchievementGhoul</texPath>
+		<points>10</points>
+	</AchievementsExpanded.AchievementDef>
+	
+	<AchievementsExpanded.AchievementDef>
+		<defName>GolemContract</defName>
+		<label>Golem Contract</label>
+		<description>Kill a golem</description>
+		<tab>WitcherMonsterHunt</tab>
+		<tracker Class="AchievementsExpanded.KillTracker">
+			<kindDef>WMH_Golem</kindDef>
+			<count>1</count>
+		</tracker>
+		
+		<texPath>Achievements/AchievementGolem</texPath>
+		<points>25</points>
+	</AchievementsExpanded.AchievementDef>
+	
+	<AchievementsExpanded.AchievementDef>
+		<defName>HymContract</defName>
+		<label>Hym Contract</label>
+		<description>Kill a hym</description>
+		<tab>WitcherMonsterHunt</tab>
+		<tracker Class="AchievementsExpanded.KillTracker">
+			<kindDef>WMH_Hym</kindDef>
+			<count>1</count>
+		</tracker>
+		
+		<texPath>Achievements/AchievementHym</texPath>
+		<points>25</points>
+	</AchievementsExpanded.AchievementDef>
+	
+	<AchievementsExpanded.AchievementDef>
+		<defName>KikimoreContract</defName>
+		<label>Kikimore Contract</label>
+		<description>Kill a kikimore queen</description>
+		<tab>WitcherMonsterHunt</tab>
+		<tracker Class="AchievementsExpanded.KillTracker">
+			<kindDef>WMH_KikimoreQueen</kindDef>
+			<count>1</count>
+		</tracker>
+		
+		<texPath>Achievements/AchievementKikimoreQueen</texPath>
+		<points>25</points>
+	</AchievementsExpanded.AchievementDef>
+	
+	<AchievementsExpanded.AchievementDef>
+		<defName>LeshyContract</defName>
+		<label>Leshy Contract</label>
+		<description>Kill a leshy</description>
+		<tab>WitcherMonsterHunt</tab>
+		<tracker Class="AchievementsExpanded.KillTracker">
+			<kindDef>WMH_Leshy</kindDef>
+			<count>1</count>
+		</tracker>
+		
+		<texPath>Achievements/AchievementLeshy</texPath>
+		<points>100</points>
+	</AchievementsExpanded.AchievementDef>
+	
+	<AchievementsExpanded.AchievementDef>
+		<defName>NekkerContract</defName>
+		<label>Nekker Contract</label>
+		<description>Kill a nekker</description>
+		<tab>WitcherMonsterHunt</tab>
+		<tracker Class="AchievementsExpanded.KillTracker">
+			<kindDef>WMH_Nekker</kindDef>
+			<count>1</count>
+		</tracker>
+		
+		<texPath>Achievements/AchievementNekker</texPath>
+		<points>10</points>
+	</AchievementsExpanded.AchievementDef>
+	
+	<AchievementsExpanded.AchievementDef>
+		<defName>WerewolfContract</defName>
+		<label>Werewolf Contract</label>
+		<description>Kill a werewolf</description>
+		<tab>WitcherMonsterHunt</tab>
+		<tracker Class="AchievementsExpanded.KillTracker">
+			<kindDef>WMH_Werewolf</kindDef>
+			<count>1</count>
+		</tracker>
+		
+		<texPath>Achievements/AchievementWerewolf</texPath>
+		<points>25</points>
+	</AchievementsExpanded.AchievementDef>
+	
+	<AchievementsExpanded.AchievementDef>
+		<defName>WraithContract</defName>
+		<label>Wraith Contract</label>
+		<description>Kill a wraith</description>
+		<tab>WitcherMonsterHunt</tab>
+		<tracker Class="AchievementsExpanded.KillTracker">
+			<kindDef>WMH_Wraith</kindDef>
+			<count>1</count>
+		</tracker>
+		
+		<texPath>Achievements/AchievementWraith</texPath>
+		<points>25</points>
+	</AchievementsExpanded.AchievementDef>
+	
+	<AchievementsExpanded.AchievementDef>
+		<defName>WyvernContract</defName>
+		<label>Wyvern Contract</label>
+		<description>Kill a wyvern</description>
+		<tab>WitcherMonsterHunt</tab>
+		<tracker Class="AchievementsExpanded.KillTracker">
+			<kindDef>WMH_Wyvern</kindDef>
+			<count>1</count>
+		</tracker>
+		
+		<texPath>Achievements/AchievementWyvern</texPath>
+		<points>25</points>
+	</AchievementsExpanded.AchievementDef>
+		
+	
+	
+</Defs>

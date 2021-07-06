@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  
+  <BodyPartGroupDef>
+    <defName>WMH_Pseudopods</defName>
+    <label>pseudopods</label>
+  </BodyPartGroupDef>
+  
+    <BodyPartGroupDef>
+    <defName>WMH_TailAttackTool</defName>
+    <label>tail</label>
+  </BodyPartGroupDef>
+
+</Defs>
