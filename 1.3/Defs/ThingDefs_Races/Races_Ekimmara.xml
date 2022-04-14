@@ -61,6 +61,9 @@
 				<factionToReturnTo>WMH_Monsters</factionToReturnTo>
 				
 			</li>
+			<li Class="AnimalBehaviours.CompProperties_DoesntFlee">
+		
+			</li>
 		</comps>
 
 		<race>

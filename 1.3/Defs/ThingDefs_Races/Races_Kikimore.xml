@@ -44,6 +44,9 @@
 				<factionToReturnTo>WMH_Monsters</factionToReturnTo>
 
 			</li>
+			<li Class="AnimalBehaviours.CompProperties_DoesntFlee">
+		
+			</li>
 		</comps>
 		<race>
 
@@ -163,6 +166,9 @@
 				<gender>Male</gender>
 
 			</li>
+			<li Class="AnimalBehaviours.CompProperties_DoesntFlee">
+		
+			</li>
 		</comps>
 		<race>
 
@@ -279,6 +285,9 @@
 			<li Class="AnimalBehaviours.CompProperties_FixedGender">
 				<gender>Female</gender>
 
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_DoesntFlee">
+		
 			</li>
 		</comps>
 		<race>
