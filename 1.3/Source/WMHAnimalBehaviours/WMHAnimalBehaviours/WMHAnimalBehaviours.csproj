@@ -298,6 +298,7 @@
     <Compile Include="DamageWorkers\DamageWorker_Demoralizer.cs" />
     <Compile Include="DeathActionWorkers\DeathActionWorker_GargantuanExplosion.cs" />
     <Compile Include="DefOfs\InternalDefOf.cs" />
+    <Compile Include="Dev Mode\RandomMonsterQuest.cs" />
     <Compile Include="Enums\MonsterClassEnum.cs" />
     <Compile Include="AI\LordJob_LongRanged.cs" />
     <Compile Include="Defs\MonsterMapSpawnsDef.cs" />
