@@ -63,7 +63,10 @@
 
 
 
-
+	<WMH_QuestMultiplier>Monster quests rate multiplier (READ MOUSEOVER TOOLTIP)</WMH_QuestMultiplier>
+	<WMH_QuestMultiplierTooltip>The frequency of the monster quests being offered is multiplied by this number (with a multiplier of 1, it is offered every between 20 and 40 days at random). Numbers below 1 decrease the time, while numbers above it increase it. Note that this event doesn't "replace" normal quests, it works independently.</WMH_QuestMultiplierTooltip>
+	
+	<WMH_Reset>Reset</WMH_Reset>	
 
 
 
