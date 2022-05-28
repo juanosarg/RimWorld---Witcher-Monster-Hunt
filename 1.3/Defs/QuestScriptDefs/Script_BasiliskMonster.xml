@@ -4,6 +4,7 @@
   <QuestScriptDef>
     <defName>WMH_Basilisk_MonsterEncounterQuest</defName>
     <rootSelectionWeight>0</rootSelectionWeight>
+	<isRootSpecial>true</isRootSpecial>
     <rootMinPoints>0</rootMinPoints>
     <autoAccept>true</autoAccept>
     <canGiveRoyalFavor>true</canGiveRoyalFavor>

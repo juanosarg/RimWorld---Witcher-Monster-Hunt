@@ -5,6 +5,7 @@
     <defName>WMH_Chort_MonsterEncounterQuest</defName>
     <rootSelectionWeight>0</rootSelectionWeight>
     <rootMinPoints>0</rootMinPoints>
+	<isRootSpecial>true</isRootSpecial>
     <autoAccept>true</autoAccept>
     <canGiveRoyalFavor>true</canGiveRoyalFavor>
 	<defaultChallengeRating>3</defaultChallengeRating>
