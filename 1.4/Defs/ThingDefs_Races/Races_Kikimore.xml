@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ====================Worker====================== -->
+
+	<ThingDef ParentName="WMH_InsectoidMonsterBase">
+		<defName>WMAux_KikimoreWorker</defName>
+		<label>kikimore worker</label>
+
+		<description>Kikimores form colonies, making them similar to communal insects such as megaspiders. Kikimore workers take care of hunting food and bringing it back to the nest.\n\nMonster class traits: Being an Insectoid, Kikimore workers always appear with other members of their species.</description>
+		<statBases>
+			<MoveSpeed>3.00</MoveSpeed>
+			<ArmorRating_Heat>-0.5</ArmorRating_Heat>
+			<Flammability>1.5</Flammability>
+			<ComfyTemperatureMin>-30</ComfyTemperatureMin>
+			<MarketValue>100</MarketValue>
+			<LeatherAmount>0</LeatherAmount>
+		</statBases>
+		<tools>
+
+			<li>
+				<label>mandibles</label>
+				<capacities>
+					<li>ToxicBite</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.1</chanceFactor>
+			</li>
+		</tools>
+		<comps>
+			<li Class="AnimalBehaviours.CompProperties_Untameable">
+				<factionToReturnTo>WMH_Monsters</factionToReturnTo>
+
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_DoesntFlee">
+		
+			</li>
+		</comps>
+		<race>
+
+			<body>BeetleLike</body>
+			<baseBodySize>0.5</baseBodySize>
+			<baseHealthScale>1</baseHealthScale>
+			<useMeatFrom>Megaspider</useMeatFrom>
+			<lifeExpectancy>10</lifeExpectancy>
+			<wildness>1</wildness>
+			<hasGenders>false</hasGenders>
+			<lifeStageAges>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+					<soundDeath>Pawn_Megascarab_Death</soundDeath>
+					<soundCall>Pawn_Megascarab_Call</soundCall>
+					<soundAngry>Pawn_Megascarab_Angry</soundAngry>
+				</li>
+
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+			<li>AnimalMonster</li>
+		</tradeTags>
+		<modExtensions>
+			<li Class="WMHAnimalBehaviours.MonsterClass">
+				<monsterClass>Insectoid</monsterClass>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<PawnKindDef ParentName="WMH_MonsterKindBase">
+		<defName>WMAux_KikimoreWorker</defName>
+		<label>kikimore worker</label>
+		<race>WMAux_KikimoreWorker</race>
+		<combatPower>50</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+		<ecoSystemWeight>0.5</ecoSystemWeight>
+
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/WMH_KikimoreWorker/WMH_KikimoreWorker</texPath>
+					<drawSize>2</drawSize>
+					<shadowData>
+						<volume>(0.9, 0.75, 0.6)</volume>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/WMH_KikimoreWorker/WMH_Dessicated_KikimoreWorker</texPath>
+					<drawSize>2</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+
+	</PawnKindDef>
+
+
+	<!-- ====================Warrior====================== -->
+
+	<ThingDef ParentName="WMH_InsectoidMonsterBase">
+		<defName>WMAux_KikimoreWarrior</defName>
+		<label>kikimore warrior</label>
+
+		<description>Kikimores form colonies, making them similar to communal insects such as megaspiders. Kikimore warriors defend their nests from attackers. They attack somewhat slower than kikimore workers, but their bite injects potent venom.\n\nMonster class traits: Being an Insectoid, Kikimore warriors always appear with other members of their species.</description>
+		<statBases>
+			<MoveSpeed>3.00</MoveSpeed>
+			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+			<ComfyTemperatureMin>-30</ComfyTemperatureMin>
+			<ArmorRating_Heat>-0.3</ArmorRating_Heat>
+			<Flammability>1.5</Flammability>
+			<MarketValue>200</MarketValue>
+			<LeatherAmount>0</LeatherAmount>
+		</statBases>
+		<tools>
+
+			<li>
+				<label>mandibles</label>
+				<capacities>
+					<li>ToxicBite</li>
+				</capacities>
+				<power>22</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.1</chanceFactor>
+			</li>
+		</tools>
+		<comps>
+			<li Class="AnimalBehaviours.CompProperties_SummonOnSpawn">
+				<pawnDef>WMAux_KikimoreWorker</pawnDef>
+				<groupMinMax>
+					<li>2</li>
+					<li>6</li>
+				</groupMinMax>
+
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_Untameable">
+				<factionToReturnTo>WMH_Monsters</factionToReturnTo>
+
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_FixedGender">
+				<gender>Male</gender>
+
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_DoesntFlee">
+		
+			</li>
+		</comps>
+		<race>
+
+			<body>BeetleLike</body>
+			<baseBodySize>2</baseBodySize>
+			<baseHealthScale>1</baseHealthScale>
+			<useMeatFrom>Megaspider</useMeatFrom>
+			<lifeExpectancy>10</lifeExpectancy>
+			<wildness>1</wildness>
+
+			<lifeStageAges>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Spelopede_Pain</soundWounded>
+					<soundDeath>Pawn_Spelopede_Death</soundDeath>
+					<soundCall>Pawn_Spelopede_Call</soundCall>
+					<soundAngry>Pawn_Spelopede_Angry</soundAngry>
+				</li>
+
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+			<li>AnimalMonster</li>
+		</tradeTags>
+		<modExtensions>
+			<li Class="WMHAnimalBehaviours.MonsterClass">
+				<monsterClass>Insectoid</monsterClass>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<PawnKindDef ParentName="WMH_MonsterKindBase">
+		<defName>WMAux_KikimoreWarrior</defName>
+		<label>kikimore warrior</label>
+		<race>WMAux_KikimoreWarrior</race>
+		<combatPower>50</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+		<ecoSystemWeight>0.5</ecoSystemWeight>
+
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/WMH_KikimoreWarrior/WMH_KikimoreWarrior</texPath>
+					<drawSize>2.75</drawSize>
+					<shadowData>
+						<volume>(0.9, 0.75, 0.6)</volume>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/WMH_KikimoreWarrior/WMH_Dessicated_KikimoreWarrior</texPath>
+					<drawSize>2.75</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+
+	</PawnKindDef>
+
+	<!-- ====================Queen====================== -->
+
+	<ThingDef ParentName="WMH_InsectoidMonsterBase">
+		<defName>WMH_KikimoreQueen</defName>
+		<label>kikimore queen</label>
+
+		<description>Kikimores form colonies, making them similar to communal insects such as megaspiders. A kikimore colony is ruled by a queen and organized into something of a social hierarchy. Queen's bite injects paralysing venom whilst her chitin armor makes her almost immune to attacks.\n\nMonster class traits: Being an Insectoid, Kikimore queens always appear with other members of their species.</description>
+		<statBases>
+			<MoveSpeed>2.5</MoveSpeed>
+			<ArmorRating_Blunt>0.40</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.80</ArmorRating_Sharp>
+			<ArmorRating_Heat>-0.2</ArmorRating_Heat>
+			<Flammability>1.25</Flammability>
+			<ComfyTemperatureMin>-30</ComfyTemperatureMin>
+			<MarketValue>450</MarketValue>
+			<LeatherAmount>0</LeatherAmount>
+		</statBases>
+		<tools>
+
+			<li>
+				<label>mandibles</label>
+				<capacities>
+					<li>WMH_ParalysingBite</li>
+				</capacities>
+				<power>36</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.1</chanceFactor>
+			</li>
+		</tools>
+		<comps>
+			<li Class="AnimalBehaviours.CompProperties_SummonOnSpawn">
+				<pawnDef>WMAux_KikimoreWarrior</pawnDef>
+				<groupMinMax>
+					<li>2</li>
+					<li>5</li>
+				</groupMinMax>				
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_Untameable">
+				<factionToReturnTo>WMH_Monsters</factionToReturnTo>
+
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_FixedGender">
+				<gender>Female</gender>
+
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_DoesntFlee">
+		
+			</li>
+		</comps>
+		<race>
+
+			<body>BeetleLike</body>
+			<baseBodySize>5</baseBodySize>
+			<baseHealthScale>5</baseHealthScale>
+			<useMeatFrom>Megaspider</useMeatFrom>
+			<lifeExpectancy>150</lifeExpectancy>
+			<wildness>1</wildness>
+
+			<lifeStageAges>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_BigInsect_Pain</soundWounded>
+					<soundDeath>Pawn_BigInsect_Death</soundDeath>
+					<soundCall>Pawn_BigInsect_Call</soundCall>
+					<soundAngry>Pawn_BigInsect_Angry</soundAngry>
+				</li>
+
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+			<li>AnimalMonster</li>
+		</tradeTags>
+		<modExtensions>
+			<li Class="WMHAnimalBehaviours.MonsterClass">
+				<monsterClass>Insectoid</monsterClass>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<PawnKindDef ParentName="WMH_MonsterKindBase">
+		<defName>WMH_KikimoreQueen</defName>
+		<label>kikimore queen</label>
+		<race>WMH_KikimoreQueen</race>
+		<combatPower>500</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+		<ecoSystemWeight>0.5</ecoSystemWeight>
+
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/WMH_KikimoreQueen/WMH_KikimoreQueen</texPath>
+					<drawSize>3.5</drawSize>
+					<shadowData>
+						<volume>(0.9, 0.75, 0.6)</volume>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/WMH_KikimoreQueen/WMH_Dessicated_KikimoreQueen</texPath>
+					<drawSize>3.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+
+	</PawnKindDef>
+
+</Defs>

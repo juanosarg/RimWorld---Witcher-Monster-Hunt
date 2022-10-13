@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<FactionDef ParentName="FactionBase">
+		<defName>WMH_Monsters</defName>
+		<label>monsters</label>
+		<pawnSingular>monster</pawnSingular>
+		<pawnsPlural>monsters</pawnsPlural>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<fixedName>monsters</fixedName>
+		<raidCommonalityFromPointsCurve>
+			<points>
+				<li>(0, 0)</li>
+			</points>
+		</raidCommonalityFromPointsCurve>
+		<humanlikeFaction>false</humanlikeFaction>
+		<hidden>true</hidden>
+		<autoFlee>false</autoFlee>
+		<canUseAvoidGrid>false</canUseAvoidGrid>
+		<techLevel>Animal</techLevel>
+		<permanentEnemy>true</permanentEnemy>
+		<factionIconPath>World/WorldObjects/DefaultSettlement</factionIconPath>
+		<allowedArrivalTemperatureRange>
+			<min>0</min>
+			<max>45</max>
+		</allowedArrivalTemperatureRange>
+	</FactionDef>
+
+</Defs>

@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+	<!-- ============================================================ -->
+
+	<ThingDef ParentName="WMH_MonsterBase">
+		<defName>WMH_Leshy</defName>
+		<label>leshy</label>
+
+		<description>Leshy, being called an Archotech failed creation, uses it's inborn psychic ability to control the plants and animals within it's territory. When a trespasser is found, Leshy can summon packs of manhunting animals. Always staying away from the enemy, Leshy can throw projectiles of pure psychic energy.\n\nMonster class traits: Being a Relict, Leshy contract provides much higher rewards.</description>
+		<statBases>
+			<MoveSpeed>3.5</MoveSpeed>
+			<ComfyTemperatureMin>-20</ComfyTemperatureMin>
+			<MeatAmount>0</MeatAmount>
+			<Flammability>0</Flammability>
+			<LeatherAmount>0</LeatherAmount>
+			<MarketValue>1500</MarketValue>
+		</statBases>
+		<tools>
+			<li>
+				<label>horn</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>0.85</cooldownTime>
+				<linkedBodyPartsGroup>HornAttackTool</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>horn</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>1.7</cooldownTime>
+				<linkedBodyPartsGroup>HornAttackTool</linkedBodyPartsGroup>
+			</li>
+
+			<li>
+				<label>left claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>0.85</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>right claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>0.85</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>1.65</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+
+		</tools>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<accuracyTouch>1</accuracyTouch>
+				<accuracyShort>1</accuracyShort>
+				<accuracyMedium>0.9</accuracyMedium>
+				<accuracyLong>0.8</accuracyLong>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>WMH_LeshyWave</defaultProjectile>
+				<warmupTime>1.5</warmupTime>
+				<burstShotCount>1</burstShotCount>				
+				<minRange>5</minRange>
+				<range>40</range>
+				<muzzleFlashScale>0</muzzleFlashScale>
+				<label>rage of nature</label>
+				<commonality>1</commonality>
+			</li>
+
+
+		</verbs>
+		<comps>
+			<li Class="AnimalBehaviours.CompProperties_SummonOnSpawn">
+				<pawnDef>Wolf_Timber</pawnDef>
+				<groupMinMax>
+					<li>4</li>
+					<li>8</li>
+				</groupMinMax>
+				
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_Untameable">
+				<factionToReturnTo>WMH_Monsters</factionToReturnTo>
+
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_DoesntFlee">
+		
+			</li>
+		</comps>
+		<race>
+
+			<body>WMH_HornedHumanoid</body>
+			<baseBodySize>1.50</baseBodySize>
+			<baseHungerRate>1.0</baseHungerRate>
+			<baseHealthScale>15</baseHealthScale>
+			<leatherDef>Leather_Lizard</leatherDef>
+			<wildness>0.99</wildness>
+			<useMeatFrom>Human</useMeatFrom>
+			<manhunterOnDamageChance>1.0</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>1.0</manhunterOnTameFailChance>
+			<trainability>Advanced</trainability>
+			<gestationPeriodDays>75</gestationPeriodDays>
+			<litterSizeCurve>
+				<points>
+					<li>(0.99, 0)</li>
+					<li>(1, 1)</li>
+					<li>(1.01, 0)</li>
+				</points>
+			</litterSizeCurve>
+			<lifeExpectancy>750</lifeExpectancy>
+			<lifeStageAges>
+				
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0</minAge>
+					<soundWounded>WMH_Pawn_Leshy_Wounded</soundWounded>
+					<soundDeath>WMH_Pawn_Leshy_Death</soundDeath>
+					<soundCall>WMH_Pawn_Leshy_Call</soundCall>
+					<soundAngry>WMH_Pawn_Leshy_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+			<li>AnimalMonster</li>
+		</tradeTags>
+		<modExtensions>
+			<li Class="WMHAnimalBehaviours.MonsterClass">
+				<monsterClass>Relict</monsterClass>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<PawnKindDef ParentName="WMH_MonsterKindBase">
+		<defName>WMH_Leshy</defName>
+		<label>leshy</label>
+		<race>WMH_Leshy</race>
+		<combatPower>1000</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+
+		<lifeStages>
+		
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/WMH_Leshy/WMH_Leshy</texPath>
+					<drawSize>3.2</drawSize>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/WMH_Leshy/WMH_Dessicated_Leshy</texPath>
+					<drawSize>3.2</drawSize>
+				</dessicatedBodyGraphicData>
+				
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+</Defs>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ====================================================== -->
+
+	<ThingDef ParentName="WMH_MonsterBase">
+		<defName>WMH_Basilisk</defName>
+		<label>basilisk</label>
+
+		<description>Contrary to popular belief, basilisks cannot turn anything to stone with their gaze, however, their acid, venom, claws and teeth provide them many other ways to kill. Several Glitterworld universities proclaim that a Basilisk's venom is the most potent across the rimworlds.\n\nMonster class traits: Being a Draconid, Basilisk can move over difficult terrain with ease.</description>
+		<statBases>
+			<MoveSpeed>3.00</MoveSpeed>
+			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
+			<ToxicResistance>1</ToxicResistance>
+			<Flammability>0</Flammability>
+			<ArmorRating_Blunt>.6</ArmorRating_Blunt>
+			<MarketValue>350</MarketValue>
+		</statBases>
+		<tools>
+
+			<li>
+				<label>left claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>13</power>
+				<cooldownTime>0.75</cooldownTime>
+				<linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
+
+			</li>
+			<li>
+				<label>right claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>13</power>
+				<cooldownTime>0.75</cooldownTime>
+				<linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
+
+			</li>
+			<li>
+				<label>razor beak</label>
+				<capacities>
+					<li>WMH_VeryToxicBite</li>
+				</capacities>
+				<power>25</power>
+				<cooldownTime>1</cooldownTime>
+				<linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
+				<chanceFactor>0.9</chanceFactor>
+
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>25</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+		</tools>
+		<comps>
+			<li Class="AnimalBehaviours.CompProperties_Floating">
+
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_Untameable">
+				<factionToReturnTo>WMH_Monsters</factionToReturnTo>
+				
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_DoesntFlee">
+		
+			</li>
+		</comps>
+		<race>
+
+			<body>WMH_Bird</body>
+			<baseBodySize>3</baseBodySize>
+			<baseHealthScale>10</baseHealthScale>
+			<leatherDef>Leather_Lizard</leatherDef>
+			<useMeatFrom>WMH_Chort</useMeatFrom>
+			<gestationPeriodDays>30</gestationPeriodDays>
+			<lifeExpectancy>18</lifeExpectancy>
+			<foodType>OmnivoreAnimal, AnimalProduct</foodType>
+			<baseHungerRate>0.10</baseHungerRate>
+			<wildness>1</wildness>
+
+			<lifeStageAges>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0</minAge>
+					<soundWounded>WMH_Pawn_Draconid_Wounded</soundWounded>
+					<soundDeath>WMH_Pawn_Draconid_Death</soundDeath>
+					<soundCall>WMH_Pawn_Draconid_Call</soundCall>
+					<soundAngry>WMH_Pawn_Draconid_Angry</soundAngry>
+				</li>
+
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+			<li>AnimalMonster</li>
+		</tradeTags>
+		<modExtensions>
+			<li Class="WMHAnimalBehaviours.MonsterClass">
+				<monsterClass>Draconid</monsterClass>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<PawnKindDef ParentName="WMH_MonsterKindBase">
+		<defName>WMH_Basilisk</defName>
+		<label>basilisk</label>
+		<race>WMH_Basilisk</race>
+		<combatPower>175</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+		<ecoSystemWeight>0.5</ecoSystemWeight>
+
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/WMH_Basilisk/WMH_Basilisk</texPath>
+					<drawSize>3</drawSize>
+					<shadowData>
+						<volume>(0.9, 0.75, 0.6)</volume>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/WMH_Basilisk/WMH_Dessicated_Basilisk</texPath>
+					<drawSize>3</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+
+	</PawnKindDef>
+</Defs>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="WMH_MonsterBase">
+		<defName>WMH_Ekimmara</defName>
+		<label>ekimmara</label>
+		<description>Ekimmaras are not, despite what village gossips might say, intelligent vampires. They are instead infected travelers trapped in a monstrous bodies, who have no particular feelings about garlic, holy water or religious symbols.\n\nMonster class traits: Being a Cursed One, Ekimmara bite infection leads to full transformation and should be treated as soon as possible.</description>		
+		<statBases>
+			<MoveSpeed>4</MoveSpeed>
+			<ComfyTemperatureMin>-35</ComfyTemperatureMin>
+			<MarketValue>450</MarketValue>
+			<ArmorRating_Blunt>.15</ArmorRating_Blunt>
+			<ArmorRating_Sharp>.15</ArmorRating_Sharp>
+		</statBases>
+		<tools>
+			<li>
+				<label>left claws</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>0.5</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>right claws</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>0.5</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<capacities>
+					<li>WMH_EkimmaraBite</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.45</chanceFactor>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<comps>
+			<li Class="AnimalBehaviours.CompProperties_Regeneration">
+				<rateInTicks>1000</rateInTicks>
+
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_Untameable">
+				<factionToReturnTo>WMH_Monsters</factionToReturnTo>
+				
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_DoesntFlee">
+		
+			</li>
+		</comps>
+
+		<race>
+			<body>Human</body>
+			<baseBodySize>1</baseBodySize>
+			<baseHealthScale>10</baseHealthScale>
+			<leatherDef>Leather_Human</leatherDef>
+			<useMeatFrom>Human</useMeatFrom>
+			<gestationPeriodDays>45</gestationPeriodDays>
+			<lifeExpectancy>85</lifeExpectancy>
+			<foodType>OmnivoreHuman</foodType>
+			<baseHungerRate>0.10</baseHungerRate>
+			<wildness>1</wildness>
+
+			<lifeStageAges>
+			
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0</minAge>
+					<soundWounded>WMH_Pawn_Ekimmara_Wounded</soundWounded>
+					<soundDeath>WMH_Pawn_Ekimmara_Death</soundDeath>
+					<soundCall>WMH_Pawn_Ekimmara_Call</soundCall>
+					<soundAngry>WMH_Pawn_Ekimmara_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+			
+		</race>
+		
+		<tradeTags>
+			<li>AnimalMonster</li>
+		</tradeTags>
+		<modExtensions>
+			<li Class="WMHAnimalBehaviours.MonsterClass">
+				<monsterClass>CursedOne</monsterClass>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<PawnKindDef ParentName="WMH_MonsterKindBase">
+		<defName>WMH_Ekimmara</defName>
+		<label>ekimmara</label>
+		<race>WMH_Ekimmara</race>
+		<combatPower>250</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+		<ecoSystemWeight>1</ecoSystemWeight>
+		<wildGroupSize>
+			<min>3</min>
+			<max>3</max>
+		</wildGroupSize>
+		<lifeStages>
+			
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/WMH_Ekimmara/WMH_Ekimmara</texPath>
+					<drawSize>2</drawSize>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/WMH_Ekimmara/WMH_Dessicated_Ekimmara</texPath>
+					<drawSize>2</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+</Defs>

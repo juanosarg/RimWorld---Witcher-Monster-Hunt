@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="WMH_MonsterBase">
+		<defName>WMH_Fleder</defName>
+		<label>fleder</label>
+		<description>Fleders are lesser vampires, weaker than the rest of their ilk in almost every aspect. These vampires mainly fight with their teeth and claws, flailing them blindly and not stopping even when their victim is already dead.Their claws can rip through armour and flesh alike.\n\nMonster class traits: Being a Cursed One, Fleder bite infection leads to full transformation and should be treated as soon as possible.</description>		
+		<statBases>
+			<MoveSpeed>5</MoveSpeed>
+			<ComfyTemperatureMin>-35</ComfyTemperatureMin>
+			<MarketValue>450</MarketValue>
+			<ArmorRating_Blunt>.3</ArmorRating_Blunt>
+			<ArmorRating_Sharp>.3</ArmorRating_Sharp>
+		</statBases>
+		<tools>
+			<li>
+				<label>left claws</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>15</power>
+				<armorPenetration>0.50</armorPenetration>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>right claws</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>15</power>
+								<armorPenetration>0.50</armorPenetration>
+
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<capacities>
+					<li>WMH_FlederBite</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.45</chanceFactor>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<comps>
+			<li Class="AnimalBehaviours.CompProperties_Regeneration">
+				<rateInTicks>300</rateInTicks>
+
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_Untameable">
+				<factionToReturnTo>WMH_Monsters</factionToReturnTo>
+				
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_DoesntFlee">
+		
+			</li>
+		</comps>
+
+		<race>
+			<body>Human</body>
+			<baseBodySize>1.20</baseBodySize>
+			<baseHealthScale>10</baseHealthScale>
+			<leatherDef>Leather_Human</leatherDef>
+			<useMeatFrom>Human</useMeatFrom>
+			<gestationPeriodDays>45</gestationPeriodDays>
+			<lifeExpectancy>85</lifeExpectancy>
+			<foodType>OmnivoreHuman</foodType>
+			<baseHungerRate>0.10</baseHungerRate>
+			<wildness>1</wildness>
+
+			<lifeStageAges>
+			
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0</minAge>
+					<soundWounded>WMH_Pawn_Fleder_Wounded</soundWounded>
+					<soundDeath>WMH_Pawn_Fleder_Death</soundDeath>
+					<soundCall>WMH_Pawn_Fleder_Call</soundCall>
+					<soundAngry>WMH_Pawn_Fleder_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+			
+		</race>
+		
+		<tradeTags>
+			<li>AnimalMonster</li>
+		</tradeTags>
+		<modExtensions>
+			<li Class="WMHAnimalBehaviours.MonsterClass">
+				<monsterClass>CursedOne</monsterClass>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<PawnKindDef ParentName="WMH_MonsterKindBase">
+		<defName>WMH_Fleder</defName>
+		<label>fleder</label>
+		<race>WMH_Fleder</race>
+		<combatPower>250</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+		<ecoSystemWeight>1</ecoSystemWeight>
+		<wildGroupSize>
+			<min>3</min>
+			<max>3</max>
+		</wildGroupSize>
+		<lifeStages>
+			
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/WMH_Fleder/WMH_Fleder</texPath>
+					<drawSize>2.25</drawSize>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/WMH_Fleder/WMH_Dessicated_Fleder</texPath>
+					<drawSize>2.25</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+</Defs>

@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+	<!-- ============================================================ -->
+
+	<ThingDef ParentName="WMH_MonsterBase">
+		<defName>WMH_Fiend</defName>
+		<label>fiend</label>
+
+		<description>Fiend is a walking mountain of muscle capped with horned, tooth-filled head. Is enormous size and strength allows it to take on an entire raiding party, whilst the third eye located in the center of their forehead is used to draw their prey into a state of hypnosis.\n\nMonster class traits: Being a Relict, Fiend contract provides much higher rewards.</description>		
+		<statBases>
+			<MoveSpeed>5</MoveSpeed>
+			<ComfyTemperatureMin>-100</ComfyTemperatureMin>
+			<Flammability>0</Flammability>
+			<MarketValue>4000</MarketValue>
+		</statBases>
+		<tools>
+			<li>
+				<label>left claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>22</power>
+				<cooldownTime>0.85</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>right claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>22</power>
+				<cooldownTime>0.85</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>horn</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>27</power>
+				<cooldownTime>1.7</cooldownTime>
+				<linkedBodyPartsGroup>HornAttackTool</linkedBodyPartsGroup>
+			</li>
+
+			<li>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>1.65</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1.65</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+
+		</tools>
+		<comps>
+			<li Class="AnimalBehaviours.CompProperties_MindEffecter">
+				<radius>40</radius>
+				<tickInterval>450</tickInterval>
+				<mentalState>Wander_Psychotic</mentalState>
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_Untameable">
+				<factionToReturnTo>WMH_Monsters</factionToReturnTo>
+				
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_DoesntFlee">
+		
+			</li>
+		</comps>
+		<race>
+
+			<body>WMH_QuadrupedWithPawsAndHorns</body>
+			<baseBodySize>7.00</baseBodySize>
+			<baseHungerRate>3.0</baseHungerRate>
+			<baseHealthScale>20</baseHealthScale>
+			<foodType>OmnivoreAnimal</foodType>
+			<leatherDef>Leather_Heavy</leatherDef>
+			<useMeatFrom>WMH_Chort</useMeatFrom>
+			<wildness>0.99</wildness>
+			<manhunterOnDamageChance>1.0</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>1.0</manhunterOnTameFailChance>
+			<trainability>Advanced</trainability>
+			<gestationPeriodDays>75</gestationPeriodDays>
+			<litterSizeCurve>
+				<points>
+					<li>(0.99, 0)</li>
+					<li>(1, 1)</li>
+					<li>(1.01, 0)</li>
+				</points>
+			</litterSizeCurve>
+			<lifeExpectancy>300</lifeExpectancy>
+			<lifeStageAges>
+
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0</minAge>
+					<soundWounded>WMH_Pawn_Relict_Wounded</soundWounded>
+					<soundDeath>WMH_Pawn_Relict_Death</soundDeath>
+					<soundCall>WMH_Pawn_Relict_Call</soundCall>
+					<soundAngry>WMH_Pawn_Relict_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+			<li>AnimalMonster</li>
+		</tradeTags>
+		<modExtensions>
+			<li Class="WMHAnimalBehaviours.MonsterClass">
+				<monsterClass>Relict</monsterClass>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<PawnKindDef ParentName="WMH_MonsterKindBase">
+		<defName>WMH_Fiend</defName>
+		<label>fiend</label>
+		<race>WMH_Fiend</race>
+		<combatPower>1000</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+
+		<lifeStages>
+
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/WMH_Fiend/WMH_Fiend</texPath>
+					<drawSize>4.5</drawSize>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/WMH_Fiend/WMH_Dessicated_Fiend</texPath>
+					<drawSize>4.5</drawSize>
+				</dessicatedBodyGraphicData>
+
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+</Defs>

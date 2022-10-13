@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="WMH_MonsterBase">
+		<defName>WMH_Werewolf</defName>
+		<label>werewolf</label>
+		<description>Neither animal, nor man, the Werewolf takes the worst from both species: the bloodlust and primal nature of a timberwolf, and the ruthlessness and cruelty of a human. Feared by the tribal elders, Werewolves are nearly unkillable due to their fast wound regeneration.\n\nMonster class traits: Being a Cursed One, Werewolf bite infection leads to full transformation and should be treated as soon as possible.</description>		
+		<statBases>
+			<MoveSpeed>7</MoveSpeed>
+			<ComfyTemperatureMin>-55</ComfyTemperatureMin>
+			<MarketValue>450</MarketValue>
+			<ArmorRating_Blunt>.3</ArmorRating_Blunt>
+			<ArmorRating_Sharp>.3</ArmorRating_Sharp>
+		</statBases>
+		<tools>
+			<li>
+				<label>left claws</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>right claws</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<capacities>
+					<li>WMH_WerewolfBite</li>
+				</capacities>
+				<power>24</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.45</chanceFactor>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<comps>
+			<li Class="AnimalBehaviours.CompProperties_Regeneration">
+				<rateInTicks>50</rateInTicks>
+
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_Untameable">
+				<factionToReturnTo>WMH_Monsters</factionToReturnTo>
+
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_DoesntFlee">
+		
+			</li>
+		</comps>
+
+		<race>
+			<body>Human</body>
+			<baseBodySize>1.5</baseBodySize>
+			<baseHealthScale>8</baseHealthScale>
+			<leatherDef>Leather_Wolf</leatherDef>
+			<useMeatFrom>Human</useMeatFrom>
+			<gestationPeriodDays>45</gestationPeriodDays>
+			<lifeExpectancy>85</lifeExpectancy>
+			<foodType>OmnivoreHuman</foodType>
+			<baseHungerRate>0.10</baseHungerRate>
+			<wildness>1</wildness>
+
+			<lifeStageAges>
+			
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0</minAge>
+					<soundWounded>WMH_Pawn_Werewolf_Wounded</soundWounded>
+					<soundDeath>WMH_Pawn_Werewolf_Death</soundDeath>
+					<soundCall>WMH_Pawn_Werewolf_Call</soundCall>
+					<soundAngry>WMH_Pawn_Werewolf_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+			
+		</race>
+		
+		<tradeTags>
+			<li>AnimalMonster</li>
+		</tradeTags>
+		<modExtensions>
+			<li Class="WMHAnimalBehaviours.MonsterClass">
+				<monsterClass>CursedOne</monsterClass>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<PawnKindDef ParentName="WMH_MonsterKindBase">
+		<defName>WMH_Werewolf</defName>
+		<label>werewolf</label>
+		<race>WMH_Werewolf</race>
+		<combatPower>250</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+		<ecoSystemWeight>1</ecoSystemWeight>
+		<wildGroupSize>
+			<min>2</min>
+			<max>2</max>
+		</wildGroupSize>
+		<lifeStages>
+			
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/WMH_Werewolf/WMH_Werewolf</texPath>
+					<drawSize>3</drawSize>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/WMH_Werewolf/WMH_Dessicated_Werewolf</texPath>
+					<drawSize>3</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+</Defs>

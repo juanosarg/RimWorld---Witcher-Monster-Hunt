@@ -1,0 +1,1856 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- Chort (lower pitch Relict) -->
+
+	<SoundDef>
+		<defName>WMH_Pawn_Chort_Angry</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxVoices>2</maxVoices>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Relict/Pawn_Relict_Angry</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>36</min>
+					<max>36</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.5</min>
+					<max>0.65</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>WMH_Pawn_Chort_Wounded</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Relict/Pawn_Relict_Wounded</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>36</min>
+					<max>36</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.5</min>
+					<max>0.65</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<repeatMode>NeverTwice</repeatMode>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>WMH_Pawn_Chort_Death</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Relict/Pawn_Relict_Death</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>40</min>
+					<max>40</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.5</min>
+					<max>0.65</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>WMH_Pawn_Chort_Call</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Relict/Pawn_Relict_Call</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>36</min>
+					<max>36</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.5</min>
+					<max>0.65</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!-- Djinn (higher pitched elementa) -->
+
+	<SoundDef>
+		<defName>WMH_Pawn_Djinn_Angry</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxVoices>2</maxVoices>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Elementa/Pawn_Elementa_Angry</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>36</min>
+					<max>36</max>
+				</volumeRange>
+				<pitchRange>
+					<min>1.3</min>
+					<max>1.5</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>WMH_Pawn_Djinn_Wounded</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Elementa/Pawn_Elementa_Wounded</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>36</min>
+					<max>36</max>
+				</volumeRange>
+				<pitchRange>
+					<min>1.3</min>
+					<max>1.5</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<repeatMode>NeverTwice</repeatMode>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>WMH_Pawn_Djinn_Death</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Elementa/Pawn_Elementa_Death</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>40</min>
+					<max>40</max>
+				</volumeRange>
+				<pitchRange>
+					<min>1.3</min>
+					<max>1.5</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>WMH_Pawn_Djinn_Call</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Elementa/Pawn_Elementa_Call</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>36</min>
+					<max>36</max>
+				</volumeRange>
+				<pitchRange>
+					<min>1.3</min>
+					<max>1.5</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!-- Draconid -->
+
+	<SoundDef>
+		<defName>WMH_Pawn_Draconid_Angry</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxVoices>2</maxVoices>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Draconid/Pawn_Draconid_Angry</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>32</min>
+					<max>32</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9</min>
+					<max>1.1</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>WMH_Pawn_Draconid_Wounded</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Draconid/Pawn_Draconid_Wounded</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>32</min>
+					<max>32</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9</min>
+					<max>1.1</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<repeatMode>NeverTwice</repeatMode>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>WMH_Pawn_Draconid_Death</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Draconid/Pawn_Draconid_Death</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>40</min>
+					<max>40</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9</min>
+					<max>1.1</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>WMH_Pawn_Draconid_Call</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Draconid/Pawn_Draconid_Call</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>32</min>
+					<max>32</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9</min>
+					<max>1.1</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!-- Ekimmara -->
+
+	<SoundDef>
+		<defName>WMH_Pawn_Ekimmara_Angry</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxVoices>2</maxVoices>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Ekimmara/Pawn_Ekimmara_Angry</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>36</min>
+					<max>36</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9</min>
+					<max>1.1</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>WMH_Pawn_Ekimmara_Wounded</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Ekimmara/Pawn_Ekimmara_Wounded</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>36</min>
+					<max>36</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9</min>
+					<max>1.1</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<repeatMode>NeverTwice</repeatMode>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>WMH_Pawn_Ekimmara_Death</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Ekimmara/Pawn_Ekimmara_Death</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>40</min>
+					<max>40</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9</min>
+					<max>1.1</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>WMH_Pawn_Ekimmara_Call</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Ekimmara/Pawn_Ekimmara_Call</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>36</min>
+					<max>36</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9</min>
+					<max>1.1</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!-- Elementa -->
+
+	<SoundDef>
+		<defName>WMH_Pawn_Elementa_Angry</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxVoices>2</maxVoices>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Elementa/Pawn_Elementa_Angry</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>36</min>
+					<max>36</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9</min>
+					<max>1.1</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>WMH_Pawn_Elementa_Wounded</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Elementa/Pawn_Elementa_Wounded</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>36</min>
+					<max>36</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9</min>
+					<max>1.1</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<repeatMode>NeverTwice</repeatMode>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>WMH_Pawn_Elementa_Death</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Elementa/Pawn_Elementa_Death</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>40</min>
+					<max>40</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9</min>
+					<max>1.1</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>WMH_Pawn_Elementa_Call</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Elementa/Pawn_Elementa_Call</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>36</min>
+					<max>36</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9</min>
+					<max>1.1</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!-- Fleder (lower pitcher Ekimmara) -->
+
+	<SoundDef>
+		<defName>WMH_Pawn_Fleder_Angry</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxVoices>2</maxVoices>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Ekimmara/Pawn_Ekimmara_Angry</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>36</min>
+					<max>36</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.5</min>
+					<max>0.65</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>WMH_Pawn_Fleder_Wounded</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Ekimmara/Pawn_Ekimmara_Wounded</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>36</min>
+					<max>36</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.5</min>
+					<max>0.65</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<repeatMode>NeverTwice</repeatMode>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>WMH_Pawn_Fleder_Death</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Ekimmara/Pawn_Ekimmara_Death</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>40</min>
+					<max>40</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.5</min>
+					<max>0.65</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>WMH_Pawn_Fleder_Call</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Ekimmara/Pawn_Ekimmara_Call</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>36</min>
+					<max>36</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.5</min>
+					<max>0.65</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!-- Fogler (lower pitched Necrophage) -->
+
+	<SoundDef>
+		<defName>WMH_Pawn_Fogler_Angry</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxVoices>2</maxVoices>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Necrophage/Pawn_Necrophage_Angry</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>36</min>
+					<max>36</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.5</min>
+					<max>0.65</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>WMH_Pawn_Fogler_Wounded</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Necrophage/Pawn_Necrophage_Wounded</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>36</min>
+					<max>36</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.5</min>
+					<max>0.65</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<repeatMode>NeverTwice</repeatMode>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>WMH_Pawn_Fogler_Death</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Necrophage/Pawn_Necrophage_Death</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>40</min>
+					<max>40</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.5</min>
+					<max>0.65</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>WMH_Pawn_Fogler_Call</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Necrophage/Pawn_Necrophage_Call</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>36</min>
+					<max>36</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.5</min>
+					<max>0.65</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!-- Hym (lower pitched Wraith) -->
+
+	<SoundDef>
+		<defName>WMH_Pawn_Hym_Angry</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxVoices>2</maxVoices>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Wraith/Pawn_Wraith_Angry</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>36</min>
+					<max>36</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.7</min>
+					<max>0.8</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>WMH_Pawn_Hym_Wounded</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Wraith/Pawn_Wraith_Wounded</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>36</min>
+					<max>36</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.7</min>
+					<max>0.8</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<repeatMode>NeverTwice</repeatMode>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>WMH_Pawn_Hym_Death</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Wraith/Pawn_Wraith_Death</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>40</min>
+					<max>40</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.7</min>
+					<max>0.8</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>WMH_Pawn_Hym_Call</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Wraith/Pawn_Wraith_Call</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>36</min>
+					<max>36</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.7</min>
+					<max>0.8</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!-- Leshy -->
+
+	<SoundDef>
+		<defName>WMH_Pawn_Leshy_Angry</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxVoices>2</maxVoices>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Leshy/Pawn_Leshy_Angry</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>36</min>
+					<max>36</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9</min>
+					<max>1.1</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>WMH_Pawn_Leshy_Wounded</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Leshy/Pawn_Leshy_Wounded</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>36</min>
+					<max>36</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9</min>
+					<max>1.1</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<repeatMode>NeverTwice</repeatMode>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>WMH_Pawn_Leshy_Death</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Leshy/Pawn_Leshy_Death</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>40</min>
+					<max>40</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9</min>
+					<max>1.1</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>WMH_Pawn_Leshy_Call</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Leshy/Pawn_Leshy_Call</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>36</min>
+					<max>36</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9</min>
+					<max>1.1</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!-- Necrophage -->
+
+	<SoundDef>
+		<defName>WMH_Pawn_Necrophage_Angry</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxVoices>2</maxVoices>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Necrophage/Pawn_Necrophage_Angry</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>36</min>
+					<max>36</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9</min>
+					<max>1.1</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>WMH_Pawn_Necrophage_Wounded</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Necrophage/Pawn_Necrophage_Wounded</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>36</min>
+					<max>36</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9</min>
+					<max>1.1</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<repeatMode>NeverTwice</repeatMode>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>WMH_Pawn_Necrophage_Death</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Necrophage/Pawn_Necrophage_Death</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>40</min>
+					<max>40</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9</min>
+					<max>1.1</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>WMH_Pawn_Necrophage_Call</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Necrophage/Pawn_Necrophage_Call</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>36</min>
+					<max>36</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9</min>
+					<max>1.1</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!-- Nekker -->
+
+	<SoundDef>
+		<defName>WMH_Pawn_Nekker_Angry</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxVoices>2</maxVoices>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Nekker/Pawn_Nekker_Angry</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>32</min>
+					<max>32</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9</min>
+					<max>1.1</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>WMH_Pawn_Nekker_Wounded</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Nekker/Pawn_Nekker_Wounded</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>32</min>
+					<max>32</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9</min>
+					<max>1.1</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<repeatMode>NeverTwice</repeatMode>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>WMH_Pawn_Nekker_Death</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Nekker/Pawn_Nekker_Death</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>40</min>
+					<max>40</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9</min>
+					<max>1.1</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>WMH_Pawn_Nekker_Call</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Nekker/Pawn_Nekker_Call</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>32</min>
+					<max>32</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9</min>
+					<max>1.1</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!-- Ogroid -->
+
+	<SoundDef>
+		<defName>WMH_Pawn_Ogroid_Angry</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxVoices>2</maxVoices>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Ogroid/Pawn_Ogroid_Angry</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>36</min>
+					<max>36</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9</min>
+					<max>1.1</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>WMH_Pawn_Ogroid_Wounded</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Ogroid/Pawn_Ogroid_Wounded</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>36</min>
+					<max>36</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9</min>
+					<max>1.1</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<repeatMode>NeverTwice</repeatMode>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>WMH_Pawn_Ogroid_Death</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Ogroid/Pawn_Ogroid_Death</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>40</min>
+					<max>40</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9</min>
+					<max>1.1</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>WMH_Pawn_Ogroid_Call</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Ogroid/Pawn_Ogroid_Call</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>36</min>
+					<max>36</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9</min>
+					<max>1.1</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!-- Relict -->
+
+	<SoundDef>
+		<defName>WMH_Pawn_Relict_Angry</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxVoices>2</maxVoices>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Relict/Pawn_Relict_Angry</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>36</min>
+					<max>36</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9</min>
+					<max>1.1</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>WMH_Pawn_Relict_Wounded</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Relict/Pawn_Relict_Wounded</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>36</min>
+					<max>36</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9</min>
+					<max>1.1</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<repeatMode>NeverTwice</repeatMode>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>WMH_Pawn_Relict_Death</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Relict/Pawn_Relict_Death</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>40</min>
+					<max>40</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9</min>
+					<max>1.1</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>WMH_Pawn_Relict_Call</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Relict/Pawn_Relict_Call</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>36</min>
+					<max>36</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9</min>
+					<max>1.1</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!-- Werewolf -->
+
+	<SoundDef>
+		<defName>WMH_Pawn_Werewolf_Call</defName>  
+		<context>MapOnly</context>
+		<eventNames />  
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>Pawn/Animal/Dog/Dog_Call</clipFolderPath>
+					</li>
+				</grains>      
+				<volumeRange>
+					<min>36</min>
+					<max>36</max>
+				</volumeRange>      
+				<pitchRange>
+					<min>0.6</min>        
+					<max>0.8</max>
+				</pitchRange>      
+				<distRange>
+					<min>0</min>        
+					<max>50</max>
+				</distRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>WMH_Pawn_Werewolf_Angry</defName>  
+		<context>MapOnly</context>
+		<eventNames />  
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>Pawn/Animal/Dog/Dog_Angry</clipFolderPath>
+					</li>
+				</grains>      
+				<volumeRange>
+					<min>36</min>
+					<max>36</max>
+				</volumeRange>      
+				<pitchRange>
+					<min>0.6</min>        
+					<max>0.8</max>
+				</pitchRange>      
+				<distRange>
+					<min>0</min>        
+					<max>70</max>
+				</distRange>      
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>WMH_Pawn_Werewolf_Wounded</defName>  
+		<context>MapOnly</context>
+		<eventNames />  
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>Pawn/Animal/Dog/Dog_Injured</clipFolderPath>
+					</li>
+				</grains>      
+				<volumeRange>
+					<min>32</min>
+					<max>32</max>
+				</volumeRange>      
+				<pitchRange>
+					<min>0.6</min>        
+					<max>0.8</max>
+				</pitchRange>      
+				<distRange>
+					<min>0</min>        
+					<max>70</max>
+				</distRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>WMH_Pawn_Werewolf_Death</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>Pawn/Animal/Dog/Dog_Dead</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>36</min>
+					<max>36</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.6</min>        
+					<max>0.8</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+
+	<!-- Wraith -->
+
+	<SoundDef>
+		<defName>WMH_Pawn_Wraith_Angry</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxVoices>2</maxVoices>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Wraith/Pawn_Wraith_Angry</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>36</min>
+					<max>36</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9</min>
+					<max>1.1</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>WMH_Pawn_Wraith_Wounded</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Wraith/Pawn_Wraith_Wounded</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>36</min>
+					<max>36</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9</min>
+					<max>1.1</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<repeatMode>NeverTwice</repeatMode>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>WMH_Pawn_Wraith_Death</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Wraith/Pawn_Wraith_Death</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>40</min>
+					<max>40</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9</min>
+					<max>1.1</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>WMH_Pawn_Wraith_Call</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Wraith/Pawn_Wraith_Call</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>36</min>
+					<max>36</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9</min>
+					<max>1.1</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<!-- Wyvern (lower pitched Draconid) -->
+
+	<SoundDef>
+		<defName>WMH_Pawn_Wyvern_Angry</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxVoices>2</maxVoices>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Draconid/Pawn_Draconid_Angry</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>32</min>
+					<max>32</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.6</min>        
+					<max>0.8</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>WMH_Pawn_Wyvern_Wounded</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Draconid/Pawn_Draconid_Wounded</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>32</min>
+					<max>32</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.6</min>        
+					<max>0.8</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<repeatMode>NeverTwice</repeatMode>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>WMH_Pawn_Wyvern_Death</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Draconid/Pawn_Draconid_Death</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>40</min>
+					<max>40</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.6</min>        
+					<max>0.8</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>WMH_Pawn_Wyvern_Call</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Draconid/Pawn_Draconid_Call</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>32</min>
+					<max>32</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.6</min>        
+					<max>0.8</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+</Defs>

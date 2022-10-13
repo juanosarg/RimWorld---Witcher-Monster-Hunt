@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+
+	<MVCF.ModDef>
+		<defName>WMH_Witcher</defName>
+		<label>Witcher Monster Hunt</label>
+		<description>Adding animal ranged attacks for Witcher Monster Hunt creatures</description>
+		<ActivateFeatures>
+			<li>RangedAnimals</li>
+			<li>HediffVerbs</li>
+			<li>IntegratedToggle</li>
+		</ActivateFeatures>
+	</MVCF.ModDef>
+
+
+
+
+
+
+</Defs>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="WMH_UndeadMonsterBase">
+		
+		<defName>WMH_Hym</defName>
+		<label>hym</label>
+		<description>Hym avoids sinking its claws into their victims. Instead, it saps their strength directly, through inflicting suffering. Speaking in a voice only the victim hears, Hym drives him to commit acts of violence, aggression and self-harm. Those tormented by a Hym are incapable of restful sleep weeks after the Hym is gone.\n\nMonster class traits: Being a Spectre, Hym instill fear in nearby humans, directly affecting their mood.</description>		
+		<statBases>
+			<MoveSpeed>5</MoveSpeed>
+			<ComfyTemperatureMin>-250</ComfyTemperatureMin>
+			<ComfyTemperatureMax>750</ComfyTemperatureMax>
+			<MarketValue>175</MarketValue>
+			<MeatAmount>0</MeatAmount>
+			<LeatherAmount>0</LeatherAmount>
+			<PsychicSensitivity>0</PsychicSensitivity>
+			<ToxicResistance>1</ToxicResistance>
+			  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
+			<Flammability>0</Flammability>
+			
+		</statBases>
+		<tools>
+			
+			<li>
+				<label>left claws</label>
+				<capacities>
+					<li>WMH_HymPunch</li>
+				</capacities>
+				<power>22</power>
+				<cooldownTime>3</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>right claws</label>
+				<capacities>
+					<li>WMH_HymPunch</li>
+				</capacities>
+				<power>22</power>
+				<cooldownTime>3</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>WMH_HymPunch</li>
+				</capacities>
+				<power>3</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+			
+		</tools>
+		
+		<comps>
+			<li Class="AnimalBehaviours.CompProperties_ThoughtEffecter">
+				<radius>100</radius>
+				<tickInterval>50</tickInterval>
+				<thoughtDef>WMH_SpectreEffect</thoughtDef>
+				<showEffect>true</showEffect>
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
+				<hediffname>WMH_NoPain</hediffname>
+				<hediffseverity>1</hediffseverity>
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_Untameable">
+				<factionToReturnTo>WMH_Monsters</factionToReturnTo>
+				
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_DoesntFlee">
+		
+			</li>
+		</comps>
+		<race>
+			<body>Human</body>
+			<baseBodySize>1</baseBodySize>
+			<baseHealthScale>10</baseHealthScale>
+			<useMeatFrom>WMH_Chort</useMeatFrom>
+			<useLeatherFrom>Pig</useLeatherFrom>
+			<hasGenders>false</hasGenders>
+			<lifeExpectancy>5000</lifeExpectancy>
+			<foodType>None</foodType>
+			<wildness>1</wildness>
+			<trainability>None</trainability>
+			<canBePredatorPrey>false</canBePredatorPrey>
+			<mateMtbHours>10000</mateMtbHours>
+			<gestationPeriodDays>10000</gestationPeriodDays>
+
+			<lifeStageAges>
+			
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0</minAge>
+					<soundWounded>WMH_Pawn_Hym_Wounded</soundWounded>
+					<soundDeath>WMH_Pawn_Hym_Death</soundDeath>
+					<soundCall>WMH_Pawn_Hym_Call</soundCall>
+					<soundAngry>WMH_Pawn_Hym_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+			
+		</race>
+		
+		<tradeTags>
+			<li>AnimalMonster</li>
+		</tradeTags>
+		<modExtensions>
+			<li Class="WMHAnimalBehaviours.MonsterClass">
+				<monsterClass>Spectre</monsterClass>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<PawnKindDef ParentName="WMH_MonsterKindBase">
+		<defName>WMH_Hym</defName>
+		<label>hym</label>
+		<race>WMH_Hym</race>
+		<combatPower>125</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+		<ecoSystemWeight>1</ecoSystemWeight>
+		
+		<lifeStages>
+			
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/WMH_Hym/WMH_Hym</texPath>
+					<drawSize>3</drawSize>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/WMH_Hym/WMH_Dessicated_Hym</texPath>
+					<drawSize>3</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+</Defs>
