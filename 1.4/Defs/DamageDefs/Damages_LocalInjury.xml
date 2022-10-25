@@ -1,10 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-
-
-
-	
 	<DamageDef>
 		<defName>WMH_VeryToxicBite</defName>
 		<label>virulent toxic bite</label>
@@ -18,13 +13,13 @@
 				<hediff>WMH_ToxicBuildup</hediff>
 				<severityPerDamageDealt>0.03</severityPerDamageDealt>
 				<victimSeverityScaling>ToxicResistance</victimSeverityScaling>
+				<inverseStatScaling>true</inverseStatScaling>
 			</li>
 		</additionalHediffs>
 		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
 		<impactSoundType>Slice</impactSoundType>
 		<armorCategory>Sharp</armorCategory>
 	</DamageDef>
-
 	<DamageDef ParentName="Bite">
 		<defName>WMH_WerewolfBite</defName>
 		<label>werewolf bite</label>
@@ -32,11 +27,11 @@
 			<li>
 				<hediff>WMH_Lycanthropy</hediff>
 				<severityPerDamageDealt>0.0001</severityPerDamageDealt>
-
+				<victimSeverityScaling>ToxicResistance</victimSeverityScaling>
+				<inverseStatScaling>true</inverseStatScaling>
 			</li>
 		</additionalHediffs>
 	</DamageDef>
-
 	<DamageDef ParentName="Bite">
 		<defName>WMH_EkimmaraBite</defName>
 		<label>ekimmara bite</label>
@@ -44,11 +39,11 @@
 			<li>
 				<hediff>WMH_VampirismEkimmara</hediff>
 				<severityPerDamageDealt>0.0001</severityPerDamageDealt>
-
+				<victimSeverityScaling>ToxicResistance</victimSeverityScaling>
+				<inverseStatScaling>true</inverseStatScaling>
 			</li>
 		</additionalHediffs>
 	</DamageDef>
-
 	<DamageDef ParentName="Bite">
 		<defName>WMH_FlederBite</defName>
 		<label>fleder bite</label>
@@ -56,25 +51,21 @@
 			<li>
 				<hediff>WMH_VampirismFleder</hediff>
 				<severityPerDamageDealt>0.0001</severityPerDamageDealt>
-
+				<victimSeverityScaling>ToxicResistance</victimSeverityScaling>
+				<inverseStatScaling>true</inverseStatScaling>
 			</li>
 		</additionalHediffs>
-	</DamageDef>	
-
+	</DamageDef>
 	<DamageDef ParentName="Bite">
 		<defName>WMH_Berserk</defName>
 		<label>berserk wave</label>
 		<workerClass>AnimalBehaviours.DamageWorker_Berserk</workerClass>
-
 	</DamageDef>
-
 	<DamageDef ParentName="BluntBase">
 		<defName>WMH_HymPunch</defName>
 		<label>hym claws</label>
 		<workerClass>WMHAnimalBehaviours.DamageWorker_Demoralizer</workerClass>
-
 	</DamageDef>
-
 	<DamageDef ParentName="CutBase">
 		<defName>WMH_InfectedClaws</defName>
 		<label>infected claws</label>
@@ -84,13 +75,10 @@
 				<hediff>WMH_Vomiting</hediff>
 				<severityPerDamageDealt>0.03</severityPerDamageDealt>
 				<victimSeverityScaling>ToxicResistance</victimSeverityScaling>
-
+				<inverseStatScaling>true</inverseStatScaling>
 			</li>
 		</additionalHediffs>
 	</DamageDef>
-
-
-
 	<DamageDef ParentName="Bite">
 		<defName>WMH_ParalysingBite</defName>
 		<label>paralysing bite</label>
@@ -98,10 +86,11 @@
 			<li>
 				<hediff>WMH_Paralysis</hediff>
 				<severityPerDamageDealt>0.01</severityPerDamageDealt>
+				<victimSeverityScaling>ToxicResistance</victimSeverityScaling>
+				<inverseStatScaling>true</inverseStatScaling>
 			</li>
 		</additionalHediffs>
 	</DamageDef>
-	
 	<DamageDef>
 		<defName>WMH_AcidSpit</defName>
 		<label>acid spit</label>
@@ -113,14 +102,12 @@
 			<li>
 				<hediff>WMH_AcidBuildup</hediff>
 				<severityPerDamageDealt>0.01</severityPerDamageDealt>
-				
 			</li>
 		</additionalHediffs>
 		<isRanged>true</isRanged>
 		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
 		<armorCategory>Heat</armorCategory>
 	</DamageDef>
-	
 	<DamageDef>
 		<defName>WMH_SecondaryAcidBurn</defName>
 		<label>acid burn</label>
@@ -128,11 +115,9 @@
 		<externalViolence>true</externalViolence>
 		<deathMessage>{0} has been corroded to death.</deathMessage>
 		<hediff>Burn</hediff>
-		
 		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
 		<armorCategory>Heat</armorCategory>
 	</DamageDef>
-
 	<DamageDef>
 		<defName>WMH_RockBomb</defName>
 		<label>rock</label>
@@ -160,13 +145,4 @@
 		<soundExplosion>Explosion_Smoke</soundExplosion>
 		<combatLogRules>Damage_Bomb</combatLogRules>
 	</DamageDef>
-	
-	
-
-
-
-
-
-
-
 </Defs>
